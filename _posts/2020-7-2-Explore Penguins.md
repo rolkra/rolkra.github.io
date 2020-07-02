@@ -1,7 +1,11 @@
 ---
 layout: post
-title: {explore} penguins
+title: penguin %>% explore()
 ---
+Example how to use the {explore} package to explore penguin data in R
 
-Example how to use the {explore} package to explore penguin data
+<code>
+  library(tidyverse)
+  library(explore)
+</code>
 
