@@ -11,9 +11,15 @@ data %>% explore()
 
 R would be so much more attractive to people that are used to do data analytics with a GUI!
 
-I really apprechiate the power of coding, but for fresh new R user starting to code is not easy. If you start RStudio there is not much you can do by just "playing around". You may be able to import a dataset by using the "Import Dataset" Button at the Environment pane. But then if you want to do some basic statistics or create some plots, you fail because the IDE is not offering any support. So you are not able to do the very basic stuff without learning quite a number of different concepts and functions first. That may be frustrating and feels like a "step backwards".
+I really apprechiate the power of coding, but for fresh new R user starting to code is not easy. If you start RStudio for the first time, there is not much you can do by just "playing around". You may be able to import a dataset by using the "Import Dataset" button at the Environment pane. But then if you want to do some basic statistics or create some plots, you fail because the IDE is not offering any support. 
 
 ![RStudio start](../images/RStudio-empty.png)
+
+In a typical introduction to data explration in R for beginner, you are confronted with more than 20 function names:
+
+library, setwd, data, read.csv, str, head, tail, summary, table, ggplot, aes, geom_point, geom_bar, geom_boxplot, geom_density, coord_flip, labs, theme_light, select, filter, mutate, summarize, group_by, ...
+
+So you are not able to do the very basic stuff without learning quite a number of different concepts and functions first. That may be frustrating and feels like a "step backwards". 
 
 Let’s explore!
 <https://github.com/rolkra/explore>
