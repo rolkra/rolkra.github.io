@@ -15,7 +15,7 @@ I really apprechiate the power of coding, but for fresh new R user starting to c
 
 ![RStudio start](../images/RStudio-empty.png)
 
-**In a typical introduction to data exploration in R for beginner, you are confronted with more than 20 function names:**
+In a typical introduction to data exploration in R for beginner, you are confronted with more than 20 function names:
 
 ```library```, ```setwd```, ```data```, ```read.csv```, ```str```, ```head```, ```tail```, ```summary```, ```table```, ```ggplot```, ```aes```, ```geom_point```, ```geom_bar```, ```geom_boxplot```, ```geom_density```, ```coord_flip```, ```labs```, ```theme_light```, ```select```, ```filter```, ```mutate```, ```summarize```, ```group_by```, ```arrange```, ...
 
