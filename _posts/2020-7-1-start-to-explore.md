@@ -16,3 +16,8 @@ Want to write reproducible R code?
 You can do almost everything in "7 words" or less!
 
 explore, describe, report, explain, clean, select, filter
+
+```R
+data %>% explore()
+data %>% describe()
+```
