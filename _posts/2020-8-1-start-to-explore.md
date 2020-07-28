@@ -21,7 +21,9 @@ In a typical introduction to data exploration in R for beginner, you are confron
 
 So you are not able to do the very basic stuff without learning quite a number of different concepts and functions first. That may be frustrating and feels like a "step backwards". 
 
-**I believe using R for the first time should feel like getting new exciting toys you instantly want to use and play with**. Thats why I wrote the {explore} package! 
+**I believe using R for the first time should feel like getting new exciting toys you instantly want to use and play with**. 
+
+Thats why I wrote the {explore} package! 
 
 For example, to explore the penguins dataset you just need 3 easy to understand lines of code: 
 
