@@ -21,12 +21,15 @@ library, setwd, data, read.csv, str, head, tail, summary, table, ggplot, aes, ge
 
 So you are not able to do the very basic stuff without learning quite a number of different concepts and functions first. That may be frustrating and feels like a "step backwards". 
 
-I believe using R for the first time should feel like getting new exciting toys you instantly want to use and play with. Thats why I wrote the {explore} package!
+I believe using R for the first time should feel like getting new exciting toys you instantly want to use and play with. Thats why I wrote the {explore} package! Exploring the penguins dataset is extremely easy. Using just 3 easy to understand lines of code let you experience powerful ways to cut through the data.
 
 ```R
+library(palmerpenguins)
 library(explore)
-explore(iris)
+explore(penguins)
 ```
+
+
 
 Let’s explore!
 <https://github.com/rolkra/explore>
