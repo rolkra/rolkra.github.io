@@ -12,4 +12,5 @@ data %>% explore()
 Let’s explore!
 <https://github.com/rolkra/explore>
 
+Want to write reproducible R code?
 You can do almost everything in "7 words" or less!
