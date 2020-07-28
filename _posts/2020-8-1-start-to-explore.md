@@ -33,6 +33,10 @@ library(explore)
 explore(penguins)
 ```
 
+![explore penguins](../images/explore-penguins-flipper-species.png)
+
+![explore penguins tree](../images/explore-penguins-explain-species.png)
+
 Let’s explore!
 <https://github.com/rolkra/explore>
 
