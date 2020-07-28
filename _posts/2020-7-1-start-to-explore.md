@@ -23,6 +23,6 @@ data %>% describe()
 ```
 
 Text
-![test image](images/config.png)
+![test image](../images/config.png)
 Text
 
