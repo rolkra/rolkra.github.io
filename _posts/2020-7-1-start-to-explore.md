@@ -23,6 +23,6 @@ data %>% describe()
 ```
 
 Text
-![hex explore](https://github.com/rolkra/explore/blob/master/man/figures/hex_explore.png)
+![test image](config.png)
 Text
 
