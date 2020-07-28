@@ -37,6 +37,8 @@ explore(penguins)
 
 ![explore penguins tree](../images/explore-penguins-explain-species.png)
 
+![explore penguins overview](../images/explore-penguins-overview.png)
+
 Let’s explore!
 <https://github.com/rolkra/explore>
 
