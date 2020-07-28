@@ -39,6 +39,8 @@ explore(penguins)
 
 ![explore penguins overview](../images/explore-penguins-overview.png)
 
+![explore penguins overview](../images/explore-penguins-data.png)
+
 Let’s explore!
 <https://github.com/rolkra/explore>
 
