@@ -23,6 +23,6 @@ data %>% describe()
 ```
 
 Text
-![https://github.com/rolkra/explore/blob/master/man/figures/hex_explore.png]
+<img src ="https://github.com/rolkra/explore/blob/master/man/figures/hex_explore.png">
 Text
 
