@@ -45,7 +45,7 @@ The **overview tab** shows all variable, their type, NA-values, min, max ...
 The **data tab** view the raw data
 ![explore penguins data](../images/explore-penguins-data.png)
 
-Furthermore you can create different types of HTML-reports by clicking the "report all" button.
+Furthermore you can create different types of HTML-reports of your data by clicking the "report all" button.
 
 Of course you can unleash the full power of R only using code, so the {explore} package offers all functionality of the GUI as extremely easy to use R functions to step into:
 ```explore()```, ```describe()```, ```report()```, ```explain_tree()```, ...
