@@ -11,3 +11,5 @@ data %>% explore()
 
 Let’s explore!
 <https://github.com/rolkra/explore>
+
+Explore data in 7 words (or less)!
