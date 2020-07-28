@@ -39,7 +39,7 @@ The **variable tab** lets you explore a variable and its relation to a target
 The **explain tab** shows a decision tree explaining the target 
 ![explore penguins tree](../images/explore-penguins-explain-species.png)
 
-The **overviw tab** shows all variable, their type, NA-values, min, max ...
+The **overview tab** shows all variable, their type, NA-values, min, max ...
 ![explore penguins overview](../images/explore-penguins-overview.png)
 
 The **data tab** view the raw data
