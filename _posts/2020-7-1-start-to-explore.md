@@ -9,22 +9,12 @@ What if exploring data in R is just one line of code?
 data %>% explore()
 ```
 
+R would be so much more attractive to people that are doing data analytics with a GUI!
+
+I really apprechiate the power of coding, but for fresh new R user starting to code is not easy. If you start RStudio there is not much you can do by just "playing around".  
+
+![RStudio start](../images/RStudio-empty.png)
+
 Let’s explore!
 <https://github.com/rolkra/explore>
-
-Want to write reproducible R code?
-You can do almost everything in "7 words" or less!
-
-explore, describe, report, explain, clean, select, filter
-
-```R
-data %>% explore()
-data %>% describe()
-```
-
-Text
-
-![test image](../images/config.png)
-
-Text
 
