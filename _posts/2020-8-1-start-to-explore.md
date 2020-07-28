@@ -17,7 +17,7 @@ I really apprechiate the power of coding, but for fresh new R user starting to c
 
 In a typical introduction to data exploration in R for beginner, you are confronted with more than 25 function names:
 
-```library```, ```getwd```, ```setwd```, ```c```, ```data```, ```data.frame```, ```read.csv```, ```str```, ```head```, ```tail```, ```summary```, ```table```, ```ggplot```, ```aes```, ```geom_point```, ```geom_bar```, ```geom_boxplot```, ```geom_density```, ```coord_flip```, ```labs```, ```theme_light```, ```select```, ```filter```, ```mutate```, ```summarize```, ```group_by```, ```arrange```, ...
+```library()```, ```getwd()```, ```setwd()```, ```c()```, ```data()```, ```data.frame()```, ```read.csv()```, ```str()```, ```head()```, ```tail()```, ```summary()```, ```table()```, ```ggplot()```, ```aes()```, ```geom_point()```, ```geom_bar()```, ```geom_boxplot()```, ```geom_density()```, ```coord_flip()```, ```labs()```, ```theme_light()```, ```select()```, ```filter()```, ```mutate()```, ```summarize()```, ```group_by()```, ```arrange()```, ...
 
 So you are not able to do the very basic stuff without learning quite a number of different concepts and functions first. That may be frustrating and feels like a "step backwards". 
 
@@ -33,13 +33,22 @@ library(explore)
 explore(penguins)
 ```
 
+The **variable tab** lets you explore a variable and its relation to a target 
 ![explore penguins](../images/explore-penguins-flipper-species.png)
 
+The **explain tab** shows a decision tree explaining the target 
 ![explore penguins tree](../images/explore-penguins-explain-species.png)
 
+The **overviw tab** shows all variable, their type, NA-values, min, max ...
 ![explore penguins overview](../images/explore-penguins-overview.png)
 
+The **data tab** view the raw data
 ![explore penguins data](../images/explore-penguins-data.png)
+
+Furthermore you can create different types of HTML-reports by clicking the "report all" button.
+
+Of course you can unleash the full power of R only using code, so the {explore} package offers all functionality of the GUI as extremely easy to use R functions to step into:
+```explore()```, ```describe()```, ```report()```, ```explain_tree()```, ...
 
 Let’s explore!
 <https://github.com/rolkra/explore>
