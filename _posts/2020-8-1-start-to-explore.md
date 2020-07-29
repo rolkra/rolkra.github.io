@@ -42,13 +42,13 @@ The **variable tab** lets you explore a variable and its relation to a target
 The **explain tab** shows a decision tree explaining the target 
 ![explore penguins tree](../images/explore-penguins-explain-species.png)
 
-The **overview tab** shows all variable, their type, NA-values, min, max ...
+The **overview tab** shows all variables, their type, NA-values, min, max ...
 ![explore penguins overview](../images/explore-penguins-overview.png)
 
 The **data tab** view the raw data
 ![explore penguins data](../images/explore-penguins-data.png)
 
-Furthermore you can create different types of HTML-reports of your data by clicking the "report all" button.
+Furthermore you can create different types of rich HTML-reports of your data by clicking the "report all" button.
 
 Of course you can unleash the full power of R only using code, so the {explore} package offers all functionality of the GUI as extremely easy to use R functions to step into coding:
 ```explore()```, ```describe()```, ```report()```, ```explain_tree()```, ...
