@@ -50,7 +50,7 @@ The **data tab** view the raw data
 
 Furthermore you can create different types of HTML-reports of your data by clicking the "report all" button.
 
-Of course you can unleash the full power of R only using code, so the {explore} package offers all functionality of the GUI as extremely easy to use R functions to step into:
+Of course you can unleash the full power of R only using code, so the {explore} package offers all functionality of the GUI as extremely easy to use R functions to step into coding:
 ```explore()```, ```describe()```, ```report()```, ```explain_tree()```, ...
 
 After a while these new R users will naturally go into the direction of rmarkdown and will explore new packages like {ggplot2}, {tidyr}, {}, ...
