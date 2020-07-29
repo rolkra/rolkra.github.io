@@ -9,16 +9,17 @@ What if exploring data in R is just one line of code?
 explore(data)
 ```
 
-**R would be so much more attractive to people that are used to do data analytics with Excel or a statistic tool with a GUI!**
+**R would be so much more attractive to people that are used to do data analytics with Excel or a GUI based statistic tool!**
 
-I really apprechiate the power of coding, but for fresh new R user starting to code is not easy. If you start RStudio for the first time, there is not much you can do by just "playing around". You may be able to import a dataset by using the "Import Dataset" button at the Environment pane. But then if you want to do some basic statistics or create some plots, you fail because the IDE is not offering any support. 
+I really apprechiate the power of coding, but for fresh new R users stepping into coding is not easy. If you start RStudio for the first time, there is not much you can do by just "playing around". You may be able to import a dataset by using the "Import Dataset" button at the Environment pane. But then if you want to do some basic statistics or create some basic plots, you fail because the IDE is not offering any support. 
 
 ![RStudio start](../images/RStudio-empty.png)
 
-In a typical introduction to data exploration in R for beginner, you are confronted with more than 25 function names:
+In a typical introduction to data exploration in R for beginners, you are confronted with more than 25 function names:
 
 ```library()```, ```getwd()```, ```setwd()```, ```c()```, ```data()```, ```data.frame()```, ```read.csv()```, ```str()```, ```head()```, ```tail()```, ```summary()```, ```table()```, ```ggplot()```, ```aes()```, ```geom_point()```, ```geom_bar()```, ```geom_boxplot()```, ```geom_density()```, ```coord_flip()```, ```labs()```, ```theme_light()```, ```select()```, ```filter()```, ```mutate()```, ```summarize()```, ```group_by()```, ```arrange()```, ...
 
+But cognitive psychology proved, that humans can only keep about 7 new objects in memory (![The magical number 7, by George A. Miller](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)
 So you are not able to do the very basic stuff without learning quite a number of different concepts and functions first. That may be frustrating and feels like a "step backwards". 
 
 **I believe using R for the first time should feel like getting new exciting toys you instantly want to use and play with**. 
@@ -32,6 +33,8 @@ library(palmerpenguins)
 library(explore)
 explore(penguins)
 ```
+
+This will launch a Shiny App that enables you to explore data with just a few mouse clicks!
 
 The **variable tab** lets you explore a variable and its relation to a target 
 ![explore penguins](../images/explore-penguins-flipper-species.png)
@@ -49,6 +52,8 @@ Furthermore you can create different types of HTML-reports of your data by click
 
 Of course you can unleash the full power of R only using code, so the {explore} package offers all functionality of the GUI as extremely easy to use R functions to step into:
 ```explore()```, ```describe()```, ```report()```, ```explain_tree()```, ...
+
+After a while these new R users will naturally go into the direction of rmarkdown and will explore new packages like {ggplot2}, {tidyr}, {}, ...
 
 Let’s explore!
 <https://github.com/rolkra/explore>
