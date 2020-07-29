@@ -50,8 +50,15 @@ The **overview tab** shows all variables, their type, NA-values, min, max ...
 The **data tab** view the raw data
 ![explore penguins data](../images/explore-penguins-data.png)
 
+### Automated Reports
+
 Furthermore you can create different types of rich HTML-reports of your data by clicking the "report all" button.
+
+If no target is defined, you get a report of all the variables
 ![explore penguins report variables](../images/explore-penguins-report-variables.png)
+
+If a target is defined, you get a report of the relation between all variables and the target.
+![explore penguins report variables](../images/explore-penguins-report-target.png)
 
 ### Reproducible Data Science
 
