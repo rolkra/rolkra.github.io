@@ -19,8 +19,8 @@ In a typical introduction to data exploration in R for beginners, you are confro
 
 ```library()```, ```getwd()```, ```setwd()```, ```c()```, ```data()```, ```data.frame()```, ```read.csv()```, ```str()```, ```head()```, ```tail()```, ```summary()```, ```table()```, ```ggplot()```, ```aes()```, ```geom_point()```, ```geom_bar()```, ```geom_boxplot()```, ```geom_density()```, ```coord_flip()```, ```labs()```, ```theme_light()```, ```select()```, ```filter()```, ```mutate()```, ```summarize()```, ```group_by()```, ```arrange()```, ...
 
-But cognitive psychology proved, that humans can only keep about 7 new objects in memory ([The magical number 7, by George A. Miller](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)
-So you are not able to do the very basic stuff without learning quite a number of different concepts and functions first. That may be frustrating and feels like a "step backwards". 
+But cognitive psychology proved, that humans can only keep about 7 new objects in memory ([The magical number 7, by George A. Miller](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two))
+So you are not able to do the very basic stuff without learning quite a number of different concepts and functions the hard way first. That may be frustrating and feels like a "step backwards". 
 
 **I believe using R for the first time should feel like getting new exciting toys you instantly want to use and play with**. 
 
@@ -54,6 +54,8 @@ Of course you can unleash the full power of R only using code, so the {explore} 
 ```explore()```, ```describe()```, ```report()```, ```explain_tree()```, ...
 
 After a while these new R users will naturally go into the direction of rmarkdown and will explore new packages like {ggplot2}, {tidyr}, {}, ...
+
+**So I believe the {explore} package offers a "natural" learning path, specially for people coming from a GUI, to have a successful start with R and stay with it in the long run.**
 
 Let’s explore!
 <https://github.com/rolkra/explore>
