@@ -11,7 +11,7 @@ explore(data)
 
 **R would be so much more attractive to people that are used to do data analytics with Excel or a GUI based statistic tool!**
 
-I really apprechiate the power of coding, but for fresh new R users stepping into coding is not easy. If you start RStudio for the first time, there is not much you can do by just "playing around". You may be able to import a dataset by using the "Import Dataset" button at the Environment pane. But then if you want to do some basic statistics or create some basic plots, you fail because the IDE is not offering any support. 
+I really apprechiate the power of coding, but for fresh new R users stepping into coding is not easy. If you start RStudio for the first time, there is not much you can do by just "playing around". You may be able to import a dataset by using the "Import Dataset" button at the Environment pane. But then if you want to do some basic statistics or create some basic plots, you fail because the IDE is not offering any direct support. 
 
 ![RStudio start](../images/RStudio-empty.png)
 
