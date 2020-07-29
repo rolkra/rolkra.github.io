@@ -26,7 +26,7 @@ So you are not able to do the very basic stuff without learning quite a number o
 
 Thats why I wrote the {explore} package! 
 
-### Interactive Data Science
+## Interactive Data Science
 
 For example, to explore the penguins dataset you just need 3 easy to understand lines of code: 
 
@@ -50,7 +50,7 @@ The **overview tab** shows all variables, their type, NA-values, min, max ...
 The **data tab** view the raw data
 ![explore penguins data](../images/explore-penguins-data.png)
 
-### Automated Reports
+## Automated Reports
 
 Furthermore you can create different types of rich HTML-reports of your data by clicking the "report all" button.
 
@@ -60,7 +60,7 @@ If no target is defined, you get a report of all the variables
 If a target is defined, you get a report of the relation between all variables and the target.
 ![explore penguins report variables](../images/explore-penguins-report-target.png)
 
-### Reproducible Data Science
+## Reproducible Data Science
 
 Of course you can unleash the full power of R only using code, so the {explore} package offers all functionality of the GUI as extremely easy to use R functions to step into coding:
 ```explore()```, ```describe()```, ```report()```, ```explain_tree()```, ...
