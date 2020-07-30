@@ -114,7 +114,7 @@ penguins %>% explain_tree(target = species)
 
 Interactive Data Exploration helps new users to step into R. 
 
-To get mor options and possibilities these users will switch to coding using just a handful of simple functions of the {explore} package.
+To get more options and possibilities these users will switch to coding using just a handful of simple functions of the {explore} package.
 
 After a while these new R users will naturally go into the direction of reproducible datascience with rmarkdown and will discover new packages like {dplyr}, {ggplot2}, {tidyr}
 
