@@ -74,7 +74,7 @@ library(explore)
 library(palmerpenguins)
 ```
 
-Describe data:(output is a tibble)
+Describe data: (output is a tibble)
 
 ```R
 describe(penguins)
