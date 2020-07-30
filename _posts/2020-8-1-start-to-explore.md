@@ -93,6 +93,19 @@ describe(penguins)
 8 year              int       0    0        3 2007   2008.  2009  
 ```
 
+Explore variables:
+This will create the same plots like in the Shiny App and the Automated Report
+
+```R
+# explore variable
+penguins %>% explore(island)
+penguins %>% explore(flipper_length_mm)
+
+# explore relationship with target
+penguins %>% explore(island, target = species)
+penguins %>% explore(flipper_length_mm, target = species)
+```
+
 Create a Decision Tree:
 ```R
 penguins %>% explain_tree(target = species)
