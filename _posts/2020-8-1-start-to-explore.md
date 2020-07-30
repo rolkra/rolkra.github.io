@@ -58,7 +58,7 @@ If no target is defined, you get a report of all the variables
 ![explore penguins report variables](../images/explore-penguins-report-variables.png)
 
 If a target is defined, you get a report of the relation between all variables and the target.
-![explore penguins report variables](../images/explore-penguins-report-target.png)
+![explore penguins report variables](../images/explore-penguins-report-target.png | width=829)
 
 ## Reproducible Data Science
 
