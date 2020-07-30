@@ -67,7 +67,7 @@ Of course you can unleash the full power of R only using code, so the {explore} 
 
 After a while these new R users will naturally go into the direction of reproducible datascience with rmarkdown and will discover new packages like {dplyr}, {ggplot2}, {tidyr}, ...
 
-**So I believe the {explore} package offers a "natural" learning path, specially for people coming from a GUI, to have a successful start with R and stay with it in the long run.**
+**So I believe the {explore} package offers an easy learning path, specially for people coming from a GUI, to have a successful start with R and stay with it in the long run.**
 
 Let’s explore!
 <https://github.com/rolkra/explore>
