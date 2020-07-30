@@ -20,7 +20,7 @@ In a typical introduction to data exploration in R for beginners, you are confro
 ```library()```, ```getwd()```, ```setwd()```, ```c()```, ```data()```, ```data.frame()```, ```read.csv()```, ```str()```, ```head()```, ```tail()```, ```summary()```, ```table()```, ```ggplot()```, ```aes()```, ```geom_point()```, ```geom_bar()```, ```geom_boxplot()```, ```geom_density()```, ```coord_flip()```, ```labs()```, ```theme_light()```, ```select()```, ```filter()```, ```mutate()```, ```summarize()```, ```group_by()```, ```arrange()```, ...
 
 But cognitive psychology proved, that humans can only keep about 7 new objects in memory ([The magical number 7, by George A. Miller](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two))
-So you are not able to do the very basic stuff without learning quite a number of different concepts and functions the hard way first. That may be frustrating and feels like a "step backwards". 
+So you are not able to do the very basic stuff without learning quite a number of different concepts and functions the hard way first. That may be frustrating and feels like a "step backwards" coming from a GUI.
 
 **I believe using R for the first time should feel like getting new exciting toys you instantly want to use and play with**. 
 
