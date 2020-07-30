@@ -67,6 +67,37 @@ If a target is defined, you get a report of the relation between all variables a
 Of course you can unleash the full power of R only using code, so the {explore} package offers all functionality of the GUI as extremely easy to use R functions to step into coding:
 ```explore()```, ```describe()```, ```report()```, ```explain_tree()```, ...
 
+```R
+# prepare
+library(dplyr)
+library(explore)
+library(palmerpenguins)
+```
+
+Describe data:
+
+```R
+describe(penguins)
+```
+```
+# A tibble: 8 x 8
+  variable          type     na na_pct unique    min   mean    max
+  <chr>             <chr> <int>  <dbl>  <int>  <dbl>  <dbl>  <dbl>
+1 species           fct       0    0        3   NA     NA     NA  
+2 island            fct       0    0        3   NA     NA     NA  
+3 bill_length_mm    dbl       2    0.6    165   32.1   43.9   59.6
+4 bill_depth_mm     dbl       2    0.6     81   13.1   17.2   21.5
+5 flipper_length_mm int       2    0.6     56  172    201.   231  
+6 body_mass_g       int       2    0.6     95 2700   4202.  6300  
+7 sex               fct      11    3.2      3   NA     NA     NA  
+8 year              int       0    0        3 2007   2008.  2009  
+```
+
+Create a Decision Tree:
+```R
+penguins %>% explain_tree(target = species)
+```
+
 After a while these new R users will naturally go into the direction of reproducible datascience with rmarkdown and will discover new packages like {dplyr}, {ggplot2}, {tidyr}, ...
 
 **So I believe the {explore} package offers an easy learning path, specially for people coming from a GUI, to have a successful start with R and stay with it in the long run.**
