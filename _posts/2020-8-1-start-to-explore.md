@@ -74,7 +74,7 @@ library(explore)
 library(palmerpenguins)
 ```
 
-Describe data:
+Describe data:(output is a tibble)
 
 ```R
 describe(penguins)
@@ -93,8 +93,7 @@ describe(penguins)
 8 year              int       0    0        3 2007   2008.  2009  
 ```
 
-Explore variables:
-This will create the same plots like in the Shiny App and the Automated Report
+Explore variables: (output is a plot)
 
 ```R
 # explore variable
@@ -106,7 +105,7 @@ penguins %>% explore(island, target = species)
 penguins %>% explore(flipper_length_mm, target = species)
 ```
 
-Create a Decision Tree:
+Create a Decision Tree: (output is the tree plot)
 ```R
 penguins %>% explain_tree(target = species)
 ```
