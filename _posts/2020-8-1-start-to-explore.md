@@ -114,9 +114,9 @@ penguins %>% explain_tree(target = species)
 
 Interactive Data Exploration helps new users to step into R. 
 
-With the {explore} package these have instant success with coding, by using just a handful simple functions as alternative to the Shiny App, that gives you more options and possibilities.
+To get mor options and possibilities these users will switch to coding using just a handful of simple functions of the {explore} package.
 
-After a while these new R users will naturally go into the direction of reproducible datascience with rmarkdown and will discover new packages like {dplyr}, {ggplot2}, {tidyr}, ...
+After a while these new R users will naturally go into the direction of reproducible datascience with rmarkdown and will discover new packages like {dplyr}, {ggplot2}, {tidyr}
 
 **So I believe the {explore} package offers an easy learning path, specially for people coming from a GUI, to have a successful start with R and stay with it in the long run.**
 
