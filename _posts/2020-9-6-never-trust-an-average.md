@@ -14,7 +14,7 @@ The mathematical definition of average (mean) is:
 
 ## 50 people in a bus
 
-![RStudio start](../images/average-bus.png)
+![Who is in the bus?](../images/average-bus.png)
 
 Let’s start with an example: There are 50 people in a bus. Let’s assume they are kids, and most of them are in the age between 6 and 8.
 
@@ -53,7 +53,7 @@ people %>%
   explore(age, title = "Distribution of age and its mean") +
   geom_vline(xintercept = 7.03, color = "red")
 ```
-![RStudio start](../images/average-age-1.png)
+![Average = 7](../images/average-age-1.png)
 
 So if you tell someone that there is a bus arriving with 50 people 7 year old in average, they will think of 50 kids about 7 years old. And thats pretty ok. Even if the kids are actually between 5 and 9 years old, one single number (the average) helps to understand the whole group of people. Awesome!
 
@@ -87,7 +87,7 @@ people %>%
   geom_vline(xintercept = 8.07, color = "red")
 ```
 
-![RStudio start](../images/average-age-2.png)
+![Average = 8](../images/average-age-2.png)
 
 ## The bug!
 
