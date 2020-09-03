@@ -110,7 +110,11 @@ people %>% describe(age)
 ## mean     = 104.0715
 ```
 
-Just knowing the average age of these people, we expect a group of over 100 year old! Now we have the situation that the average is completely useless. Non of the real people is even close to 100 years old!
+Just knowing the average age of these people, we expect a group of over 100 year old! 
+
+![Average = 104](../images/average-bus-oldlades.png)
+
+Now we have the situation that the average is completely useless. Non of the real people is even close to 100 years old!
 
 Using the median would be much more realistic!
 
