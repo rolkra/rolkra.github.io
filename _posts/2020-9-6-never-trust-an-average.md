@@ -50,5 +50,5 @@ people %>%
   explore(age, title = "Distribution of age and its mean") +
   geom_vline(xintercept = 7.03, color = "red")
 ```
-![RStudio start](../images/RStudio-empty.png)
+![RStudio start](../images/average-age-1.png)
 
