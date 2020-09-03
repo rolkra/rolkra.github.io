@@ -14,7 +14,7 @@ The mathematical definition of average (mean) is:
 
 ## 50 people in a bus
 
-![Who is in the bus?](../images/average-bus.png)
+![Who is in the bus?](../images/average-bus.jpg)
 
 Let’s start with an example: There are 50 people in a bus. Let’s assume they are kids, and most of them are in the age between 6 and 8.
 
