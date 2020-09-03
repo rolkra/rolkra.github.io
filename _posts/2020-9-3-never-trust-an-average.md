@@ -3,7 +3,7 @@ layout: post
 title: Never trust an average!
 ---
 
-Averages are very common to use. Almost everyone is using them. But can we trust an average?
+Averages are very common. But can we trust them?
 
 ## What is an average?
 
@@ -22,6 +22,7 @@ Let’s start with an example: There are 50 people in a bus. Let’s assume they
 set.seed(123)  # to make it reproducible
 people <- data.frame(age = rnorm(50, mean = 7, sd = 1))
 ```
+
 To explore the data we are using {tidyverse} and {explore}
 
 ```R
@@ -110,6 +111,8 @@ people %>% describe(age)
 ```
 
 Just knowing the average age of these people, we expect a group of over 100 year old! Now we have the situation that the average is completely useless. Non of the real people is even close to 100 years old!
+
+Using the median would be much more realistic!
 
 ## Conclusion
 
