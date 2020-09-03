@@ -13,6 +13,9 @@ The mathematical definition of average (mean) is:
 **average = the sum of the values / the number of values**
 
 ## 50 people in a bus
+
+![RStudio start](../images/average-bus.png)
+
 Let’s start with an example: There are 50 people in a bus. Let’s assume they are kids, and most of them are in the age between 6 and 8.
 
 ```R
