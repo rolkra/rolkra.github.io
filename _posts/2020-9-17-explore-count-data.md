@@ -54,5 +54,6 @@ Each row does not represent one person anymore:
 # Why use count-data?
 
 They save a lot of disk-space and memory!
+There where x people on the Titanic
 
 
