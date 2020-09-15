@@ -54,6 +54,6 @@ Each row does not represent one person anymore:
 # Why use count-data?
 
 They save a lot of disk-space and memory!
-There where x people on the Titanic
+There where x people on the Titanic. In tidy data, you have x rows.
 
 
