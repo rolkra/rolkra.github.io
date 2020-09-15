@@ -45,7 +45,7 @@ Now lets take a look to **count-data**
 Each row does not represent one person anymore, but a group of people with similar attributes (like age-category, gender and survived)
 The number of people is represented by a numeric variable (in this case n)
 
-# Advantages of count-data
+# Why use count-data?
 
 They save a lot of disk-space and memory!
 
