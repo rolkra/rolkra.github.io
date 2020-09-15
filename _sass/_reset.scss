@@ -43,8 +43,9 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: separate;
-	border-spacing: 1;
+	border-collapse: collapse;
+    	border-spacing: 0;
+    	border:2px solid #ff0000;
 }
 // Apply a natural box layout model to all elements
 // from: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
