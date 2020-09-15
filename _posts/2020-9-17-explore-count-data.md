@@ -25,14 +25,12 @@ This data is called **tidy** if:
 So for the Titanic-dataset each row is representing a person on the ship. 
 Each column is representing a variable (like age or gender). And each cell is representing a value (like gender of a specific person is "Male")
 
-| --------- | --------- | --------- | --------- | --- |
 |           | Age       | Gender    | Survived  | ... |
 | --------- | --------- | --------- | --------- | --- |
 | Person 1  | 20        | Female    | Yes       | ... |
 | Person 2  | 44        | Male      | No        | ... |
 | Person 3  | 7         | Male      | Yes       | ... |
 | ...       | ...       | ...       | ...       | ... |
-| --------- | --------- | --------- | --------- | --- |
 
 
 Now lets take a look to **count-data**
@@ -40,11 +38,15 @@ Now lets take a look to **count-data**
 | n         | Age       | Gender    | Survived  | ... |
 |-----------|-----------|-----------|-----------|-----|
 | 10        | Adult     | Female    | Yes       | ... |
-|-----------|-----------|-----------|-----------|-----|
 | 20        | Adult     | Male      | No        | ... |
-|-----------|-----------|-----------|-----------|-----|
 | 5         | Kid       | Male      | Yes       | ... |
-|-----------|-----------|-----------|-----------|-----|
 | ...       | ...       | ...       | ...       | ... |
-|-----------|-----------|-----------|-----------|-----|
+
+Each row does not represent one person anymore, but a group of people with similar attributes (like age-category, gender and survived)
+The number of people is represented by a numeric variable (in this case n)
+
+# Advantages of count-data
+
+They save a lot of disk-space and memory!
+
 
