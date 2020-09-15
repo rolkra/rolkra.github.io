@@ -15,6 +15,7 @@ Data are stored in tables most of the times. Tables have rows, columns and cells
 | row 2     | value     | value     | value     | ... |
 | row 3     | value     | value     | value     | ... |
 | ...       | ...       | ...       | ...       | ... |
+{:.table-striped}
 
 This data is called **tidy** if:
 
