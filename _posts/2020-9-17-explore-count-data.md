@@ -10,6 +10,7 @@ title: Let's {explore} count-data!
 Data are stored in tables most of the times. Tables have rows, columns and cells:
 
 |           | column 1  | column 2  | column 3  | ... |
+| --------- | --------- | --------- | --------- | --- |
 | row 1     | value     | value     | value     | ... |
 | row 2     | value     | value     | value     | ... |
 | row 3     | value     | value     | value     | ... |
@@ -24,14 +25,12 @@ This data is called **tidy** if:
 So for the Titanic-dataset each row is representing a person on the ship. 
 Each column is representing a variable (like age or gender). And each cell is representing a value (like gender of a specific person is "Male")
 
+| --------- | --------- | --------- | --------- | --- |
 |           | Age       | Gender    | Survived  | ... |
 | --------- | --------- | --------- | --------- | --- |
 | Person 1  | 20        | Female    | Yes       | ... |
-| --------- | --------- | --------- | --------- | --- |
 | Person 2  | 44        | Male      | No        | ... |
-| --------- | --------- | --------- | --------- | --- |
 | Person 3  | 7         | Male      | Yes       | ... |
-| --------- | --------- | --------- | --------- | --- |
 | ...       | ...       | ...       | ...       | ... |
 | --------- | --------- | --------- | --------- | --- |
 
