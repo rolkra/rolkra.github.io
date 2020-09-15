@@ -42,8 +42,12 @@ Now lets take a look to **count-data**
 | 5         | Kid       | Male      | Yes       | ... |
 | ...       | ...       | ...       | ...       | ... |
 
-Each row does not represent one person anymore, but a group of people with similar attributes (like age-category, gender and survived)
-The number of people is represented by a numeric variable (in this case n)
+Each row does not represent one person anymore:
+
+* each row is a group of people with similar attributes (like age-category, gender and survived)
+* one column is a numeric variable representign the number of observations (in this case n)
+* the rest of the columns are categorical variables
+* each cell is a value
 
 # Why use count-data?
 
