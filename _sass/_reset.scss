@@ -44,17 +44,17 @@ q:before, q:after {
 }
 table {
 	border-collapse: separate;
-    	border-spacing: 2;
+    	border-spacing: 5;
     	border:2px solid #555555;
 }
 
 th{
-    border:2px solid #000000;
+    border:2px solid #555555;
     border-spacing: 2 2; 
 }
 
 td{
-    border:1px solid #000000;
+    border:1px solid #555555;
     border-spacing: 2 2;
 }
 
