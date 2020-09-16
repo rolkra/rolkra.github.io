@@ -138,13 +138,15 @@ titanic %>% explore_all(target = Survived, n = n)
 We can generate a rich HTML-report with just one line of code:
 
 ```R
-titanic %>% report(n = n, output_dir = tempdir())
+titanic %>% 
+  report(n = n, output_dir = tempdir())
 ```
 
 To get a reoprt the relationship between all variables and a target:
 
 ```R
-titanic %>% report(target = Survived, n = n, output_dir = tempdir())
+titanic %>% 
+  report(target = Survived, n = n, output_dir = tempdir())
 ```
 
 ## Explain a target
@@ -156,4 +158,6 @@ titanic %>% explain_tree(target = Survived, n = n)
 ```
 ![explain_target](../images/explore-count-explain.png)
 
-So, overall 32% of the people survived. Splitting by target already shows a strong pattern: 21% of male survived, but 73% of female. Taking a closer look to females, we see that better classes hat better chances to survive (46% of 3rd class survived, but 93% of better classes)
+So, overall 32% of the people survived. 
+
+Splitting by target already shows a strong pattern: 21% of male survived, but 73% of female. Taking a closer look to females, we see that better classes hat better chances to survive (46% of 3rd class survived, but 93% of better classes)
