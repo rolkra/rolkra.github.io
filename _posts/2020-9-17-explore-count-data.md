@@ -141,7 +141,7 @@ We can generate a rich HTML-report with just one line of code:
 titanic %>% 
   report(n = n, output_dir = tempdir())
 ```
-![view report](https://raw.githubusercontent.com/rolkra/rolkra.github.io/master/images/report_variable.html)
+![view report](http://htmlpreview.github.io/?https://rolkra.github.io/master/images/report_variable.html)
 
 To get a reoprt the relationship between all variables and a target:
 
