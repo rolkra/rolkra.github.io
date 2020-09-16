@@ -69,7 +69,45 @@ Now we have a table with just 32 rows instead of 2201 (14.5%) without any lost o
 * Each cell is a value
 
 So, what is the benefit of using count-data instead of tidy-data? For the Titanic-data it may not make much a difference, 
-but if you think of a dataset with millions of observations but low number of variables or low variation in the data, using count data will save a lot of memory and disk space and you will explore the data much faster!
+but if you think of a dataset with millions of observations but low number of variables or low variation in the data, using count data will save a lot of memory and disk space and you will let explore the data much faster!
+
+## Describe count-data
+
+We can use {explore} to take a closer look to the data:
+
+```R
+library(tidyverse)
+library(explore)
+titanic <- as_tibble(Titanic)
+titanic %>% describe()
+```
+```
+# A tibble: 5 x 8
+  variable type     na na_pct unique   min  mean   max
+  <chr>    <chr> <int>  <dbl>  <int> <dbl> <dbl> <dbl>
+1 Class    chr       0      0      4    NA  NA      NA
+2 Sex      chr       0      0      2    NA  NA      NA
+3 Age      chr       0      0      2    NA  NA      NA
+4 Survived chr       0      0      2    NA  NA      NA
+5 n        dbl       0      0     22     0  68.8   670
+```
+
+Thera are 5 variables in the data, the variable n is representing the number of the observations.
+To take a look at the "uncounted" data, we can simply:
+
+```R
+titanic %>% describe_tbl(n = n)
+```
+```
+2 201 (2.2k) observations with 5 variables
+0 observations containing missings (NA)
+0 variables containing missings (NA)
+0 variables with no variance
+```
+We see that the data contains 2201 observations and 5 variables (one is containing the number of observations)
+
+## Explore count-data
+
 
 # Table Test
 
