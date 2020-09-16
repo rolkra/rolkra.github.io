@@ -9,9 +9,9 @@ title: Let's {explore} count-data!
 
 Data are stored in tables most of the times. This data is called **tidy** if:
 
-* each row is an observation
-* each column is a variable
-* each cell is a value
+* Each row is an observation
+* Each column is a variable
+* Each cell is a value
 
 So for the Titanic-dataset each row is representing a person on the ship. 
 Each column is representing a variable (like age or gender). And each cell is representing a value (like gender of a specific person is "Male")
@@ -59,16 +59,14 @@ titanic <- as_tibble(Titanic)
 # ... with 22 more rows
 ```
 
-Now we have a table with 32 rows instead of 2201 rows without any lost of information!
+Now we have a table with just 32 rows instead of 2201 rows without any lost of information!
 
 **Count-data**:
 
-* each row is a group of people with similar attributes 
-(like age-category, gender and survived)
-* one column is a numeric variable representign the number of observations 
-(in this case n)
-* the rest of the columns are categorical variables
-* each cell is a value
+* Each row is a group of observations with similar attributes 
+* One column is a numeric variable representign the number of observations 
+* The rest of the columns are categorical variables
+* Each cell is a value
 
 # Why use count-data?
 
