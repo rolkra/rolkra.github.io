@@ -140,7 +140,25 @@ we can generate a rich HTML-report with just one line of code:
 ```R
 titanic %>% report(n = n, output_dir = tempdir())
 ```
-![report_variables](../images/explore-count-report-variables.png)
+
+To get a reoprt exploring the relationship between all variables and a target:
+
+```R
+titanic %>% report(target = Survived, n = n, output_dir = tempdir())
+```
+## Explain a target
+
+We can create a simple decision tree to explain a target (in our case Survived)
+
+```R
+titanic %>% explain_tree(target = Survived, n = n)
+```
+![explain_target](../images/explore-count-explain.png)
+
+
+
+
+
 
 
 
