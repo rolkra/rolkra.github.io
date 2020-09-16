@@ -104,7 +104,7 @@ titanic %>% describe_tbl(n = n)
 0 variables containing missings (NA)
 0 variables with no variance
 ```
-We see that the data contains 2201 observations and 5 variables (one is containing the number of observations)
+We see that the 32 rows of the data contains 2201 observations and 5 variables (one is containing the number of observations)
 
 ## Explore count-data
 
@@ -132,4 +132,15 @@ titanic %>% explore_all(target = Survived, n = n)
 ```
 
 ![explore_all_variables_targets](../images/explore-count-alltargets.png)
+
+## Report count-data
+
+we can generate a rich HTML-report with just one line of code:
+
+```R
+titanic %>% report(n = n, output_dir = tempdir())
+```
+![report_variables](../images/explore-count-report-variables.png)
+
+
 
