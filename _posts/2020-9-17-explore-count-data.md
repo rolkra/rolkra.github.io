@@ -3,7 +3,7 @@ layout: post
 title: Let's {explore} count-data!
 ---
 
-{explore} simplifies Exploratory Data Analysis (EDA) ... now you can use {explore} with count-data too! Let's take a look to the Titanic dataset!
+{explore} simplifies Exploratory Data Analysis (EDA) ... now you can use {explore} with count-data too! Let's take a look at the Titanic dataset!
 
 ![Titanic](../images/explore-count-titanic.jpg)
 
