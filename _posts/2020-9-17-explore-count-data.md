@@ -3,7 +3,7 @@ layout: post
 title: Let's {explore} count-data!
 ---
 
-{explore} simplifies Exploratory Data Analysis (EDA) ... of count-data too!
+{explore} simplifies Exploratory Data Analysis (EDA) ... now you can use {explore} with count-data too!
 
 ## What are count-data?
 
@@ -111,24 +111,28 @@ We see that the 32 rows of the data contains 2201 observations and 5 variables (
 We can visually explore a variable of the count-data simply using the explore function:
 
 ```R
-titanic %>% explore(Age, n = n)
+titanic %>% 
+  explore(Age, n = n)
 ```
 we can visually explore the relationship between a variable and a target:
 
 ```R
-titanic %>% explore(Age, target = Survived, n = n)
+titanic %>% 
+  explore(Age, target = Survived, n = n)
 ```
 
 We can even explore all variables in one line of code:
 
 ```R
-titanic %>% explore_all(n = n)
+titanic %>% 
+  explore_all(n = n)
 ```
 
 ![explore all variables](../images/explore-count-allvariables.png)
 
 ```R
-titanic %>% explore_all(target = Survived, n = n)
+titanic %>% 
+  explore_all(target = Survived, n = n)
 ```
 
 ![explore_all_variables_targets](../images/explore-count-alltargets.png)
@@ -141,6 +145,7 @@ We can generate a rich HTML-report with just one line of code:
 titanic %>% 
   report(n = n, output_dir = tempdir())
 ```
+View report:
 http://htmlpreview.github.io/?https://github.com/rolkra/rolkra.github.io/blob/master/images/report_variable.html
 
 To get a reoprt the relationship between all variables and a target:
@@ -150,14 +155,16 @@ titanic %>%
   report(target = Survived, n = n, output_dir = tempdir())
 ```
 
-![view report](http://htmlpreview.github.io/?https://github.com/rolkra/rolkra.github.io/blob/master/images/report_variable.html)
+View report:
+http://htmlpreview.github.io/?https://github.com/rolkra/rolkra.github.io/blob/master/images/report_target_split.html
 
 ## Explain a target
 
 We can create a simple decision tree to explain a target (in our case Survived)
 
 ```R
-titanic %>% explain_tree(target = Survived, n = n)
+titanic %>% 
+  explain_tree(target = Survived, n = n)
 ```
 ![explain_target](../images/explore-count-explain.png)
 
