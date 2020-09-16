@@ -7,7 +7,7 @@ title: Let's {explore} count-data!
 
 ## What are count-data?
 
-Data are stored in tables most of the times. This data is called **tidy** if:
+Data are stored in tables most of the time. This data is called **tidy** if:
 
 * Each row is an observation
 * Each column is a variable
