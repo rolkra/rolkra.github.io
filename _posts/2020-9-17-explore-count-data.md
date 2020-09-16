@@ -146,7 +146,7 @@ titanic %>%
   report(n = n, output_dir = tempdir())
 ```
 View report:
-http://htmlpreview.github.io/?https://github.com/rolkra/rolkra.github.io/blob/master/images/report_variable.html
+https://htmlpreview.github.io/?https://github.com/rolkra/rolkra.github.io/blob/master/images/report_variable.html
 
 To get a reoprt the relationship between all variables and a target:
 
@@ -156,7 +156,7 @@ titanic %>%
 ```
 
 View report:
-http://htmlpreview.github.io/?https://github.com/rolkra/rolkra.github.io/blob/master/images/report_target_split.html
+https://htmlpreview.github.io/?https://github.com/rolkra/rolkra.github.io/blob/master/images/report_target_split.html
 
 ## Explain a target
 
