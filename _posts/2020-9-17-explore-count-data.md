@@ -3,7 +3,7 @@ layout: post
 title: Let's {explore} count-data!
 ---
 
-{explore} simplifies Exploratory Data Analysis (EDA) of count-data!
+{explore} simplifies Exploratory Data Analysis (EDA) ... of count-data too!
 
 ## What are count-data?
 
@@ -108,15 +108,28 @@ We see that the data contains 2201 observations and 5 variables (one is containi
 
 ## Explore count-data
 
+We can visually explore a variable of the count-data simply using the explore function:
 
-# Table Test
+```R
+titanic %>% explore(Age, n = n)
+```
+we can visually explore the relationship between a variable and a target:
 
+```R
+titanic %>% explore(Age, target = Survived, n = n)
+```
 
-|           | Age       | Gender    | Survived  | ... |
-| --------- | --------- | --------- | --------- | --- |
-| Person 1  | 20        | Female    | Yes       | ... |
-| Person 2  | 44        | Male      | No        | ... |
-| Person 3  | 7         | Male      | Yes       | ... |
-| ...       | ...       | ...       | ...       | ... |
+We can even explore all variables in one line of code:
 
+```R
+titanic %>% explore_all(n = n)
+```
+
+![explore all variables](../images/explore-count-allvariables.png)
+
+```R
+titanic %>% explore_all(target = Survived, n = n)
+```
+
+![explore_all_variables_targets](../images/explore-count-alltargets.png)
 
