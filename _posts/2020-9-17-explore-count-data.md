@@ -59,7 +59,7 @@ titanic <- as_tibble(Titanic)
 # ... with 22 more rows
 ```
 
-Now we have a table with just 32 rows instead of 2201 rows without any lost of information!
+Now we have a table with just 32 rows instead of 2201 (14.5%) without any lost of information! 
 
 **Count-data**:
 
@@ -68,10 +68,8 @@ Now we have a table with just 32 rows instead of 2201 rows without any lost of i
 * The rest of the columns are categorical variables
 * Each cell is a value
 
-# Why use count-data?
-
-They save a lot of disk-space and memory!
-There where x people on the Titanic. In tidy data, you have x rows.
+So, what is the benefit of using count-data instead of tidy-data? For the Titanic-data it may not make much a difference, 
+but if you think of a dataset with millions of observations but low number of variables or low variation in the data, using count data will save a lot of memory and disk space and you will explore the data much faster!
 
 # Table Test
 
