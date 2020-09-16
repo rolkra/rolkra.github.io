@@ -3,7 +3,7 @@ layout: post
 title: Let's {explore} count-data!
 ---
 
-{explore} offers a simple interface for Exploratory Data Analysis (EDA) of count-data!
+{explore} simplifies Exploratory Data Analysis (EDA) of count-data!
 
 ## What are count-data?
 
@@ -13,7 +13,7 @@ Data are stored in tables most of the times. This data is called **tidy** if:
 * Each column is a variable
 * Each cell is a value
 
-So for the Titanic-dataset each row is representing a person on the ship. 
+So in a tidy Titanic-dataset each row is representing a person on the ship. 
 Each column is representing a variable (like age or gender). And each cell is representing a value (like gender of a specific person is "Male")
 
 ```R
@@ -36,7 +36,7 @@ titanic_tidy
 # ... with 2,191 more rows
 ```
 
-We see that the first 10 observations are similar except the id. So the basic idea of having count-data is, to group all similar observations and add a count variable.
+We see that the first 10 observations are similar except the id. So the basic idea of having count-data is, to group all similar observations and add a count variable. Let's use the Titanic dataset that comes with Base R:
 
 ```R
 library(tidyverse)
