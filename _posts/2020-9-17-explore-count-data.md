@@ -141,7 +141,7 @@ We can generate a rich HTML-report with just one line of code:
 titanic %>% 
   report(n = n, output_dir = tempdir())
 ```
-![view report](../images/report_variable.html)
+![view report](https://github.com/rolkra/rolkra.github.io/tree/master/images/report_variables.html)
 
 To get a reoprt the relationship between all variables and a target:
 
@@ -150,7 +150,7 @@ titanic %>%
   report(target = Survived, n = n, output_dir = tempdir())
 ```
 
-![view report](../images/report_target_split.html)
+![view report](https://github.com/rolkra/rolkra.github.io/tree/master/images/report_target_split.html)
 
 ## Explain a target
 
