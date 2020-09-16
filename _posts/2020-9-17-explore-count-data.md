@@ -116,7 +116,7 @@ We can visually explore a variable of the count-data simply using the explore fu
 titanic %>% 
   explore(Age, n = n)
 ```
-we can visually explore the relationship between a variable and a target:
+We can visually explore the relationship between a variable and a target:
 
 ```R
 titanic %>% 
@@ -170,4 +170,4 @@ titanic %>%
 
 So, overall 32% of the people survived. 
 
-Splitting by Gender already shows a strong pattern: only 21% of all male survived, but 73% of all female. Taking a closer look to females, we see that better classes hat better chances to survive (46% of 3rd class survived, but 93% of better classes)
+Splitting by Gender already shows a strong pattern: only 21% of all male survived, but 73% of all female. Taking a closer look to females, we see that better classes had better chances to survive (46% of 3rd class survived, but 93% of better classes)
