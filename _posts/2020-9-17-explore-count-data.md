@@ -7,14 +7,7 @@ title: Let's {explore} count-data!
 
 ## What are count-data?
 
-Data are stored in tables most of the times. Tables have rows, columns and cells:
-
-|           | column 1  | column 2  | column 3  | ... |
-| --------- | --------- | --------- | --------- | --- |
-| row 1     | value     | value     | value     | ... |
-| row 2     | value     | value     | value     | ... |
-| row 3     | value     | value     | value     | ... |
-| ...       | ...       | ...       | ...       | ... |
+Data are stored in tables most of the times. 
 
 This data is called **tidy** if:
 
