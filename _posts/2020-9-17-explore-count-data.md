@@ -124,6 +124,8 @@ titanic %>%
 ```
 ![explore class](../images/explore-count-class.png)
 
+So about 40% of all people on the Titanic were Crew-Members!
+
 We can visually explore the relationship between a variable and a target:
 
 ```R
@@ -132,12 +134,17 @@ titanic %>%
 ```
 ![explore class](../images/explore-count-classtarget.png)
 
+Bars of the same color sum up to 100%. If there is a large difference in bar-length between colors, there is an interesting pattern. 
+So Crew Members had a much lower chance to survive than Passengers in 1st class.
+
 We can even explore all variables in one line of code:
 
 ```R
 titanic %>% 
   explore_all(n = n)
 ```
+
+And the relationship of all variables with a target:
 
 ![explore all variables](../images/explore-count-allvariables.png)
 
@@ -180,3 +187,14 @@ titanic %>%
 So, overall 32% of the people survived. 
 
 Splitting by Gender already shows a strong pattern: only 21% of all male survived, but 73% of all female. Taking a closer look to females, we see that better classes had better chances to survive (46% of 3rd class survived, but 93% of better classes)
+
+## Links
+
+Let’s explore! https://github.com/rolkra/explore
+
+{explore} is on CRAN: https://cran.r-project.org/web/packages/explore/index.html
+There you find some more examples how to use it:
+* https://cran.r-project.org/web/packages/explore/vignettes/explore_mtcars.html
+* https://cran.r-project.org/web/packages/explore/vignettes/explore_penguins.html
+* https://cran.r-project.org/web/packages/explore/vignettes/explore_titanic.html
+
