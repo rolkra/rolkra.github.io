@@ -16,7 +16,7 @@ Data are stored in tables most of the time. This data is called **tidy** if:
 * Each cell is a value
 
 So in a tidy Titanic-dataset each row is representing a person on the ship. 
-Each column is representing a variable (like age or gender). And each cell is representing a value (like gender of a specific person is "Male")
+Each column is representing a variable (like age or gender). And each cell is representing a value (like the gender of a specific person is "Male")
 
 ```R
 titanic_tidy
@@ -61,7 +61,7 @@ titanic <- as_tibble(Titanic)
 # ... with 22 more rows
 ```
 
-Now we have a table with just 32 rows instead of 2201 (14.5%) without any lost of information! 
+Now we have a table with just 32 rows instead of 2201 without any lost of information! 
 
 **Count-data**:
 
@@ -70,8 +70,14 @@ Now we have a table with just 32 rows instead of 2201 (14.5%) without any lost o
 * The rest of the columns are categorical variables
 * Each cell is a value
 
-So, what is the benefit of using count-data instead of tidy-data? For the Titanic-data it may not make much a difference, 
-but if you think of a dataset with millions of observations but low number of variables or low variation in the data, using count data will save a lot of memory and disk space and you will explore the data much faster!
+So, what is the benefit of using count-data instead of tidy-data? Using count data will save a lot of memory and disk space and you will explore the data much faster!
+
+| Titanic           | tidy data | count data | %               |
+|-------------------|-----------|------------|-----------------|
+| rows              | 2201      | 32         | 14.5%           |
+| file size csv     | 85 KB     | 2 KB       | 2%              |
+
+For the Titanic-data it may not make much a difference, as the data is small anyway. But if you think of a dataset with millions of observations but low number of variables or low variation in the data, using count data will save a lot of memory and disk space and you will explore the data much faster!
 
 ## Describe count-data
 
@@ -114,14 +120,17 @@ We can visually explore a variable of the count-data simply using the explore fu
 
 ```R
 titanic %>% 
-  explore(Age, n = n)
+  explore(Class, n = n)
 ```
+![explore class](../images/explore-count-class.png)
+
 We can visually explore the relationship between a variable and a target:
 
 ```R
 titanic %>% 
-  explore(Age, target = Survived, n = n)
+  explore(Class, target = Survived, n = n)
 ```
+![explore class](../images/explore-count-classtarget.png)
 
 We can even explore all variables in one line of code:
 
