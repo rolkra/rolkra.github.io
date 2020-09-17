@@ -195,7 +195,7 @@ Let’s explore! https://github.com/rolkra/explore
 {explore} is on [CRAN](https://cran.r-project.org/web/packages/explore/index.html)
 
 There you find some more examples how to use it:
-* [Explore mtcars](https://cran.r-project.org/web/packages/explore/vignettes/explore_mtcars.html)
 * [Explore penguins](https://cran.r-project.org/web/packages/explore/vignettes/explore_penguins.html)
+* [Explore mtcars](https://cran.r-project.org/web/packages/explore/vignettes/explore_mtcars.html)
 * [Explore titanic](https://cran.r-project.org/web/packages/explore/vignettes/explore_titanic.html)
 
