@@ -72,7 +72,7 @@ Now we have a table with just 32 rows instead of 2201 without any lost of inform
 
 So, what is the benefit of using count-data instead of tidy-data? Using count data will save a lot of memory and disk space and you will explore the data much faster!
 
-| Titanic data      | tidy-data | count-data |           |
+| Titanic dataset   | tidy-data | count-data |           |
 |-------------------|-----------|------------|-----------|
 | rows              | 2201      | 32         | 14.5%     |
 | file size csv     | 85 KB     | 2 KB       | 2%        |
