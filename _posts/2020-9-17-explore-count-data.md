@@ -191,8 +191,6 @@ Splitting by Gender already shows a strong pattern: only 21% of all male survive
 
 ## Links
 
-Let’s explore! https://github.com/rolkra/explore
-
 {explore} is on [CRAN](https://cran.r-project.org/web/packages/explore/index.html)
 
 There you find some more examples how to use it:
