@@ -185,7 +185,7 @@ titanic %>%
 ```
 ![explain_target](../images/explore-count-explain.png)
 
-So, overall 32% of the people survived. 
+So, overall 32% of the people survived. This is shown in the top-node. "target = No" means that the majority (50% or more) of passengers did not survive. 0.32 is the proportion of passengers that survived (32%) and 100% is the percentage of all passengers that are in this node.
 
 Splitting by Gender already shows a strong pattern: only 21% of all male survived, but 73% of all female. Taking a closer look to females, we see that better classes had better chances to survive (46% of 3rd class survived, but 93% of better classes)
 
