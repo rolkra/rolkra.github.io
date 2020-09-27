@@ -76,7 +76,7 @@ So, what is the benefit of using count-data instead of tidy-data? Using count da
 |-------------------|-----------|---------------|
 | tidy-data         | 2201      | 85 KB         |
 | count-data        | 32        | 2 KB          |
-|                   | 1.45%     | 2%            |
+|                   | 1.5%      | 2.4%          |
 
 For the Titanic-data it may not make much a difference, as the data is small anyway. But if you think of a dataset with millions of observations but low number of variables or low variation in the data, using count data will save a lot of memory and disk space and you will explore the data much faster!
 
