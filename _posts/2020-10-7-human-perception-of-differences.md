@@ -81,5 +81,5 @@ penguins %>%
 ```
 ![visualise count_pct](../images/differences-penguins.png)
 
-
+By just looking to the bars, we instantly get a good understanding of the differences between the islands!
 
