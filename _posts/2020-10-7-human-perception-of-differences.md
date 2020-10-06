@@ -79,7 +79,7 @@ penguins %>%
   count_pct(island) %>%
   explore(island, n = n)
 ```
-![visualise count_pct](../images/differences-penguins.jpg)
+![visualise count_pct](../images/differences-penguins.png)
 
 
 
