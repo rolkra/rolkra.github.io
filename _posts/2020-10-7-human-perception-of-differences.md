@@ -36,7 +36,7 @@ But it is hard to get an accurate feeling of the differences between these numbe
 
 ### Add percentage!
 
-Adding percentage helps a log. We can do that by using ```count_pct``` from {explore}
+Adding percentage helps a lot. We can do that by using ```count_pct``` from {explore}
 
 ```R
 penguins %>% count_pct(island)
