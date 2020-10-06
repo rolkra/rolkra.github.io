@@ -92,6 +92,6 @@ penguins %>%
     geom_col(fill = "grey") +
     coord_flip() +
     theme_light()
-```R
+```
 
 
