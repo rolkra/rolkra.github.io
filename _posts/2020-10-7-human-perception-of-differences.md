@@ -78,22 +78,25 @@ We can use barcharts to visualise the number of penguins on each island, as it i
 
 ```R
 penguins %>% 
-  count_pct(island) %>%
-  explore(island, n = n)
+  explore(island)
 ```
 ![visualise count_pct](../images/differences-penguins.png)
 
 By just looking to the bars, we instantly get a good understanding of the differences between the islands!
 
-Of course you could use ggplot2 to do the same:
+Of course you could use ggplot2 to build an individual plot:
 
 ```R
 penguins %>% 
   count_pct(island) %>% 
-  ggplot(aes(x=island, y=n)) + 
+    ggplot(aes(island, pct)) + 
     geom_col(fill = "grey") +
+    geom_text(aes(y=pct, label=paste0(round(pct,1),"%")), 
+              hjust=1, size=3) +
     coord_flip() +
     theme_light()
 ```
+
+
 
 
