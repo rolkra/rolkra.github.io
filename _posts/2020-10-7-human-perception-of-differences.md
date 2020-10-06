@@ -71,8 +71,10 @@ But we can still improve it!
 
 ### Visualise it!
 
-We can use barcharts to visualise the number of penguins on each island!
-{explore} offers a simple way to do that:
+Cognitive studies proved that people can understand visualisations better and faster than just values (individuals used around 20% less cognitive resources. In other words, their brains were working a lot less hard) ![REF](https://www.bbc.com/news/business-17682294).
+
+We can use barcharts to visualise the number of penguins on each island, as it is very easy for humans to compare the length of objects (like the length of bars).
+{explore} offers a simple way to create bar plots:
 
 ```R
 penguins %>% 
