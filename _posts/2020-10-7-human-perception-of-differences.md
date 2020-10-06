@@ -83,3 +83,15 @@ penguins %>%
 
 By just looking to the bars, we instantly get a good understanding of the differences between the islands!
 
+Of course you could use ggplot2 to do the same:
+
+```R
+penguins %>% 
+  count_pct(island) %>% 
+  ggplot(aes(x=island, y=n)) + 
+    geom_col(fill = "grey") +
+    coord_flip() +
+    theme_light()
+```R
+
+
