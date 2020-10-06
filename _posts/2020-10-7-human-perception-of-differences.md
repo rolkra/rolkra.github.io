@@ -16,6 +16,8 @@ library(explore)
 library(palmerpenguins)
 ```
 
+### Count it
+
 A simple way to answer this question ist to use ```count()```
 
 ```R
@@ -32,6 +34,8 @@ penguins %>% count(island)
 Just looking to the number, we can easily find out that most of the penguins are living on the Biscoe island. 
 But it is hard to get an accurate feeling of the differences between these numbers. 
 
+### Adding percentage
+
 Adding percentage helps a log. We can do that by using ```count_pct``` from {explore}
 
 ```R
@@ -47,7 +51,25 @@ penguins %>% count_pct(island)
 ```
 
 Now we can see that 168 of 344 penguins are living on Biscoe island. The percentage is 48.8, so that is almost the half of the penguins.
-We got a much clearer view on the data. But we can still improve it:
+We got a much clearer view on the data. 
+
+The count_pct function is quite simple:
+
+```R
+count_pct <- function(data, ...)  {
+  d <- data %>%
+    dplyr::count(...)
+  d <- d %>%
+    dplyr::mutate(total = sum(n),
+                  pct = n / sum(n) * 100.00)
+  d
+} 
+```
+
+But we can still improve it!
+
+
+### Visualise it!
 
 We can use barcharts to visualise the number of penguins on each island!
 {explore} offers a simple way to do that:
