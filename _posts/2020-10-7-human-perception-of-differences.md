@@ -16,7 +16,7 @@ library(explore)
 library(palmerpenguins)
 ```
 
-### Count it
+### Count it!
 
 A simple way to answer this question ist to use ```count()```
 
@@ -34,7 +34,7 @@ penguins %>% count(island)
 Just looking to the number, we can easily find out that most of the penguins are living on the Biscoe island. 
 But it is hard to get an accurate feeling of the differences between these numbers. 
 
-### Adding percentage
+### Add percentage!
 
 Adding percentage helps a log. We can do that by using ```count_pct``` from {explore}
 
