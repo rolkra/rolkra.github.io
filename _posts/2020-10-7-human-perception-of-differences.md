@@ -99,14 +99,6 @@ penguins %>%
 But 10 minutes later, you may have already forgotten which island ranked on wich place. 
 Because these are just numbers without any meaning to your brain. 
 
-### Add meaning!
-
-If we can add some insights about the relationship between penguins and islands, our brain will just naturally remember much more.
-
-We can do that by using the ```explain_tree()``` function from {explore}
-
-
-
 
 
 
