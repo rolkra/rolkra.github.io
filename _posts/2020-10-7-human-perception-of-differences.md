@@ -31,8 +31,7 @@ penguins %>% count(island)
 2 Dream       124
 3 Torgersen    52
 ```
-Just looking to the number, we can easily find out that most of the penguins are living on the Biscoe island. 
-But it is hard to get an accurate feeling of the differences between these numbers. 
+Just looking to the number, we can easily find out that most of the penguins are living on the Biscoe island. On 2nd place is Dream island, and Torgersen island on 3rd. But it is hard to get an accurate feeling of the differences between the number of penguins on these islands. 
 
 ### Add percentage!
 
@@ -71,7 +70,7 @@ But we can still improve it!
 
 ### Visualise it!
 
-Cognitive studies proved that people can understand visualisations better and faster than just values (Ref: https://www.bbc.com/news/business-17682294).
+Cognitive studies proved that people can understand visualisations much better and faster than just values (Ref: https://www.bbc.com/news/business-17682294).
 
 We can use barcharts to visualise the number of penguins on each island, as it is very easy for humans to compare the length of objects (like the length of bars).
 {explore} offers a simple way to create bar plots:
@@ -84,7 +83,7 @@ penguins %>%
 
 By just looking to the bars, we instantly get a good understanding of the differences between the islands!
 
-Of course you could use ggplot2 to build an individual plot:
+If you want to use ggplot2 to build an individual plot:
 
 ```R
 penguins %>% 
