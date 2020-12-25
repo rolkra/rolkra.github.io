@@ -7,7 +7,7 @@ Writing Retro Games that run in the R Console
 
 ## Is it even possible?
 
-R is a great language for doing statistics and data science, but it is not designed to develop games. So obviously writing games in R is more a fun project. 
+R is a great language for doing statistics and data science, but it is not designed to develop games. So obviously writing games in R is just a fun project. 
 During the corona-lockdown I had a lot of time and started getting interested in this topic. I found out, that there are some games written in R that are running in the R console:
 
 * [The Secret of Landusia](https://lucidmanager.org/data-science/text-adventure/) - A Text Adventure in the R Language
