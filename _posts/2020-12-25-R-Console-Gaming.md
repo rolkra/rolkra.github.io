@@ -7,8 +7,8 @@ Writing Retro Games that run in the R console
 
 ## Is it even possible?
 
-R is a great language for doing statistics and data science, but it is not designed to run games. So obviously writing games in R is more a fun project. 
-But during the corona-lockdown I started getting interested into this topic. I found out, that there are some games written in R that are running in the R console:
+R is a great language for doing statistics and data science, but it is not designed to develope games. So obviously writing games in R is more a fun project. 
+During the corona-lockdown I hat a lot of time and started getting interested into this topic. I found out, that there are some games written in R that are running in the R console:
 
 * [The Secret of Landusia](https://lucidmanager.org/data-science/text-adventure/) - A Text Adventure in the R Language
 * [Tenliner Cave Adventure](https://lucidmanager.org/data-science/tenliner-cave-adventure/) - Miniature Text Adventure Ported From the ZX81
@@ -31,8 +31,8 @@ So, thats probably all you need to write an text adventure. But I wanted to add 
 
 ## Color
 
-To get some color output in the console, I used the package {cli}, that provides functions to control the output in the R console. You can select 
-the foreground using col_*() and the background-color using bg_*().
+To get some color output in the console, I used the package {cli}, that provides basic functions to control the color of the console-output. You can select 
+the foreground using col_{color}() and the background-color using bg_{color}().
 
 ```R
 library(cli)
@@ -40,7 +40,7 @@ cat("text")
 cat(col_blue("text"))
 cat(bg_blue("text"))
 ```
-So I was able to create some very basic "sprites" by using a space (" ") and setting a background color.
+So I was able to write a function, that displays a very basic "sprites" by using a space (" ") and setting a background color.
 
 ```R
 library(cli);
@@ -74,6 +74,7 @@ txt <- paste0(
   
 sprite_show(txt)
 ```
+![Golden Key](../images/codebreaker-key.png)
 
 ## Sound
 
@@ -90,9 +91,9 @@ These two lines of code play the "super mario" sound.
 
 So I was ready to create my own Retro-Game running in the R console!
 
+I decided to write a game that is inspired by "Mastermind", a game that became popular in the 1970s.
 
+![Codebreaker](../images/codebreaker-screenshot.png)
 
-
-
-
-
+You find the package on [CRAN](https://cran.r-project.org/package=codebreaker) and on [Github](https://github.com/rolkra/codebreaker)
+Have fun!
