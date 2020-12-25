@@ -8,22 +8,22 @@ Writing Retro Games that run in the R console
 ## Is it even possible?
 
 R is a great language for doing statistics and data science, but it is not designed to develop games. So obviously writing games in R is more a fun project. 
-During the corona-lockdown I had a lot of time and started getting interested into this topic. I found out, that there are some games written in R that are running in the R console:
+During the corona-lockdown I had a lot of time and started getting interested in this topic. I found out, that there are some games written in R that are running in the R console:
 
 * [The Secret of Landusia](https://lucidmanager.org/data-science/text-adventure/) - A Text Adventure in the R Language
 * [Tenliner Cave Adventure](https://lucidmanager.org/data-science/tenliner-cave-adventure/) - Miniature Text Adventure Ported From the ZX81
-* [tic tac toe](https://cran.r-project.org/package=tictactoe) - tic-tac-toe game to play on console, either with human or AI players
+* [{tictactoe}](https://cran.r-project.org/package=tictactoe) - tic-tac-toe game to play on console, either with human or AI players
 * [Hangman](https://sites.google.com/site/marekhlavac/computer-games-written-in-r) - Classic Hangman Game
 
-Other games uses the plot-window like [{fun}](https://cran.r-project.org/package=fun), [{Snake}](https://cran.r-project.org/web/packages/Snake/index.html). I even found an R game that runs in shiny like [Hangman](https://smirnovayu.shinyapps.io/hangman_en/) and [pong](https://chasemc.shinyapps.io/PONG/).
+Other games uses the plot-window like [{fun}](https://cran.r-project.org/package=fun), [{Snake}](https://cran.r-project.org/web/packages/Snake/index.html). I even found an R games that runs in shiny like [Hangman](https://smirnovayu.shinyapps.io/hangman_en/) and [pong](https://chasemc.shinyapps.io/PONG/).
 
-[Here](https://lucidmanager.org/tags/r-games/) I found a nice collection of Games written in R.
+[Here](https://lucidmanager.org/tags/r-games/) I found a nice overview of games written in R.
 
 So, yes it is possible!
 
 ## Text Input / Output
 
-Base R provide functions for reading a line and writing text to the console.
+Base R provides functions for reading a line and writing text to the console.
 
 ```R
 name <- readline("your name = ")
@@ -34,7 +34,7 @@ So, thats probably all you need to write a text adventure. But I wanted to add a
 
 ## Color
 
-To get some color output in the console, I used the package {cli}. You can select the foreground using col_{color}() and the background-color using bg_{color}().
+To get some color output in the console, I used the package {cli}. You can select the foreground-color using col_{color}() and the background-color using bg_{color}().
 
 ```R
 library(cli)
@@ -42,6 +42,8 @@ cat("text")
 cat(col_blue("text"))
 cat(bg_blue("text"))
 ```
+
+![Codebreaker](../images/codebreaker-color.png)
 
 So I was able to write a function, that displays a very basic "sprite" by using a space (" ") and setting a background color. The sprite is defined as text 
 with letters representing the color (e.g. R = red)
@@ -78,6 +80,7 @@ txt <- paste0(
   
 sprite_show(txt)
 ```
+
 ![Golden Key](../images/codebreaker-key.png)
 
 ## Sound
