@@ -102,6 +102,8 @@ I decided to write a game that is inspired by ["Mastermind"](https://www.archime
 
 ![Codebreaker](../images/codebreaker-screenshot.png)
 
+You are a codebreaker and play against the computer who is the codemaker. The computer chooses a pattern of four colors (duplicates possible). You try to break the code by trying color patterns. The computer tells you the number of correct colors. Try to break the code in less steps as possible! There are 3 game-modes: Single Game, Race and Xtreme.
+
 You find the package on [CRAN](https://cran.r-project.org/package=codebreaker) and on [Github](https://github.com/rolkra/codebreaker)
 
 Have fun!
