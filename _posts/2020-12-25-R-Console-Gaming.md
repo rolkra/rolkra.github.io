@@ -3,7 +3,7 @@ layout: post
 title: R Console Gaming
 ---
 
-Writing Retro Games that run in the R console
+Writing Retro Games that run in the R Console
 
 ## Is it even possible?
 
