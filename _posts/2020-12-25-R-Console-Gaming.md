@@ -44,13 +44,13 @@ cat(bg_blue("text"))
 ```
 
 So I was able to write a function, that displays a very basic "sprite" by using a space (" ") and setting a background color. The sprite is defined as text 
-letters representing the color (e.g. R = red)
+with letters representing the color (e.g. R = red)
 
 ```R
 library(cli);
 
 sprite_show <- function(txt)  {
-  for (i in 1:nchar(txt)) {
+  for (i in seq_len(nchar(txt))) {
     char <- substr(txt, i, i)
     if(char == "R") {cat(bg_red(" "))}
     if(char == "B") {cat(bg_blue(" "))}
