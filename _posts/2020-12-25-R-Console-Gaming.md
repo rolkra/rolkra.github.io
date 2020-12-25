@@ -13,11 +13,10 @@ During the corona-lockdown I had a lot of time and started getting interested in
 * [The Secret of Landusia](https://lucidmanager.org/data-science/text-adventure/) - A Text Adventure in the R Language
 * [Tenliner Cave Adventure](https://lucidmanager.org/data-science/tenliner-cave-adventure/) - Miniature Text Adventure Ported From the ZX81
 * [{tictactoe}](https://cran.r-project.org/package=tictactoe) - tic-tac-toe game to play on console, either with human or AI players
+* [{twenty48}](https://cran.r-project.org/package=twenty48) - Join the numbers and get to the 2048 tile!
 * [Hangman](https://sites.google.com/site/marekhlavac/computer-games-written-in-r) - Classic Hangman Game
 
-Other games uses the plot-window like [{fun}](https://cran.r-project.org/package=fun), [{Snake}](https://cran.r-project.org/web/packages/Snake/index.html). I even found an R games that runs in shiny like [Hangman](https://smirnovayu.shinyapps.io/hangman_en/) and [pong](https://chasemc.shinyapps.io/PONG/).
-
-[Here](https://lucidmanager.org/tags/r-games/) I found a nice overview of games written in R.
+Other games uses the plot-window like [{fun}](https://cran.r-project.org/package=fun) and [{Snake}](https://cran.r-project.org/web/packages/Snake/index.html). I even found an R games that runs in shiny like [Hangman](https://smirnovayu.shinyapps.io/hangman_en/) and [pong](https://chasemc.shinyapps.io/PONG/).
 
 So, yes it is possible!
 
