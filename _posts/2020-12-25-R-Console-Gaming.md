@@ -10,11 +10,11 @@ Writing Games that run in the R console
 R is a great language for doing statistics and data science, but it is not designed to run games. So obviously writing games in R is more a fun project. 
 But during the corona-lockdown I started getting interested into this topic. I found out, that there are some games written in R that are running in the R console:
 
-* The Secret of Landusia <https://lucidmanager.org/data-science/text-adventure/> - A Text Adventure in the R Language
+* T<https://lucidmanager.org/data-science/text-adventure/ "The Secret of Landusia"> - A Text Adventure in the R Language
 * Tenliner Cave Adventure <https://lucidmanager.org/data-science/tenliner-cave-adventure/> - Miniature Text Adventure Ported From the ZX81
 * Hangman <https://sites.google.com/site/marekhlavac/computer-games-written-in-r> - Classic Hangman Game
 
-Here <https://lucidmanager.org/tags/r-games/> I found a nice collection of Games writen in R
+[Here](https://lucidmanager.org/tags/r-games/) I found a nice collection of Games writen in R
 
 So, yes it is possible!
 
