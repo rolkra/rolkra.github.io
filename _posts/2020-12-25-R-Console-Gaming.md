@@ -91,9 +91,10 @@ These two lines of code play the "super mario" sound.
 
 So I was ready to create my own Retro-Game running in the R console!
 
-I decided to write a game that is inspired by "Mastermind", a game that became popular in the 1970s.
+I decided to write a game that is inspired by ["Mastermind"](https://www.archimedes-lab.org/mastermind.html), a game that became popular in the 1970s.
 
 ![Codebreaker](../images/codebreaker-screenshot.png)
 
 You find the package on [CRAN](https://cran.r-project.org/package=codebreaker) and on [Github](https://github.com/rolkra/codebreaker)
+
 Have fun!
