@@ -18,7 +18,7 @@ During the corona-lockdown I had a lot of time and started getting interested in
 
 Other games uses the plot-window like [{fun}](https://cran.r-project.org/package=fun) and [{Snake}](https://cran.r-project.org/web/packages/Snake/index.html). I found R games that run in shiny like [Hangman](https://smirnovayu.shinyapps.io/hangman_en/) and [pong](https://chasemc.shinyapps.io/PONG/). Even running HTML-games in the RStudio-viewer is an option (see [here](https://github.com/RLesur/Rcade))
 
-Peter Prevos wrote a nice overview of [games in R](https://lucidmanager.org/data-science/games-in-r/)
+Peter Prevos wrote a great [summary article](https://lucidmanager.org/data-science/games-in-r/).
 
 So, yes it is possible to write games in R!
 
