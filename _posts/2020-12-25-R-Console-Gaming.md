@@ -15,6 +15,7 @@ During the corona-lockdown I had a lot of time and started getting interested in
 * [{tictactoe}](https://cran.r-project.org/package=tictactoe) - tic-tac-toe game to play on console, either with human or AI players
 * [{twenty48}](https://cran.r-project.org/package=twenty48) - Join the numbers and get to the 2048 tile!
 * [Hangman](https://sites.google.com/site/marekhlavac/computer-games-written-in-r) - Classic Hangman Game
+* [Gravedigger](https://lucidmanager.org/data-science/creepy-computer-games-in-r/) - Gravedigger game from the 1983 Creepy Computer Games book
 
 Other games uses the plot-window like [{fun}](https://cran.r-project.org/package=fun) and [{Snake}](https://cran.r-project.org/web/packages/Snake/index.html). I found R games that run in shiny like [Hangman](https://smirnovayu.shinyapps.io/hangman_en/) and [pong](https://chasemc.shinyapps.io/PONG/). Even running HTML-games in the RStudio-viewer is an option (see [here](https://github.com/RLesur/Rcade))
 
