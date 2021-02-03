@@ -55,7 +55,7 @@ data %>% describe()
 #### Binary target
 
 The variable sex is binary, it has two different values (male/female).
-Creating a Decision Tree explaining the sex-variable is just this line of code:
+Creating a Decision Tree explaining the sex-variable (is a penguin male?) is just this line of code:
 
 ```R
 data %>% explain_tree(target = sex)
@@ -96,3 +96,8 @@ data %>% explain_tree(target = flipper_length_mm)
 ![Decision Tree?](../images/trees-penguins-flipper.png)
 
 The top node contains all penguins, they have an average flipper_length_mm of 201. Using different variables for splitting into subgroups, we finally get 8 groups of penguins with average flipper_length_mm from 188 to 224
+
+### Advanced
+
+If you data contains a binary target (0/1) with rare target = 1 values, it might be useful to weight the target.
+
