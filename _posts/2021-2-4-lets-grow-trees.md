@@ -71,7 +71,7 @@ The top node contains all penguins. Meaning of the labels:
 
 Now the algorithm is searching how to split this node into 2 groups with highest possilbe difference in males. If body_mass_g >= 3713 there are 67% male (so the majority is male), in the group body_mass_g < 3713 there are only 18% male (so the majority is female).
 
-These groups can be split again in two subgroups with high difference in males. So in the end we get 4 groups, 2 with high proportion of males and 2 with high proportion of females. 
+These groups can be split again in two subgroups with high difference in males. So in the end we get 4 groups, 2 with high proportion of males and 2 with high proportion of females. The biggest group is the node on the bottom right, it contains 49% of all penguins.
 
 #### Categorical target
 
