@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Let's grow trees - the easy way!
+title: Let's grow trees!
 ---
 
 The fast way to create and visualise Decision Trees using {explore}  
@@ -61,6 +61,12 @@ Creating a Decision Tree explaining the sex-variable is just this line of code:
 data %>% explain_tree(target = sex)
 ```
 
+The top node contains all penguins. Meaning of the labels:
+
+* "target = male": class of target with at least 50%
+* 0.50 is the proportion of male in this node
+* This node contains 100% of all penguins in the data 
+
 ![Decision Tree?](../images/trees-pinguins-sex.png)
 
 #### Categorical target
@@ -75,7 +81,7 @@ data %>% explain_tree(target = species)
 
 #### Numerical target
 
-The variable flipper_length_mm is numerical, it has values between 172 and 231. To create a Decision Tree explaining the flipper_length_mm-variable we just need to replace species with flipper_length_mm.
+The variable flipper_length_mm is numerical, it has values between 172 and 231. To create a Decision Tree explaining the flipper_length_mm-variable we just need to pass flipper_length_mm as target.
 
 ```R
 data %>% explain_tree(target = flipper_length_mm)
