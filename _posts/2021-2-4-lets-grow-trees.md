@@ -83,9 +83,13 @@ data %>% explain_tree(target = species)
 
 ![Decision Tree?](../images/trees-penguins-species.png)
 
+The top node contains 44% Adelie, 20% Chinstrap and 36% Gentoo penguins. As Adelie have the highest proportion, dies node is labeled "target = Adelie". Using flipper_length_mm and bill_length_mm to split into subgroups, we finally get 3 groups seperating the genguins by species with high probability.
+
 #### Numerical target
 
 The variable flipper_length_mm is numerical, it has values between 172 and 231. To create a Decision Tree explaining the flipper_length_mm-variable we just need to pass flipper_length_mm as target.
+
+The top node contains all penguins, they have an average flipper_length_mm of 201. Using different variables for splitting into subgroups, we finally get 8 groups of penguins with average flipper_length_mm from 188 to 224
 
 ```R
 data %>% explain_tree(target = flipper_length_mm)
