@@ -73,4 +73,12 @@ data %>% explain_tree(target = species)
 
 ![Decision Tree?](../images/trees-penguins-species.png)
 
+#### Numerical target
 
+The variable flipper_length_mm is numerical, it has values between 172 and 231. To create a Decision Tree explaining the flipper_length_mm-variable we just need to replace species with flipper_length_mm.
+
+```R
+data %>% explain_tree(target = flipper_length_mm)
+```
+
+![Decision Tree?](../images/trees-penguins-flipper.png)
