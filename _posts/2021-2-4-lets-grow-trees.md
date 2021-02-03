@@ -61,13 +61,17 @@ Creating a Decision Tree explaining the sex-variable is just this line of code:
 data %>% explain_tree(target = sex)
 ```
 
+![Decision Tree?](../images/trees-pinguins-sex.png)
+
 The top node contains all penguins. Meaning of the labels:
 
 * "target = male": class of target with at least 50%
 * 0.50 is the proportion of male in this node
 * This node contains 100% of all penguins in the data 
 
-![Decision Tree?](../images/trees-pinguins-sex.png)
+Now the algorithm is searching how to split this node into 2 groups with highest possilbe difference in males. If body_mass_g > 3713 there are 67% male (so the majority is male), in the group body_mass_g <= 3713 there are only 18% male (so the majority is female).
+
+These groups can be split again in two subgroups with high difference in males. So in the end we get 4 groups, 2 with high proportion of males and 2 with high proportion of females. 
 
 #### Categorical target
 
