@@ -71,6 +71,6 @@ The variable species is categorical, it has 3 different values. To create a Deci
 data %>% explain_tree(target = species)
 ```
 
-![Decision Tree?](../images/trees-pinguins-species.png)
+![Decision Tree?](../images/trees-penguins-species.png)
 
 
