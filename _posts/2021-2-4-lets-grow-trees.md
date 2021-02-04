@@ -129,5 +129,21 @@ data %>% explain_tree(target = target01)
 
 ![Growing tree fails](../images/trees-inbalanced-cantgrow.png)
 
+There are not enough target01 = 1 in the data to create the tree:
+
+```R
+data %>% describe(target01)
+```
+
+```
+variable = target01
+type     = double
+na       = 0 of 1 000 (0%)
+unique   = 2
+       0 = 953 (95.3%)
+       1 = 47 (4.7%)
+```
+
+
 
 
