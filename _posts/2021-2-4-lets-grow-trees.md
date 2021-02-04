@@ -181,11 +181,9 @@ The Decision Tree now can detect the pattern in the data easily.
 
 Interested in {explore}?
 
-You find {explore} on CRAN and on github:
-* https://CRAN.R-project.org/package=explore 
-* https://github.com/rolkra/explore
+You find {explore} on ![CRAN](https://CRAN.R-project.org/package=explore) and on ![github](https://github.com/rolkra/explore)
 
-Blog post that might be interesting for you:
-* https://rolkra.github.io/start-to-explore/
-* https://rolkra.github.io/explore-count-data/
+Blog posts related to {explore}
+* ![Start to explore](https://rolkra.github.io/start-to-explore/)
+* ![explore count data](https://rolkra.github.io/explore-count-data/)
 
