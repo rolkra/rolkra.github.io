@@ -15,11 +15,13 @@ The most popular package to create Decision Trees in R is {rpart}. For visualisa
 ## Growing Trees
 ### The hard way
 
-![Who is in the bus?](../images/trees-thehardway.jpg)
+![Growing trees](../images/trees-thehardway.jpg)
 
 Using {rpart} and {rpart.plot} can be timeconsuming, as there are a lot of different parameters to set and the code for using a categorical target differs from using a numeric target. So instead of growing a tree fast, you end up in searching for code syntax in the help-files or searching the web.
 
 ### The easy way
+
+![Growing trees](../images/trees-instant.jpg)
 
 {explore} offers a simple function to grow and visualise a Decision Tree without thinking about code syntax. 
 
