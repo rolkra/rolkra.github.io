@@ -177,6 +177,15 @@ data %>%
 
 The Decision Tree now can detect the pattern in the data easily.
 
+In case of a large dataset downsampling migth be an option to handle an inbalanced dataset. You can use `balance_target()`:
+
+```R
+data %>% 
+  balance_target(target = target01,
+                 min_prop = 0.50) %>% 
+  explain_tree(target = target01)
+```
+
 ## {explore}
 
 Interested in {explore}?
