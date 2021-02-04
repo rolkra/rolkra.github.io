@@ -31,7 +31,7 @@ library(explore)
 library(palmerpenguins)
 ```
 
-We use the penguins dataset from {palmerpenguins} to create Decision Trees. In this dataset each observation (row) is a pinguin. We will filter out penguins with undefined bill length. Available variables (columns):
+We use the penguins dataset from {palmerpenguins} to create Decision Trees. In this dataset each observation (row) is a penguin. We will filter out penguins with undefined bill length. Available variables (columns):
 
 ```R
 data <- penguins %>% filter(bill_length_mm > 0) 
@@ -99,5 +99,27 @@ The top node contains all penguins, they have an average flipper_length_mm of 20
 
 ### Advanced
 
-If you data contains a binary target (0/1) with rare target = 1 values, it might be useful to weight the target.
+If you data contains a binary target (0/1) that is highly inbalanced (rare target = 1 values), it might be useful to weight the target. Otherwise {rpart} is not able to create a Decision Tree.
+
+Let's create a highly inbalanced dataset:
+
+```R
+data <- data.frame(
+  target01 = sample(c(0,1), 1000, replace = TRUE, prob = c(0.95,0.05))
+  )
+
+data$age = ifelse(data$target01 == 1,
+                  rnorm(1000, mean = 40, sd = 5),
+                  rnorm(1000, mean = 50, sd = 10))
+```
+
+There is a clear pattern in the data:
+
+```R
+data %>% explore(age, target = target01)
+```
+
+![Explore age](../images/trees-inbalanced-age.png)
+
+
 
