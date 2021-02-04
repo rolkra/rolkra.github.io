@@ -121,5 +121,13 @@ data %>% explore(age, target = target01)
 
 ![Explore age](../images/trees-inbalanced-age.png)
 
+But growing an tree fails.
+
+```R
+data %>% explain_tree(target = target01)
+```
+
+![Growing tree fails](../images/trees-inbalanced-cantgrow.png)
+
 
 
