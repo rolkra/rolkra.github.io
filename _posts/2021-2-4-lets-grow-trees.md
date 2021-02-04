@@ -121,7 +121,9 @@ Let's create a highly inbalanced dataset:
 
 ```R
 data <- data.frame(
-  target01 = sample(c(0,1), 1000, replace = TRUE, prob = c(0.95,0.05))
+  target01 = sample(
+      c(0,1), 1000, replace = TRUE, 
+      prob = c(0.95,0.05))
   )
 
 data$age = ifelse(data$target01 == 1,
