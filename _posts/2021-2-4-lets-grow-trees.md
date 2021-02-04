@@ -188,7 +188,7 @@ data %>%
 
 #### Predict
 
-If you want to use the Decision Tree for a prediction, you can model itsel by passing the parameter `out = "model"` to `explain_tree`.
+If you want to use the Decision Tree for a prediction, you can model itsel by passing the parameter `out = "model"` to `explain_tree()`.
 
 ```R
 weights <- weight_target(data, target01)
