@@ -69,7 +69,7 @@ The top node contains all penguins. Meaning of the labels:
 * 0.50 is the proportion of male in this node
 * This node contains 100% of all penguins in the data 
 
-Now the algorithm is searching how to split this node into 2 groups with highest possilbe difference in males. If body_mass_g >= 3713 there are 67% male (so the majority is male), in the group body_mass_g < 3713 there are only 18% male (so the majority is female).
+Now the algorithm is searching how to split this node into 2 groups with highest possible difference in males. If body_mass_g >= 3713 there are 67% male (so the majority is male), in the group body_mass_g < 3713 there are only 18% male (so the majority is female).
 
 These groups can be split again in two subgroups with high difference in males. So in the end we get 4 groups, 2 with high proportion of males and 2 with high proportion of females. The biggest group is the node on the bottom right, it contains 49% of all penguins.
 
@@ -83,7 +83,7 @@ data %>% explain_tree(target = species)
 
 ![Decision Tree?](../images/trees-penguins-species.png)
 
-The top node contains 44% Adelie, 20% Chinstrap and 36% Gentoo penguins. As Adelie have the highest proportion, dies node is labeled "target = Adelie". Using flipper_length_mm and bill_length_mm to split into subgroups, we finally get 3 groups seperating the genguins by species with high probability.
+The top node contains 44% Adelie, 20% Chinstrap and 36% Gentoo penguins. As Adelie have the highest proportion, this node is labeled "target = Adelie". Using flipper_length_mm and bill_length_mm to split into subgroups, we finally get 3 groups seperating the penguins by species with high probability.
 
 #### Numerical target
 
@@ -99,7 +99,23 @@ The top node contains all penguins, they have an average flipper_length_mm of 20
 
 ### Advanced
 
-If you data contains a binary target (0/1) that is highly inbalanced (rare target = 1 values), it might be useful to weight the target. Otherwise {rpart} is not able to create a Decision Tree.
+#### Control tree size
+
+You can control the tree size using the maxdepth parameter.
+
+```R
+data %>% 
+  explain_tree(target = flipper_length_mm,
+               maxdepth = 2)
+```
+
+![maxdepth](../images/trees-penguins-maxdepth.png)
+
+You may also use parameter minsplit to control the tree.
+
+#### Inbalanced target
+
+If your data contains a binary target (0/1) that is highly inbalanced (rare target = 1 values), it might be useful to weight the target. Otherwise {rpart} is not able to create a Decision Tree.
 
 Let's create a highly inbalanced dataset:
 
@@ -121,7 +137,7 @@ data %>% explore(age, target = target01)
 
 ![Explore age](../images/trees-inbalanced-age.png)
 
-But growing an tree fails.
+But growing a tree fails.
 
 ```R
 data %>% explain_tree(target = target01)
