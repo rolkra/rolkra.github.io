@@ -103,7 +103,7 @@ The top node contains all penguins, they have an average flipper_length_mm of 20
 
 #### Control tree size
 
-You can control the tree size using the maxdepth parameter.
+You can control the tree size using the `maxdepth` parameter.
 
 ```R
 data %>% 
@@ -113,7 +113,7 @@ data %>%
 
 ![maxdepth](../images/trees-penguins-maxdepth.png)
 
-You may also use parameter minsplit to control the tree.
+You may also use parameter `minsplit` to control the tree.
 
 #### Inbalanced target
 
@@ -224,4 +224,3 @@ You find {explore} on [CRAN](https://CRAN.R-project.org/package=explore) and on 
 Blog posts related to {explore}
 * [Start to {explore}](https://rolkra.github.io/start-to-explore/)
 * [explore count data](https://rolkra.github.io/explore-count-data/)
-
