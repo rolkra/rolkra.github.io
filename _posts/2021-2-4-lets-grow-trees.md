@@ -144,6 +144,15 @@ unique   = 2
        1 = 47 (4.7%)
 ```
 
+Weighting the target will help:
 
+```R
+weights <- weight_target(data, target01)
+data %>% 
+  explain_tree(target = target01, 
+               weights = weights)
+```
 
+![Growing tree fails](../images/trees-inbalanced-weighted.png)
 
+The Decision Tree now can detect the pattern in the data easily.
