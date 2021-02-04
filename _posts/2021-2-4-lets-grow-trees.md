@@ -186,6 +186,35 @@ data %>%
   explain_tree(target = target01)
 ```
 
+#### Predict
+
+If you want to use the Decision Tree for a prediction, you can model itsel by passing the parameter `out = "model"` to `explain_tree`.
+
+```R
+weights <- weight_target(data, target01)
+model <- data %>% 
+  explain_tree(target = target01, 
+               weights = weights,
+               out = "model")
+```
+
+Now we can use this model for a prediction. We use new data with 2 observations (age = 20 and age = 60) to predict target01.
+
+```R
+new <- data.frame(age = c(20, 60))
+prediction <- predict(model, new)
+new$prediction <- prediction
+new
+```
+
+For age = 20 target01 = 1 with a probability of 80.6%, for age = 60 target01 = 0 with a probability of 86.3%.
+
+```
+  age prediction.0 prediction.1
+1  20    0.1937470    0.8062530
+2  60    0.8626485    0.1373515
+```
+
 ## {explore}
 
 Interested in {explore}?
