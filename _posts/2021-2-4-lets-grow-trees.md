@@ -184,6 +184,6 @@ Interested in {explore}?
 You find {explore} on ![CRAN](https://CRAN.R-project.org/package=explore) and on ![github](https://github.com/rolkra/explore)
 
 Blog posts related to {explore}
-* ![Start to explore](https://rolkra.github.io/start-to-explore/)
-* ![explore count data](https://rolkra.github.io/explore-count-data/)
+* [Start to explore](https://rolkra.github.io/start-to-explore/)
+* [explore count data](https://rolkra.github.io/explore-count-data/)
 
