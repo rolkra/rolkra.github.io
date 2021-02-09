@@ -215,6 +215,22 @@ For age = 20 target01 = 1 with a probability of 80.6%, for age = 60 target01 = 0
 2  60    0.8626485    0.1373515
 ```
 
+## Interactive Trees
+
+You can make Decision Trees interactive by using `visTree()` from {visNetwork}.
+
+```R
+library(dplyr)
+library(explore)
+library(palmerpenguins)
+library(visNetwork)
+
+penguins %>% 
+  explain_tree(target = species, out = "model") %>% 
+  visTree()
+```
+![Interactive Trees (Screenshot)](../images/trees-interactive.png)
+
 ## {explore}
 
 Interested in {explore}?
