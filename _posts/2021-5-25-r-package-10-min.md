@@ -9,7 +9,7 @@ R-packages are a great way to structure and share code. Let's give it a try!
 
 ## Where to start from
 
-Most of the times you already have some R-code that is oranised as a function. In this example we start with a very simple funkction `hello()` that is stored in a file called hello.R
+Most of the times you already have some R-code that is oranised as functions. In this example we start with a very simple function `hello()` that is stored in a file called hello.R
 
 ```R
 hello <- function(name = "my friend") {
@@ -23,7 +23,7 @@ So, if you call `hello()` you get
 [1] "Hello my friend"
 ```
 
-So, if you call `hello("Tom")` you get
+If you call `hello("Tom")` you get
 
 ```
 [1] "Hello Tom"
@@ -34,7 +34,7 @@ So, if you call `hello("Tom")` you get
 
 ### Step 1: Create a new R-project
 
-Start RStudio and Creat a new Project:
+Start RStudio and create a new project:
 
 `File > New Project ... > New Directory > R Package`
 
@@ -42,14 +42,14 @@ Start RStudio and Creat a new Project:
 
 Enter the name of the package, the files containing R-functions you want to use in the package, and define the package-folder.
 
-Then you should have a new "Build" Section in the upper right pane.
+Then you should have a new "Build" section in the upper right pane.
 
 ![build](../images/r-package-build.png)
 
 
 ### Step 2: Update DESCRIPTION
 
-Now you can describe what you package is doing, by editing the file `DESCRIPTION`:
+Now you can describe what yourt package does, by editing the file `DESCRIPTION`:
 
 ```
 Package: help
@@ -66,7 +66,7 @@ LazyData: true
 ```
 So, typically you edit at least `Title`, `Author`, `Maintainer` and `Description`
 
-If you are using other packages in your code, you need to add an section called `Imports:` with all packages seperated with a comma. In your code you need to refere to functions of a package as package::function().
+If you are using other packages in your code, you need to add a section called `Imports:` with all package-names seperated by a comma. In your code you need to refere to functions of a package as package::function().
 
 If you want to use a license, you can do that with the following R-code (in the R-console, `name` is the name of the copyright holder). If {usethis} is not installed, do that before.
 
@@ -76,16 +76,16 @@ usethis::use_mit_license(name = "Roland Krasser")
 
 ### Step 3: Build package
 
-Simply press the `Install and Restart` Button in the Git-Tab (upper right pane)
+Simply press the `Install and Restart` button in the Git-Tab (upper right pane)
 
-After a while, you new package {hello} is build and ready to use!
+After a while, your new package {hello} is built and ready to use!
 
 ![install](../images/r-package-install.png)
 
-### Step 4: Add Documentation
+### Step 4: Add documentation
 
 To add a documentation to your function, open the file `R/hello.R`, go to the top of the function and select `Code > Insert Roxygen Skeleton`
-from the menu
+from the menu.
  
 Your function now looks like this:
  
@@ -130,6 +130,8 @@ To "activate" the documentation, you need to go to `Tools > Project Options` and
 
 ![install](../images/r-package-project-options.png)
 
+Then you can create the documentation (Build tab: More > Document) und install the package (now containing help files)
+
 ### Step 5: Add Unit Testing
 
 To use unit testing, run this R-code in the R-console (you may change "hello" to what you want to test in your package)
@@ -139,7 +141,7 @@ usethis::use_testthat()
 usethis::use_test(name = "hello")
 ```
 
-Now you have new `tests` folder
+Now you have a new `tests` folder
 
 You can add tests to your test-file (in this case tests/testthat/test-hello.R)
 
