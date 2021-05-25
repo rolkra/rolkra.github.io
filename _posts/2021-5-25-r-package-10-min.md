@@ -31,7 +31,12 @@ So, if you call `hello("Tom")` you get
 
 
 ## Build a package
+
 ### Step 1: Create a new R-project
+
+Start RStudio and Creat a new Project:
+
+`File > New Project ... > New Directory > R Package`
 
 ### Step 2: Update DESCRIPTION
 
