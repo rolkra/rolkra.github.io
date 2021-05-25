@@ -148,6 +148,21 @@ test_that("hello", {
 })
 ```
 
+To run the tests, go to the Build-Tab and select `More > Test Package`:
+
+```
+√ |  OK F W S | Context
+√ |   2       | hello
+
+== Results ================================================
+Duration: 0.1 s
+
+OK:       2
+Failed:   0
+Warnings: 0
+Skipped:  0
+```
+
 ## Advanced
 
 There is a lot more you could do, specially if you want to put your package on CRAN
