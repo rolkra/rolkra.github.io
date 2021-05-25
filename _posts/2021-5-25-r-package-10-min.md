@@ -66,13 +66,17 @@ LazyData: true
 ```
 So, typically you edit at least `Title`, `Author`, `Maintainer` and `Description`
 
-If you want to use a license, you can do that with the following R-code (in the R-console, `name` is the name of the copyright holder)
+If you want to use a license, you can do that with the following R-code (in the R-console, `name` is the name of the copyright holder). If {usethis} is not installed, do that before.
 
 ```R
 usethis::use_mit_license(name = "Roland Krasser")
 ```
 
 ### Step 3: Build package
+
+Simply press the `Install and Restart` Button in the Git-Tab (upper right pane)
+
+After a while, you new package {hello} is build and ready to use!
 
 ### Step 4: Add Documentation
 
