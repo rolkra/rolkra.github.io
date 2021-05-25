@@ -78,6 +78,56 @@ Simply press the `Install and Restart` Button in the Git-Tab (upper right pane)
 
 After a while, you new package {hello} is build and ready to use!
 
+![install](../images/rolkra.github.io/images/r-package-install.png)
+
 ### Step 4: Add Documentation
 
+To add a documentation to your function, open the file `R/hello.R`, go to the top of the function and select `Code > Insert Roxygen Skeleton`
+ from the menu
+ 
+ Your function now looks like this:
+ 
+ ```
+ #' Title
+#'
+#' @param name 
+#'
+#' @return
+#' @export
+#'
+#' @examples
+hello <- function(name = "my friend") {
+  
+  paste("Hello", name)
+  
+}
+ ```
+ 
+ Now you can edit the description
+ 
+ ```
+ #' Say hello
+#'
+#' @param name Name of the person to say hello
+#'
+#' @return text
+#' @export
+#'
+#' @examples
+#' hello()
+#' hello("Tom")
+
+hello <- function(name = "my friend") {
+  
+  paste("Hello", name)
+  
+}
+```
+
+To "activate" the documentation, you need to go to `Tools > Project Options` and then select `Build Tools` and activate `Generate Documentation with Roxygen`
+
+![install](../images/rolkra.github.io/images/r-package-project-options.png)
+
 ### Step 5: Add Unit Testing
+
+
