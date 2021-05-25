@@ -83,12 +83,12 @@ After a while, you new package {hello} is build and ready to use!
 ### Step 4: Add Documentation
 
 To add a documentation to your function, open the file `R/hello.R`, go to the top of the function and select `Code > Insert Roxygen Skeleton`
- from the menu
+from the menu
  
- Your function now looks like this:
+Your function now looks like this:
  
- ```
- #' Title
+```
+#' Title
 #'
 #' @param name 
 #'
@@ -101,12 +101,12 @@ hello <- function(name = "my friend") {
   paste("Hello", name)
   
 }
- ```
+```
  
  Now you can edit the description
  
- ```
- #' Say hello
+```
+#' Say hello
 #'
 #' @param name Name of the person to say hello
 #'
@@ -143,7 +143,7 @@ Now you have new `tests` folder
 
 There is a lot more you could do, specially if you want to put your package on CRAN
 
-Take a look here: https://r-pkgs.org/
+Take a look here: [https://r-pkgs.org/] (r-pkgs.org)
 
 
 
