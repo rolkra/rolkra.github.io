@@ -5,7 +5,7 @@ title: How to build an R-package in under 10 minutes!
 
 R-packages are a great way to structure and share code. Let's give it a try!
 
-![Growing trees](../images/trees-thehardway.jpg)
+![Growing trees](../images/rolkra.github.io/images/16219521337980.jpg)
 
 ## Where to start from
 
