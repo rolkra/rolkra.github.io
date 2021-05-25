@@ -66,6 +66,8 @@ LazyData: true
 ```
 So, typically you edit at least `Title`, `Author`, `Maintainer` and `Description`
 
+If you are using other packages in your code, you need to add an section called `Imports:` with all packages seperated with a comma. In your code you need to refere to functions of a package as package::function().
+
 If you want to use a license, you can do that with the following R-code (in the R-console, `name` is the name of the copyright holder). If {usethis} is not installed, do that before.
 
 ```R
