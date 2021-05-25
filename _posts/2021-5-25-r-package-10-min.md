@@ -38,13 +38,13 @@ Start RStudio and Creat a new Project:
 
 `File > New Project ... > New Directory > R Package`
 
-![wizard](../images/rolkra.github.io/images/r-package-new-project-wizard.png)
+![wizard](../images/r-package-new-project-wizard.png)
 
 Enter the name of the package, the files containing R-functions you want to use in the package, and define the package-folder.
 
 Then you should have a new "Build" Section in the upper right pane.
 
-![build](../images/rolkra.github.io/images/r-package-build.png)
+![build](../images/r-package-build.png)
 
 
 ### Step 2: Update DESCRIPTION
@@ -78,7 +78,7 @@ Simply press the `Install and Restart` Button in the Git-Tab (upper right pane)
 
 After a while, you new package {hello} is build and ready to use!
 
-![install](../images/rolkra.github.io/images/r-package-install.png)
+![install](../images/r-package-install.png)
 
 ### Step 4: Add Documentation
 
@@ -138,5 +138,12 @@ usethis::use_test(name = "hello")
 ```
 
 Now you have new `tests` folder
+
+## Advanced
+
+There is a lot more you could do, specially if you want to put your package on CRAN
+
+Take a look here: https://r-pkgs.org/
+
 
 
