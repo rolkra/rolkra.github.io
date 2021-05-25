@@ -130,4 +130,13 @@ To "activate" the documentation, you need to go to `Tools > Project Options` and
 
 ### Step 5: Add Unit Testing
 
+To use unit testing, run this R-code in the R-console (you may change "hello" to what you want to test in your package)
+
+```
+usethis::use_testthat()
+usethis::use_test(name = "hello")
+```
+
+Now you have new `tests` folder
+
 
