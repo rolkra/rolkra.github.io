@@ -5,7 +5,7 @@ title: How to build an R-package in under 10 minutes!
 
 R-packages are a great way to structure and share code. Let's give it a try!
 
-![Growing trees](../images/rolkra.github.io/images/16219521337980.jpg)
+![hello](../images/rolkra.github.io/images/r-package-intro.jpg)
 
 ## Where to start from
 
@@ -37,6 +37,15 @@ So, if you call `hello("Tom")` you get
 Start RStudio and Creat a new Project:
 
 `File > New Project ... > New Directory > R Package`
+
+![wizard](../images/rolkra.github.io/images/r-package-new-project-wizard.png)
+
+Enter the name of the package, the files containing R-functions you want to use in the package, and define the package-folder.
+
+Then you should have a new "Build" Section in the upper right pane.
+
+![build](../images/rolkra.github.io/images/r-package-build.png)
+
 
 ### Step 2: Update DESCRIPTION
 
