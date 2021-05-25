@@ -139,11 +139,20 @@ usethis::use_test(name = "hello")
 
 Now you have new `tests` folder
 
+You can add tests to your test-file (in this case tests/testthat/test-hello.R)
+
+```R
+test_that("hello", {
+  expect_equal(hello(), "Hello my friend")
+  expect_equal(hello("Tom"), "Hello Tom")
+})
+```
+
 ## Advanced
 
 There is a lot more you could do, specially if you want to put your package on CRAN
 
-Take a look here: [https://r-pkgs.org/] (r-pkgs.org)
+Take a look here: <https://r-pkgs.org/>
 
 
 
