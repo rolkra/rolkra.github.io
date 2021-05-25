@@ -5,7 +5,7 @@ title: How to build an R-package in under 10 minutes!
 
 R-packages are a great way to structure and share code. Let's give it a try!
 
-![hello](../images/rolkra.github.io/images/r-package-intro.jpg)
+![hello](../images/r-package-intro.jpg)
 
 ## Where to start from
 
@@ -126,7 +126,7 @@ hello <- function(name = "my friend") {
 
 To "activate" the documentation, you need to go to `Tools > Project Options` and then select `Build Tools` and activate `Generate Documentation with Roxygen`
 
-![install](../images/rolkra.github.io/images/r-package-project-options.png)
+![install](../images/r-package-project-options.png)
 
 ### Step 5: Add Unit Testing
 
