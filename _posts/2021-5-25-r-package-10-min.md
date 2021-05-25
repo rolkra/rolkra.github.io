@@ -49,6 +49,29 @@ Then you should have a new "Build" Section in the upper right pane.
 
 ### Step 2: Update DESCRIPTION
 
+Now you can describe what you package is doing, by editing the file `DESCRIPTION`:
+
+```
+Package: help
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+```
+So, typically you edit at least `Title`, `Author`, `Maintainer` and `Description`
+
+If you want to use a license, you can do that with the following R-code (in the R-console, `name` is the name of the copyright holder)
+
+```R
+usethis::use_mit_license(name = "Roland Krasser")
+```
+
 ### Step 3: Build package
 
 ### Step 4: Add Documentation
