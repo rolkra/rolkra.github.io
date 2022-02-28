@@ -54,3 +54,12 @@ $ cp info.txt info2.txt
 $ ls 
 data  info.txt  info2.txt  R 
 ```
+
+You can copy multiple files into a directory too.
+In this example, we copy the files info.txt and info2.txt into the data directory.
+
+```console
+$ ls 
+data  info.txt  info2.txt  R 
+cp info.txt info2.txt data
+```
