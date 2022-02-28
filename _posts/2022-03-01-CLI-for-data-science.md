@@ -62,4 +62,6 @@ In this example, we copy the files info.txt and info2.txt into the data director
 $ ls 
 data  info.txt  info2.txt  R 
 $ cp info.txt info2.txt data
+$ ls data
+info.txt  info2.txt
 ```
