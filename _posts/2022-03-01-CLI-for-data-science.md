@@ -7,8 +7,6 @@ title: Must know CLI-commands for Data Scientists
 
 ```pwd``` prints the working directory
 
-```R
-hello <- function(name = "my friend") {
-   paste("Hello", name)
-}
+```CLI
+pwd 
 ```
