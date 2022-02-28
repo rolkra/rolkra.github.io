@@ -129,10 +129,24 @@ To delete a directory you must use ```rmdir``` (to prevent you accidentally dele
 
 ### rmdir (remove directory)
 
+Use ```rmdir``` to remove a directory 
+
 ```console
 $ ls
 data  data2  info.txt  info2.txt  R 
 $ rmdir data2
 $ ls
 data  info.txt  info2.txt  R 
+```
+
+### mkdir (make directory)
+
+Use ```mkdir``` to remove a directory
+
+```console
+$ ls
+data  info.txt  info2.txt  R 
+$ mkdir data2
+$ ls
+data  data2  info.txt  info2.txt  R 
 ```
