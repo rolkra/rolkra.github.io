@@ -65,3 +65,74 @@ $ cp info.txt info2.txt data
 $ ls data
 info.txt  info2.txt
 ```
+
+### mv (move)
+
+```mv``` let you move (and rename) a file or directory
+
+To move file info2.txt into data directory:
+
+```console
+$ ls 
+data  info.txt  info2.txt  R 
+$ mv info2.txt data
+$ ls
+data  info.txt  R 
+```
+
+To rename file info.txt to info3:
+
+```console
+$ ls 
+data  info.txt  R 
+$ mv info.txt info3.txt
+$ ls
+data  info.txt  info3.txt  R 
+```
+
+To rename a directory:
+
+```console
+$ ls 
+data  info.txt  R 
+$ mv data data2
+$ ls
+data2  info.txt  R 
+```
+
+
+### rm (remove)
+
+Use ```rm``` to remove (delete) a file or directory
+
+To delete a single file:
+
+```console
+$ ls 
+data  info.txt  info2.txt  info3.txt  R 
+$ rm info3.txt
+$ ls
+data  info.txt  info2.txt  R 
+```
+
+To delete multiple files:
+
+```console
+$ ls
+data  info.txt  info2.txt  R 
+$ rm info.txt info2.txt
+$ ls
+data  R 
+```
+
+To delete a directory you must use ```rmdir``` (to prevent you accidentally deleting an entire directory)
+
+### rmdir (remove directory)
+
+```console
+$ ls
+data  data2  info.txt  info2.txt  R 
+$ rmdir data2
+$ ls
+data  info.txt  info2.txt  R 
+```
