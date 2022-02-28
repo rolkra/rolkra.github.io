@@ -45,6 +45,15 @@ $ pwd
 
 ### cp - copy
 
+```cp``` let you copy a file or directory
+
+```console
+$ ls 
+data  info.txt  R 
+$ cp info.txt info2.txt
+$ ls 
+data  info.txt  info2.txt  R 
+```
 
 
 
