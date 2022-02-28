@@ -61,5 +61,5 @@ In this example, we copy the files info.txt and info2.txt into the data director
 ```console
 $ ls 
 data  info.txt  info2.txt  R 
-cp info.txt info2.txt data
+$ cp info.txt info2.txt data
 ```
