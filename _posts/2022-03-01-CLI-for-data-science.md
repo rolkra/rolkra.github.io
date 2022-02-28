@@ -5,7 +5,7 @@ title: Must know CLI-commands for Data Scientists
 
 ## File system
 
-### pwd - print working directory
+### pwd (print working directory)
 
 ```pwd``` prints the absolute path of your current working directory
 
@@ -14,7 +14,7 @@ $ pwd
 /home/myuser
 ```
 
-### ls - list
+### ls (list)
 
 ```ls``` lists all contents of your current directory (the one displayed by pwd) 
 
@@ -27,7 +27,7 @@ data  info.txt  R
 * ```ls data``` lists all contents of the directory data (relative directory)
 * ```ls -al``` lists all contents of the current directory, including hidden files and showing additional information
 
-### cd - change directory
+### cd (change directory)
 
 Use ```cd``` to change directory
 
@@ -43,7 +43,7 @@ $ pwd
 * Use ```cd ./R``` to change to directory R (from your current directory)
 * Use ```cd ~``` to change to your home directory
 
-### cp - copy
+### cp (copy)
 
 ```cp``` let you copy a file or directory
 
@@ -54,6 +54,3 @@ $ cp info.txt info2.txt
 $ ls 
 data  info.txt  info2.txt  R 
 ```
-
-
-
