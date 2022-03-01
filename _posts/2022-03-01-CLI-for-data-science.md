@@ -239,4 +239,12 @@ $ cut -d , f 2-3 data.csv
 * -d = defining the delimiter (in this case we use ",")
 * -f = defining the fields (columns) to view (in this case columns 2-3)
 
+### grep (search text)
+
+Use ```grep``` to search for text or patterns in text files
+
+* ```grep Robert data.csv``` will search for the string Robert in data.csv
+* ```grep Robert data.csv -c``` will search for the string Robert in data.csv and returns the count of matchning
+* ```grep Robert data.csv -c -i``` will search for the string Robert in data.csv and returns the count of matchning, ignoring upper/lower case
+
 
