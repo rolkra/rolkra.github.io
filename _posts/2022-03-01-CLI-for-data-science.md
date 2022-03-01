@@ -241,6 +241,8 @@ $ cut -d , f 2-3 data.csv
 * -d = defining the delimiter (in this case we use ",")
 * -f = defining the fields (columns) to view (in this case columns 2-3)
 
+## Search content
+
 ### grep (search text)
 
 Use ```grep``` to search for text or patterns in text files
