@@ -3,6 +3,12 @@ layout: post
 title: Must know CLI-commands for Data Scientists
 ---
 
+## Basics
+
+* Use ```man``` to view the manual of a command. Example: ```man man``` shows the manual of the ```man``` command. Use Space to skip to the next page and :q to quit.
+* Use ```hist``` to show the history of commands used
+* Use "Key Up" to show the last command
+
 ## Files & Directories
 
 ### pwd (print working directory)
