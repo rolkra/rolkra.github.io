@@ -11,7 +11,8 @@ CLI stands for Command Line Interface. It is a program that accepts text input t
 
 * Use ```man``` to view the manual of a command. Example: ```man man``` shows the manual for the ```man``` command. Use Space to skip to the next page and :q to quit.
 * Use ```hist``` to show the history of commands used
-* Use "Key Up" to show the last command
+* Use "Up Key" to show the last command
+* Use "Tab Key" for auto-completion
 * Use ```>``` to redirect the output from screen to a file (e.g. ```ls > out.txt``` writes the output of the ls command into the file out.txt)
 * Use ```|``` to "pipe" the output from one command as input for the next command (e.g. ```head -n 10 info.txt | tail -n 2``` takes the first ten lines of info.txt and then shows the last 2 lines of those 10 lines)
 
