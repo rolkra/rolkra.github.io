@@ -3,13 +3,17 @@ layout: post
 title: Must know CLI-commands for Data Scientists
 ---
 
+Learn the most important linux CLI line commands that help you become a more efficient and productive data scientist
+
 ## Intro
 
-* Use ```man``` to view the manual of a command. Example: ```man man``` shows the manual of the ```man``` command. Use Space to skip to the next page and :q to quit.
+CLI stands for Command Line Interface. It is a program that accepts text input to execute operating system functions. Bash is a popular Unix shell to run CLI commands.
+
+* Use ```man``` to view the manual of a command. Example: ```man man``` shows the manual for the ```man``` command. Use Space to skip to the next page and :q to quit.
 * Use ```hist``` to show the history of commands used
 * Use "Key Up" to show the last command
 * Use ```>``` to redirect the output from screen to a file (e.g. ```ls > out.txt``` writes the output of the ls command into the file out.txt)
-* Use ```|``` to "pipe" the output from one command as input for the next command (e.g. ```head -n 10 info.txt | tail -n 2``` takes the first ten lines of info.txt and then shows the last 2 lines (of those 10 lines))
+* Use ```|``` to "pipe" the output from one command as input for the next command (e.g. ```head -n 10 info.txt | tail -n 2``` takes the first ten lines of info.txt and then shows the last 2 lines of those 10 lines)
 
 ## Files & Directories
 
@@ -160,6 +164,15 @@ $ ls
 data  data2  info.txt  info2.txt  R 
 ```
 
+### Wildcards
+
+You can use wildcards to define which files to use.
+
+* ```*``` is used for "any string"
+* ```?``` is used for "any single character"
+* ```[...]``` is used for a list of single characters (e.g. [234] accepts the character 2,3, and 4)
+* ```{..., ...}``` is used for a list of patterns (e.g. {*.txt, *.csv} accepts all files with extensions txt and csv)
+ 
 ## View content
 
 ### cat (concatenate)
