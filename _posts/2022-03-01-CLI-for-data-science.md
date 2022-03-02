@@ -3,7 +3,7 @@ layout: post
 title: Must know CLI-commands for Data Scientists
 ---
 
-Learn the most important linux CLI line commands that help you become a more efficient and productive data scientist
+Learn the most important Linux CLI commands that help you become a more efficient and productive data scientist!
 
 ## Intro
 
