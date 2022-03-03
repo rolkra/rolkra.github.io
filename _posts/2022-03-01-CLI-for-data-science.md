@@ -263,9 +263,10 @@ $ cut -d , f 2-3 data.csv
 
 Use ```grep``` to search for text or patterns in text files
 
-* ```grep Robert data.csv``` will search for the string Robert in data.csv
-* ```grep Robert data.csv -c``` will search for the string Robert in data.csv and returns the count of matchning
-* ```grep Robert data.csv -c -i``` will search for the string Robert in data.csv and returns the count of matchning, ignoring upper/lower case
+* ```grep Robert data.csv``` will print all lines containing the string Robert in data.csv
+* ```grep -c Robert data.csv``` will search for the string Robert in data.csv and returns the count of matchning
+* ```grep -c -i Robert data.csv``` will search for the string Robert in data.csv and returns the count of matchning, ignoring upper/lower case
+* ```grep -v Robert data.csv``` will print all lines NOT containing the string Robert
 
 ### wc (word count)
 
