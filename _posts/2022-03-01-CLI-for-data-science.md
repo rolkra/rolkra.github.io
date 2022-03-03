@@ -290,6 +290,7 @@ Use ```sort``` to sort lines of a text-file
 * ```sort -r data.csv``` sorts lines in data.csv and reverse order
 * ```sort -b data.csv``` sorts lines in data.csv and ignore leading blanks
 * ```sort -f data.csv``` sorts lines in data.csv case insensitive
+* ```sort -n data.csv``` sorts lines in data.csv compare according to string numerical value
  
 ### uniq
 
