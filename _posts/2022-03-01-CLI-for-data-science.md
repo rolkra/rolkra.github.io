@@ -17,6 +17,7 @@ CLI stands for Command Line Interface. It is a program that accepts text input t
 (e.g. ```ls > out.txt``` writes the output of the ls command into the file out.txt)
 * Use ```|``` to "pipe" the output from one command as input for the next command 
 (e.g. ```head -n 10 info.txt | tail -n 2``` takes the first ten lines of info.txt and then shows the last 2 lines of those 10 lines)
+* Use ```Ctrl + C``` to stop a running program
 
 ## Files & Directories
 
@@ -278,3 +279,21 @@ hello world
 $ wc info.txt
  1  2 12 info.txt
 ```
+
+## sort & uniq (Sort & Unique)
+
+### sort
+
+Use ```sort``` to sort lines of a text-file
+
+* ```sort data.csv``` sorts lines in data.csv
+* ```sort -r data.csv``` sorts lines in data.csv and reverse order
+* ```sort -b data.csv``` sorts lines in data.csv and ignore leading blanks
+* ```sort -f data.csv``` sorts lines in data.csv case insensitive
+ 
+### uniq
+
+Use ```uniq``` to remove duplicate lines from a text-file
+
+* ```uniq data.csv``` removes duplicate lines from a text-file
+* ```uniq -c data.csv``` removes duplicate lines from a text-file and print count
