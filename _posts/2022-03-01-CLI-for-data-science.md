@@ -104,7 +104,7 @@ $ ls
 data  info.txt  R 
 $ mv info.txt info3.txt
 $ ls
-data  info.txt  info3.txt  R 
+data  info3.txt  R 
 ```
 
 To rename a directory:
