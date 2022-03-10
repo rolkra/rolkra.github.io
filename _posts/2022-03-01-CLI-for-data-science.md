@@ -333,7 +333,7 @@ $ head -n $lines data.csv
 ## Loops
 
 ```console
-$ for filetype in gif txt csv; do echo $filetype
+$ for filetype in gif txt csv; do echo $filetype; done
 gif
 txt
 csv
