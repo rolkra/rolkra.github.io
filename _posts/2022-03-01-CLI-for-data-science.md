@@ -317,3 +317,15 @@ $ myname=Bill
 $ echo $myname
 Bill
 ```
+
+You can use variables in commands:
+
+```console
+$ lines=3
+$ echo $lines
+3
+$ head -n $lines data.csv
+1, "Robert", 100
+2, "Joe", 200
+3, "Jack", 150
+```
