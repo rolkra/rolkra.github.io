@@ -329,3 +329,12 @@ $ head -n $lines data.csv
 2, "Joe", 200
 3, "Jack", 150
 ```
+
+## Loops
+
+```console
+$ for filetype in gif txt csv; do echo $filetype
+gif
+txt
+csv
+```
