@@ -298,3 +298,22 @@ Use ```uniq``` to remove duplicate lines from a text-file
 
 * ```uniq data.csv``` removes duplicate lines from a text-file
 * ```uniq -c data.csv``` removes duplicate lines from a text-file and print count
+
+## Variables
+
+Use ```echo``` to print the value of a variable
+
+Environment variables:
+
+* ```echo $USER``` prints the user-name
+* ```echo $HOME``` prints the home directory
+* ```echo $PWD``` prints the name of the present working directory
+* ```echo $SHELL``` prints the name of the shell
+
+Create your own variables:
+
+```console
+$ myname=Bill
+$ echo $myname
+Bill
+```
