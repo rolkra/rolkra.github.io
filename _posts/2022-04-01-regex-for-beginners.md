@@ -29,9 +29,9 @@ grep("Orange", c("Apple", "Orange", "Lemon"))
 ```grep``` is case sensitive by default.
 To switch off case sensitivity you can use the parameter ```ignore.case = TRUE```
 
-* grep("a", c("Apple", "Orange", "Lemon"), ignore.case = TRUE) now returns ```1 2```
-* grep("ORANGE", c("Apple", "Orange", "Lemon"), ignore.case = TRUE) returns ```2```
-* grep("orange", c("Apple", "Orange", "Lemon"), ignore.case = TRUE) returns ```2```
+* ```grep("a", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` now returns ```1 2```
+* ```grep("ORANGE", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` returns ```2```
+* ```grep("orange", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` returns ```2```
 
 ## Starts With
 
