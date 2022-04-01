@@ -7,7 +7,7 @@ Introduction to Regular Expressions (regex) in R
 
 ## Intro
 
-As a Data Scientist you will work with regular expressions (regex). This is how to use regex to search for patterns in a text:
+As a Data Scientist you will work with regular expressions (regex). This is how to use regex to search for patterns in a text-vector:
 
 ```R
 > grep("Orange", c("Apple", "Orange", "Lemon"))
@@ -26,7 +26,7 @@ As a Data Scientist you will work with regular expressions (regex). This is how 
 To return the value instead of the index use parameter ```value = TRUE```
 
 ```R
-> grep("a", c("Apple", "Orange", "Lemon"))
+> grep("a", c("Apple", "Orange", "Lemon"), value = TRUE)
 [1] Orange
 ```
 
