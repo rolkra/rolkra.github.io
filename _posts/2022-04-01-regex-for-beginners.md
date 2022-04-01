@@ -32,8 +32,17 @@ To switch off case sensitivity you can use the parameter ```ignore.case = TRUE``
 * grep("a", c("Apple", "Orange", "Lemon"), ignore.case = TRUE) now returns ```1 2```
 * grep("ORANGE", c("Apple", "Orange", "Lemon"), ignore.case = TRUE) returns ```2```
 * grep("orange", c("Apple", "Orange", "Lemon"), ignore.case = TRUE) returns ```2```
-* 
 
+## Starts With
 
+To search for a pattern at the beginning of a string you can use ```^```:
 
+* ```grep("^A", c("Apple", "Orange", "Lemon"))``` returns ```1```
+* ```grep("^p", c("Apple", "Orange", "Lemon"))``` has no matach
 
+## Ends With
+
+To search for a pattern at the end of a string you can use ```$```:
+
+* ```grep("e$", c("Apple", "Orange", "Lemon"))``` returns ```1 2```
+* ```grep("n$", c("Apple", "Orange", "Lemon"))``` returns ```3```
