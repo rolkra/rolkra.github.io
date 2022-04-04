@@ -50,23 +50,23 @@ If you want to use {tidyverse} you can use {stringr}:
 ```grep``` is case sensitive by default.
 To switch off case sensitivity you can use the parameter ```ignore.case = TRUE```
 
-* ```grep("a", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` now returns ```1 2```
-* ```grep("ORANGE", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` returns ```2```
-* ```grep("orange", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` returns ```2```
+* ```grep("a", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` <br>now returns ```1 2```
+* ```grep("ORANGE", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` <br>returns ```2```
+* ```grep("orange", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` <br>returns ```2```
 
 ## Starts With
 
 To search for a pattern at the beginning of a string you can use ```^```:
 
-* ```grep("^A", c("Apple", "Orange", "Lemon"))``` returns ```1```
-* ```grep("^p", c("Apple", "Orange", "Lemon"))``` has no matach
+* ```grep("^A", c("Apple", "Orange", "Lemon"))``` <br>returns ```1```
+* ```grep("^p", c("Apple", "Orange", "Lemon"))``` <br>has no matach
 
 ## Ends With
 
 To search for a pattern at the end of a string you can use ```$```:
 
-* ```grep("e$", c("Apple", "Orange", "Lemon"))``` returns ```1 2```
-* ```grep("n$", c("Apple", "Orange", "Lemon"))``` returns ```3```
+* ```grep("e$", c("Apple", "Orange", "Lemon"))``` <br>returns ```1 2```
+* ```grep("n$", c("Apple", "Orange", "Lemon"))``` <br>returns ```3```
 
 ## Starts & Ends With
 
@@ -87,11 +87,11 @@ To control the number of characters between start and end:
 > str = c("Apple", "Ape", "Ae")
 ```
 
-* ```grep("^A.*e$", str)``` returns ```1 2 3``` (Starts with "A" and ends with "e")
-* ```grep("^A.+e$", str)``` returns ```1 2``` (Starts with "A" and ends with "e", between at least ONE character)
-* ```grep("^A.{3}e$", str)``` returns ```1``` (Starts with "A" and ends with "e", between at EXACTLY 3 character)
-* ```grep("^A.{2,}e$", str)``` returns ```1``` (Starts with "A" and ends with "e", between at 2 or more character)
-* ```grep("^A.{1,3}e$", str)``` returns ```1 2``` (Starts with "A" and ends with "e", between at min 1 max 3 character)
+* ```grep("^A.*e$", str)``` <br>returns ```1 2 3``` <br>(Starts with "A" and ends with "e")
+* ```grep("^A.+e$", str)``` <br>returns ```1 2``` <br>(Starts with "A" and ends with "e", between at least ONE character)
+* ```grep("^A.{3}e$", str)``` <br>returns ```1``` <br>(Starts with "A" and ends with "e", between at EXACTLY 3 character)
+* ```grep("^A.{2,}e$", str)``` <br>returns ```1``` <br>(Starts with "A" and ends with "e", between at 2 or more character)
+* ```grep("^A.{1,3}e$", str)``` <br>returns ```1 2``` <br>(Starts with "A" and ends with "e", between at min 1 max 3 character)
 
 
 ## Escaping
