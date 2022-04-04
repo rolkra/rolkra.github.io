@@ -81,6 +81,19 @@ To combine both:
 * ```.*``` = any string
 * ```e$``` = ends with "e"
 
+To control the number of characters between:
+
+```R
+> str = c("Apple", "Ape", "Ae")
+```
+
+* ```grep("^A.*e$", str)``` returns ```1 2 3``` (Starts with "A" and ends with "e")
+* ```grep("^A.+e$", str)``` returns ```1 2``` (Starts with "A" and ends with "e", between at least ONE character)
+* ```grep("^A.{3}e$", str)```
+* ```grep("^A.{2,}e$", str)```
+* ```grep("^A.{1,3}e$", str)```
+
+
 ## Escaping
 
 ```R
