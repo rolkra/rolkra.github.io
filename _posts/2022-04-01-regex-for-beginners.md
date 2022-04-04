@@ -71,11 +71,11 @@ Now matches "Apple" and "Orange" as both contain "a" (ignoring upper/lower-case)
 
 ```R
 > library(stringr)
-> str_detect(c("Apple", "Orange", "Lemon"), regex("a", ignore_case = TRUE))
+> str <- c("Apple", "Orange", "Lemon")
+> str_detect(str, regex("a", ignore_case = TRUE))
 [1]  TRUE  TRUE FALSE
 ```
 The same using {tidyverse} and {stringr}
-
 
 ## Starts With
 
@@ -116,13 +116,30 @@ To control the number of characters between start and end you can use ```*```, `
 * ```.{3,}``` = 3 or more character
 * ```.{1,3}``` = between 1 and 3 character
 
-
 ```R
 > str = c("Apple", "Ape", "Ae")
 > grep("^A.{2,}e$", str)
 [1] 1
 ```
 Only "Apple" starts with "A", ends with "e" and has of 2+ character inbetween!
+
+## Which character?
+
+To search for ANY character you can use ```.```
+
+If you want to be more specific:
+
+* ```[a-z]``` = letter a to z (lower case) 
+* ```[A-Z]``` = letter A to Z (upper case)
+* ```[ACES]``` = letter A or C or E or S
+* ```[0-9]``` = a digit (0 to 9)
+* ```[1234]``` = digit 1 or 2 or 3 or 4
+* ```[A-z0-9]``` = letters A to Z or a to z or a digit (0 to 9)
+
+You can exclude characters too (using ```^```):
+
+* ```[^0-9]``` = a non digit (all characters, but no 0 to 9)
+* ```[^A-Z]``` = all characters, but no upper case letter (A to Z)
 
 ## Escaping
 
