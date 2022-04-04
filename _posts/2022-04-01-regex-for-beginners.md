@@ -41,32 +41,59 @@ If you want to use {tidyverse} you can use {stringr}:
 
 ## Basic Examples
 
-* ```grep("Lemon", c("Apple", "Orange", "Lemon"))``` <br>returns ```3```
-* ```grep("e", c("Apple", "Orange", "Lemon"))``` <br>returns ```1 2 3```
-* ```grep("a", c("Apple", "Orange", "Lemon"))``` <br>returns ```2``` because it is case sensitive by default
+ ```R
+> grep("Lemon", c("Apple", "Orange", "Lemon"))
+[1] 3
+``` 
+
+ ```R
+> grep("e", c("Apple", "Orange", "Lemon"))
+[1] 1 2 3
+``` 
+Matches all tree, because all contain the character "e"
+
+```R
+> grep("a", c("Apple", "Orange", "Lemon"))
+[1] 2
+```
+Matches "Orange" (but not "Apple"), because it is case sensitive by default
 
 ## Case Sensitive
 
 ```grep``` is case sensitive by default.
 To switch off case sensitivity you can use the parameter ```ignore.case = TRUE```
 
-* ```grep("a", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` <br>now returns ```1 2```
-* ```grep("ORANGE", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` <br>returns ```2```
-* ```grep("orange", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)``` <br>returns ```2```
+```R
+> grep("a", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)
+[1] 1 2
+```
+Now matches "Apple" and "Orange" as both contain "a" (ignoring upper/lower-case)
+
+```R
+> library(stringr)
+> str_detect(c("Apple", "Orange", "Lemon"), regex("a", ignore_case = TRUE))
+[1]  TRUE  TRUE FALSE
+```
+The same using {tidyverse} and {stringr}
+
 
 ## Starts With
 
 To search for a pattern at the beginning of a string you can use ```^```:
 
-* ```grep("^A", c("Apple", "Orange", "Lemon"))``` <br>returns ```1```
-* ```grep("^p", c("Apple", "Orange", "Lemon"))``` <br>has no matach
+```R
+> grep("^a", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)
+[1] 1
+```
+Now only "Apple" matches, because the "a" in "Orange" is in the middle.
 
 ## Ends With
 
-To search for a pattern at the end of a string you can use ```$```:
-
-* ```grep("e$", c("Apple", "Orange", "Lemon"))``` <br>returns ```1 2```
-* ```grep("n$", c("Apple", "Orange", "Lemon"))``` <br>returns ```3```
+```R
+> grep("e$", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)
+[1] 1 2
+```
+Matches "Apple" and "Orange", but not "Lemon", because the "e" in Lemon is not at the end!
 
 ## Starts & Ends With
 
@@ -81,18 +108,21 @@ To combine both:
 * ```.*``` = any string
 * ```e$``` = ends with "e"
 
-To control the number of characters between start and end:
+To control the number of characters between start and end you can use ```*```, ```+``` and ```{ }```:
+
+* ```.*``` = any string 
+* ```.+``` = any string with minimum length of 1 character
+* ```.{3}``` = exactly 3 character
+* ```.{3,}``` = 3 or more character
+* ```.{1,3}``` = between 1 and 3 character
+
 
 ```R
 > str = c("Apple", "Ape", "Ae")
+> grep("^A.{2,}e$", str)
+[1] 1
 ```
-
-* ```grep("^A.*e$", str)``` <br>returns ```1 2 3``` <br>(Starts with "A" and ends with "e")
-* ```grep("^A.+e$", str)``` <br>returns ```1 2``` <br>(Starts with "A" and ends with "e", between at least ONE character)
-* ```grep("^A.{3}e$", str)``` <br>returns ```1``` <br>(Starts with "A" and ends with "e", between at EXACTLY 3 character)
-* ```grep("^A.{2,}e$", str)``` <br>returns ```1``` <br>(Starts with "A" and ends with "e", between at 2 or more character)
-* ```grep("^A.{1,3}e$", str)``` <br>returns ```1 2``` <br>(Starts with "A" and ends with "e", between at min 1 max 3 character)
-
+Only "Apple" starts with "A", ends with "e" and has of 2+ character inbetween!
 
 ## Escaping
 
@@ -108,7 +138,9 @@ This result may surprise you if you are not used regex. Here "." is not the char
 [1] 1 2
 ```
 
-In they same way you need to escape:
+Charcters you need to escape:
 
+* ```.``` =  ```\\.```
 * ```+``` =  ```\\+```
 * ```*``` =  ```\\*```
+* ```"``` =  ```\\"```
