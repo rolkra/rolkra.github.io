@@ -46,11 +46,13 @@ If you want to use {tidyverse} you can use {stringr}:
 [1] 3
 ``` 
 
+Matches only the 3rd element (Lemon)
+
  ```R
 > grep("e", c("Apple", "Orange", "Lemon"))
 [1] 1 2 3
 ``` 
-Matches all tree, because all contain the character "e"
+Matches all, because all contain the character "e"
 
 ```R
 > grep("a", c("Apple", "Orange", "Lemon"))
@@ -134,7 +136,7 @@ If you want to be more specific:
 * ```[ACES]``` = letter A or C or E or S
 * ```[0-9]``` = a digit (0 to 9)
 * ```[1234]``` = digit 1 or 2 or 3 or 4
-* ```[A-z0-9]``` = letters A to Z or a to z or a digit (0 to 9)
+* ```[A-z0-9]``` = letter (A to Z, a to z) or digit (0 to 9)
 
 You can exclude characters too (using ```^```):
 
