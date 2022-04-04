@@ -41,9 +41,9 @@ If you want to use {tidyverse} you can use {stringr}:
 
 ## Basic Examples
 
-* ```grep("Lemon", c("Apple", "Orange", "Lemon"))``` returns ```3```
-* ```grep("e", c("Apple", "Orange", "Lemon"))``` returns ```1 2 3```
-* ```grep("a", c("Apple", "Orange", "Lemon"))``` returns ```2``` because it is case sensitive by default
+* ```grep("Lemon", c("Apple", "Orange", "Lemon"))``` <br>returns ```3```
+* ```grep("e", c("Apple", "Orange", "Lemon"))``` <br>returns ```1 2 3```
+* ```grep("a", c("Apple", "Orange", "Lemon"))``` <br>returns ```2``` because it is case sensitive by default
 
 ## Case Sensitive
 
