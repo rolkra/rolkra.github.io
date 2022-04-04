@@ -7,14 +7,16 @@ Introduction to Regular Expressions (regex) in R
 
 ## Intro
 
-As a Data Scientist you will work with regular expressions (regex). This is how to use regex to search for patterns in a text-vector:
+As a Data Scientist you will work with regular expressions (regex). 
+
+There are several ways how to use regex to search for patterns in a text-vector:
+
+```grep``` is a base-R function and returns a vector containing the (integer) indices of the matches. So in this case it returns 2.
 
 ```R
 > grep("Orange", c("Apple", "Orange", "Lemon"))
 [1] 2
 ```
-
-```grep``` is a base-R function and returns a vector containing the (integer) indices of the matches. So in this case it returns 2.
 
 ```grepl``` returns a locial vector
 
@@ -28,6 +30,13 @@ To return the value instead of the index use parameter ```value = TRUE```
 ```R
 > grep("a", c("Apple", "Orange", "Lemon"), value = TRUE)
 [1] Orange
+```
+
+If you want to use {tidyverse} you can use {stringr}:
+
+```R
+> stringr::str_detect(c("Apple", "Orange", "Lemon"), "Orange")
+[1] FALSE  TRUE FALSE
 ```
 
 ## Basic Examples
@@ -88,5 +97,5 @@ This result may surprise you if you are not used regex. Here "." is not the char
 
 In they same way you need to escape:
 
-* ```+```= ```\\+```
-* ```*```= ```\\*```
+* ```+``` =  ```\\+```
+* ```*``` =  ```\\*```
