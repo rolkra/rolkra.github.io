@@ -119,6 +119,7 @@ To control the number of characters between start and end you can use ```*```, `
 * ```.?``` = string with length 0 or 1
 * ```.{3}``` = exactly 3 character
 * ```.{3,}``` = 3 or more character
+* ```.{,3}``` = maximum 3 character
 * ```.{1,3}``` = between 1 and 3 character
 
 ```R
