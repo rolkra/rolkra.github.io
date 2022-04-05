@@ -160,7 +160,7 @@ This result may surprise you if you are not used to regex. Here "." is not the c
 [1] 1 2
 ```
 
-Charcters you need to escape:
+Charcters you need to escape (using ```\\```):
 
 * ```.``` =  ```\\.```
 * ```+``` =  ```\\+```
