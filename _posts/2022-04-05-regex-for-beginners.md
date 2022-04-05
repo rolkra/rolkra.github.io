@@ -195,8 +195,8 @@ Here "." is just the character "." (no special meaning). So only the first item 
 If you want to mix a regex with a literal expression, you can use ```\\Q``` and ```\\E```:
 
 ```R
-grep(".\\Q[x^2]=\\E[0-9]+", c("a[x^2]=0", "b(x^2)=1", "c[x^2]=2"))
-[1] 1 3
+grep(".\\Q[x^2]=\\E[0-9]+", c("a[x^2]=0", "b(x^2)=1")
+[1] 1
 ```
 
 * ```.``` = any character
