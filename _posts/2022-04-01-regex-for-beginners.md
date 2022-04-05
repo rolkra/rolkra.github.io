@@ -116,6 +116,7 @@ To control the number of characters between start and end you can use ```*```, `
 
 * ```.*``` = any string 
 * ```.+``` = any string with minimum length of 1 character
+* ```.?``` = string with length 0 or 1
 * ```.{3}``` = exactly 3 character
 * ```.{3,}``` = 3 or more character
 * ```.{1,3}``` = between 1 and 3 character
@@ -169,13 +170,13 @@ Charcters you need to escape (using ```\\```):
 * ```\``` =  ```\\\```
 * ```$``` =  ```\\$```
 * ```^``` =  ```\\^```
-* ```|``` =  ```\\|```
 
-And more: ```(```, ```)```, ```[```, ```]```, ```{```, ```}```  
+And more: ```?``` ```|``` ```(``` ```)``` ```[``` ```]``` ```{``` ```}```  
 
 ## Or
 
-To detect all filenames with extension ".csv" or ".txt":
+You can use ```( | )``` for a logical OR.
+Example: detect all filenames with extension ".csv" or ".txt":
 
 ```R
 > grep(".*\\.(csv|txt)", c("f1.csv", "f2.xls", "f3.txt"))
