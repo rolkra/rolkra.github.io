@@ -166,3 +166,16 @@ Charcters you need to escape:
 * ```*``` =  ```\\*```
 * ```"``` =  ```\\"```
 * ```\``` =  ```\\\```
+
+## Or
+
+To detect all filenames with extension ".csv" or ".txt":
+
+```R
+> grep("*\\.(csv|txt)", c("f1.csv", "f2.xls", "f3.txt"))
+[1] 1 3 
+```
+
+* ```*``` = any string (even lenth 0)
+* ```\\.``` = the character "." (need to escape it)
+* ```(csv|txt)``` = "csv" OR "txt
