@@ -174,9 +174,9 @@ Charcters you need to escape (using ```\\```):
 
 And more: ```?``` ```|``` ```(``` ```)``` ```[``` ```]``` ```{``` ```}```  
 
-## Fixed
+## Fixed (Literal)
 
-If you cust want to search for a string as it is, you can use ```fixed = TRUE```
+If you cust want to search for a string as it is (literal), you can use ```fixed = TRUE```
 
 ```R
 > grep(".", c("a.b.c", "a-b-c", "a^b^c"), fixed = TRUE)
@@ -189,6 +189,19 @@ Here "." is just the character "." (no special meaning). So only the first item 
 > grep(".", c("a.b.c", "a-b-c", "a^b^c"))
 [1] 1
 ```
+
+## Mix Regex + Literal
+
+If you want to mix a regex with a literal expression, you can use ```\\Q``` and ```\\E```:
+
+```R
+grep(".\\Q[x^2]=\\E[0-9]+", c("a[x^2]=0", "b(x^2)=1", "c[x^2]=2"))
+[1] 1 3
+```
+
+* ```.``` = any character
+* ```\\Q[x^2]=\\E``` = string "[x^2]=" (literal)
+* ```[0-9]+``` = one digit or more
 
 ## Or
 
