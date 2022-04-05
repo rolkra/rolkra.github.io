@@ -139,6 +139,7 @@ If you want to be more specific:
 * ```[0-9]``` = digit (0 to 9)
 * ```[1234]``` = digit 1 or 2 or 3 or 4
 * ```[A-z0-9]``` = letter (A to Z, a to z) or digit (0 to 9)
+* ```[ ]``` = blank (" ")
 
 You can exclude characters too (using ```^```):
 
@@ -166,16 +167,21 @@ Charcters you need to escape:
 * ```*``` =  ```\\*```
 * ```"``` =  ```\\"```
 * ```\``` =  ```\\\```
+* ```$``` =  ```\\$```
+* ```^``` =  ```\\^```
+* ```|``` =  ```\\|```
+
+And more: ```(```, ```)```, ```[```, ```]```, ```{```, ```}```  
 
 ## Or
 
 To detect all filenames with extension ".csv" or ".txt":
 
 ```R
-> grep("*\\.(csv|txt)", c("f1.csv", "f2.xls", "f3.txt"))
+> grep(".*\\.(csv|txt)", c("f1.csv", "f2.xls", "f3.txt"))
 [1] 1 3 
 ```
 
-* ```*``` = any string (even lenth 0)
+* ```.*``` = any string (even lenth 0)
 * ```\\.``` = the character "." (need to escape it)
 * ```(csv|txt)``` = "csv" OR "txt
