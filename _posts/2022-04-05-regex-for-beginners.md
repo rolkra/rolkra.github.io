@@ -187,7 +187,15 @@ Here "." is just the character "." (no special meaning). So only the first item 
 
 ```R
 > grep(".", c("a.b.c", "a-b-c", "a^b^c"))
-[1] 1
+[1] 1 2 3
+```
+
+You can use ```fixed``` in {stringr} too:
+
+```R
+> library(stringr)
+> str_detect("a[b", fixed("["))
+[1] TRUE 
 ```
 
 ## Mix Regex + Literal
