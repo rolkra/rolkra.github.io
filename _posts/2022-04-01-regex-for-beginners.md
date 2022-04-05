@@ -174,6 +174,24 @@ Charcters you need to escape (using ```\\```):
 
 And more: ```?``` ```|``` ```(``` ```)``` ```[``` ```]``` ```{``` ```}```  
 
+## Fixed
+
+If you cust want to search for a string as it is, you can use ```fixed = TRUE```
+
+```R
+> grep(".", c("a.b.c", "a-b-c", "a^b^c"), fixed = TRUE)
+[1] 1
+```
+
+Here "." is just the character "." (no special meaning). 
+
+```R
+> grep(".", c("a.b.c", "a-b-c", "a^b^c"))
+[1] 1
+```
+
+Without ```fixed = TRUE``` all three elements matches, because all contain "any character" (meaning of "." as a regex)
+
 ## Or
 
 You can use ```( | )``` for a logical OR.
