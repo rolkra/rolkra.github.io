@@ -25,7 +25,7 @@ There are several ways how to use regex in R to search for patterns in a text-ve
 [1] FALSE  TRUE FALSE
 ```
 
-To return the value instead of the index use parameter ```value = TRUE```
+To return the value instead of the index use parameter ```value = TRUE```:
 
 ```R
 > grep("a", c("Apple", "Orange", "Lemon"), value = TRUE)
@@ -53,13 +53,13 @@ Only the 3rd element (Lemon) matches.
 [1] 1 2 3
 ``` 
 
-All matches, because all contain the character "e"
+All matches, because all contain the character "e".
 
 ```R
 > grep("a", c("Apple", "Orange", "Lemon"))
 [1] 2
 ```
-Only "Orange" matches (but not "Apple"), because searching is case sensitive by default
+Only "Orange" matches (but not "Apple"), because searching is case sensitive by default.
 
 ## Case Sensitive
 
@@ -70,9 +70,9 @@ To switch off case sensitivity you can use the parameter ```ignore.case = TRUE``
 > grep("a", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)
 [1] 1 2
 ```
-Now "Apple" and "Orange" matches as both contain "a" (ignoring upper/lower-case)
+Now "Apple" and "Orange" matches as both contain "a" (ignoring upper/lower-case).
 
-The same using {tidyverse} and {stringr}
+The same using {tidyverse} and {stringr}:
 
 ```R
 > library(stringr)
