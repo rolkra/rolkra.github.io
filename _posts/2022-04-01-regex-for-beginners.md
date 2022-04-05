@@ -5,7 +5,7 @@ title: Regular Expressions for beginners
 
 Introduction to Regular Expressions (regex) in R
 
-# Intro
+## Intro
 
 As a Data Scientist you should know how to use regular expressions (regex). 
 
@@ -39,7 +39,7 @@ If you want to use {tidyverse} you can use {stringr}:
 [1] FALSE  TRUE FALSE
 ```
 
-# Basic Examples
+## Basic Examples
 
  ```R
 > grep("Lemon", c("Apple", "Orange", "Lemon"))
@@ -61,7 +61,7 @@ All matches, because all contain the character "e".
 ```
 Only "Orange" matches (but not "Apple"), because searching is case sensitive by default.
 
-# Case Sensitive
+## Case Sensitive
 
 ```grep``` is case sensitive by default.
 To switch off case sensitivity you can use the parameter ```ignore.case = TRUE```
@@ -81,7 +81,7 @@ The same using {tidyverse} and {stringr}:
 [1]  TRUE  TRUE FALSE
 ```
 
-# Starts With
+## Starts With
 
 To search for a pattern at the beginning of a string you can use ```^```:
 
@@ -91,7 +91,7 @@ To search for a pattern at the beginning of a string you can use ```^```:
 ```
 Now only "Apple" matches, because the "a" in "Orange" is in the middle.
 
-# Ends With
+## Ends With
 
 ```R
 > grep("e$", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)
@@ -99,7 +99,7 @@ Now only "Apple" matches, because the "a" in "Orange" is in the middle.
 ```
 "Apple" and "Orange" matches, but not "Lemon", because the "e" in Lemon is not at the end!
 
-# Starts & Ends With
+## Starts & Ends With
 
 To combine both:
 
@@ -129,7 +129,7 @@ To control the number of characters between start and end you can use ```*```, `
 ```
 Only "Apple" starts with "A", ends with "e" and has of 2+ character inbetween!
 
-# Which character?
+## Which character?
 
 To search for ANY character you can use ```.```
 
@@ -148,7 +148,7 @@ You can exclude characters too (using ```^```):
 * ```[^0-9]``` = non digit (all characters, but no 0 to 9)
 * ```[^A-Z]``` = all characters, but no upper case letter (A to Z)
 
-# Escaping
+## Escaping
 
 ```R
 > grep("*.txt", c("f1.txt", "f2.txt", "f3-txt"))
@@ -174,7 +174,7 @@ Charcters you need to escape (using ```\\```):
 
 And more: ```?``` ```|``` ```(``` ```)``` ```[``` ```]``` ```{``` ```}```  
 
-# Fixed
+## Fixed
 
 If you cust want to search for a string as it is, you can use ```fixed = TRUE```
 
@@ -190,7 +190,7 @@ Here "." is just the character "." (no special meaning). So only the first item 
 [1] 1
 ```
 
-# Or
+## Or
 
 You can use ```( | )``` for a logical OR.
 Example: detect all filenames with extension ".csv" or ".txt":
