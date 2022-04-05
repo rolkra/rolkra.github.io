@@ -183,14 +183,12 @@ If you cust want to search for a string as it is, you can use ```fixed = TRUE```
 [1] 1
 ```
 
-Here "." is just the character "." (no special meaning). 
+Here "." is just the character "." (no special meaning). So only the first item matches. Without ```fixed = TRUE``` all three elements matches, because all contain "any character" (meaning of "." as a regex)
 
 ```R
 > grep(".", c("a.b.c", "a-b-c", "a^b^c"))
 [1] 1
 ```
-
-Without ```fixed = TRUE``` all three elements matches, because all contain "any character" (meaning of "." as a regex)
 
 ## Or
 
