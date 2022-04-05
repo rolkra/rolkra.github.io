@@ -7,9 +7,9 @@ Introduction to Regular Expressions (regex) in R
 
 ## Intro
 
-As a Data Scientist you will work with regular expressions (regex). 
+As a Data Scientist you should know how to use regular expressions (regex). 
 
-There are several ways how to use regex to search for patterns in a text-vector:
+There are several ways how to use regex in R to search for patterns in a text-vector:
 
 ```grep``` is a base-R function and returns a vector containing the (integer) indices of the matches. So in this case it returns 2.
 
@@ -46,19 +46,20 @@ If you want to use {tidyverse} you can use {stringr}:
 [1] 3
 ``` 
 
-Matches only the 3rd element (Lemon)
+Only the 3rd element (Lemon) matches.
 
  ```R
 > grep("e", c("Apple", "Orange", "Lemon"))
 [1] 1 2 3
 ``` 
-Matches all, because all contain the character "e"
+
+All matches, because all contain the character "e"
 
 ```R
 > grep("a", c("Apple", "Orange", "Lemon"))
 [1] 2
 ```
-Matches "Orange" (but not "Apple"), because it is case sensitive by default
+Only "Orange" matches (but not "Apple"), because searching is case sensitive by default
 
 ## Case Sensitive
 
@@ -69,7 +70,9 @@ To switch off case sensitivity you can use the parameter ```ignore.case = TRUE``
 > grep("a", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)
 [1] 1 2
 ```
-Now matches "Apple" and "Orange" as both contain "a" (ignoring upper/lower-case)
+Now "Apple" and "Orange" matches as both contain "a" (ignoring upper/lower-case)
+
+The same using {tidyverse} and {stringr}
 
 ```R
 > library(stringr)
@@ -77,7 +80,6 @@ Now matches "Apple" and "Orange" as both contain "a" (ignoring upper/lower-case)
 > str_detect(str, regex("a", ignore_case = TRUE))
 [1]  TRUE  TRUE FALSE
 ```
-The same using {tidyverse} and {stringr}
 
 ## Starts With
 
@@ -95,7 +97,7 @@ Now only "Apple" matches, because the "a" in "Orange" is in the middle.
 > grep("e$", c("Apple", "Orange", "Lemon"), ignore.case = TRUE)
 [1] 1 2
 ```
-Matches "Apple" and "Orange", but not "Lemon", because the "e" in Lemon is not at the end!
+"Apple" and "Orange" matches, but not "Lemon", because the "e" in Lemon is not at the end!
 
 ## Starts & Ends With
 
@@ -134,13 +136,13 @@ If you want to be more specific:
 * ```[a-z]``` = letter a to z (lower case) 
 * ```[A-Z]``` = letter A to Z (upper case)
 * ```[ACES]``` = letter A or C or E or S
-* ```[0-9]``` = a digit (0 to 9)
+* ```[0-9]``` = digit (0 to 9)
 * ```[1234]``` = digit 1 or 2 or 3 or 4
 * ```[A-z0-9]``` = letter (A to Z, a to z) or digit (0 to 9)
 
 You can exclude characters too (using ```^```):
 
-* ```[^0-9]``` = a non digit (all characters, but no 0 to 9)
+* ```[^0-9]``` = non digit (all characters, but no 0 to 9)
 * ```[^A-Z]``` = all characters, but no upper case letter (A to Z)
 
 ## Escaping
@@ -150,7 +152,7 @@ You can exclude characters too (using ```^```):
 [1] 1 2 3
 ```
 
-This result may surprise you if you are not used regex. Here "." is not the character ".", but means "any character". To search for the character ".", we need to "excape" it:
+This result may surprise you if you are not used to regex. Here "." is not the character ".", but means "any character". To search for the character ".", we need to "escape" it:
 
 ```R
 > grep("*\\.txt", c("f1.txt", "f2.txt", "f3-txt"))
@@ -163,3 +165,4 @@ Charcters you need to escape:
 * ```+``` =  ```\\+```
 * ```*``` =  ```\\*```
 * ```"``` =  ```\\"```
+* ```\``` =  ```\\\```
