@@ -251,8 +251,22 @@ Only the first Email matches
 [1] 1
 ```
 
-Only the first user name matches
+Only the first user name matches.
 
 * Allowed: letter a to z, digit 0 to 9, characters ```_``` and ```-```
 * Minimum length = 3
 * Maximum length = 16
+
+### Hex Color Code
+
+```R
+> pattern <- "^#[a-fA-F0-9]{6}$"
+> grep(pattern, c("#00FF12", "#xxff"))
+[1] 1
+```
+
+Only the first color code matches.
+
+* ```^#``` = must start with "#"
+* ```[a-fA-F0-9]{6}``` = 6 character (a to f, A to F and 0 to 9 allowed)
+* ```$``` = end of string
