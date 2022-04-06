@@ -225,3 +225,34 @@ Example: detect all filenames with extension ".csv" or ".txt":
 * ```.+``` = any string (min lenth 1)
 * ```\\.``` = the character "." (need to escape it)
 * ```(csv|txt)``` = "csv" OR "txt
+
+## Examples
+
+### Email format
+
+This is a very simplified email format checker
+
+```R
+> pattern <- "^[a-zA-Z0-9_\\.\\+\\-]+@[a-zA-Z0-9\\-\\.]+$"
+> grep(pattern, c("bob.hope@me.com", "bob.hope"))
+[1] 1
+```
+Only the first Email matches
+
+* ```^[a-zA-Z0-9_\\.\\+\\-]+``` = Starts with alphanumeric or _ . + - (min 1 character)
+* ```@``` = Character "@"
+* ```[a-zA-Z0-9\\-\\.]+$``` = Ends with alphanumeric or - . (min 1 character)
+
+### User name
+
+```R
+> pattern <- "^[a-z0-9_-]{3,16}$"
+> grep(pattern, c("bobhope", "x"))
+[1] 1
+```
+
+Only the first user name matches
+
+* Allowed: letter a to z, digit 0 to 9, characters _ and -
+* Minimum length = 3
+* Maximum length = 16
