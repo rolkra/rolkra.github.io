@@ -40,31 +40,17 @@ If you want to use {tidyverse} you can use ```str_detect()```from {stringr}. Her
 [1] FALSE  TRUE FALSE
 ```
 
-## Basic Examples
+## Case Sensitive
 
- ```R
-> grep("Lemon", c("Apple", "Orange", "Lemon"))
-[1] 3
-``` 
-
-Only the 3rd element (Lemon) matches.
-
- ```R
-> grep("e", c("Apple", "Orange", "Lemon"))
-[1] 1 2 3
-``` 
-
-All matches, because all contain the character "e".
+```grep``` is case sensitive by default:
 
 ```R
 > grep("a", c("Apple", "Orange", "Lemon"))
 [1] 2
 ```
+
 Only "Orange" matches (but not "Apple"), because searching is case sensitive by default.
 
-## Case Sensitive
-
-```grep``` is case sensitive by default.
 To switch off case sensitivity you can use the parameter ```ignore.case = TRUE```
 
 ```R
