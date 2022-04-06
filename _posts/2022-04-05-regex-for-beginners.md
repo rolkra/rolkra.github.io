@@ -253,6 +253,6 @@ Only the first Email matches
 
 Only the first user name matches
 
-* Allowed: letter a to z, digit 0 to 9, characters _ and -
+* Allowed: letter a to z, digit 0 to 9, characters ```_``` and ```-```
 * Minimum length = 3
 * Maximum length = 16
