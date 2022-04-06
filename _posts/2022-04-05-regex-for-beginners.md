@@ -32,10 +32,11 @@ To return the value instead of the index use parameter ```value = TRUE```:
 [1] Orange
 ```
 
-If you want to use {tidyverse} you can use {stringr}:
+If you want to use {tidyverse} you can use ```str_detect()```from {stringr}. Here the pattern is the 2nd argument (not the first)!
 
 ```R
-> stringr::str_detect(c("Apple", "Orange", "Lemon"), "Orange")
+> library(stringr)
+> str_detect(c("Apple", "Orange", "Lemon"), "Orange")
 [1] FALSE  TRUE FALSE
 ```
 
