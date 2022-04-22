@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Regex for beginners - part 1
+title: Regex for beginners: detect!
 ---
 
-Introduction to Regular Expressions (regex) in R - part 1: pattern detection
+Introduction to Regular Expressions (regex) in R: how to detect patterns
 
 ## Intro
 
