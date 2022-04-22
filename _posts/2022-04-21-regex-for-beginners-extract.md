@@ -11,7 +11,7 @@ As a Data Scientist you should know how to use regular expressions (regex).
 
 You can use regex to detect, locate and extract patterns.
 
-```str_extract``` can be used to extract patterns:
+```str_extract()``` can be used to extract patterns:
 
 
 ```R
@@ -74,4 +74,24 @@ To get a matrix as result (instead of a list):
 [1,] "apple" ""    
 [2,] "ange"  ""    
 [3,] "apple" "ange"
+```
+
+## Replace
+
+Use ```str_replace``` to replace a pattern in a string:
+
+```R
+> library(stringr)
+> string <- c("apple", "orange", "apple+orange")
+> str_replace(string, "a.*?e", "AE")
+[1] "AE"        "orAE"      "AE+orange"
+```
+
+To replance ALL patterns:
+
+```R
+> library(stringr)
+> string <- c("apple", "orange", "apple+orange")
+> str_replace_all(string, "a.*?e", "AE")
+[1] "AE"        "orAE"      "AE+orAE"
 ```
