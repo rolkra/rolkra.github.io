@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Regex for beginners: extract!
+title: Regex for beginners - extract!
 ---
 
 Introduction to Regular Expressions (regex) in R: how to extract patterns
