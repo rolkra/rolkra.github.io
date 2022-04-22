@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Regex for beginners: detect!
+title: Regex for beginners - detect!
 ---
 
 Introduction to Regular Expressions (regex) in R: how to detect patterns
