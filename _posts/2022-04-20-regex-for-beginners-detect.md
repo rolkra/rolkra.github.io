@@ -159,8 +159,8 @@ Detecting the repetitive word "apple" can be done by using brackets.
 >grep("(apple){2}", c("apple", "apple+apple", "appleapple"))
 [1] 3
 ```
-We define the word as a grouping (using brackets) and the quantifier ```{2}``` (two times)
-Here only "appleapple" matches. "aplle+apple" does not match, as there is a other character between the words.
+We define the word as a grouping (using brackets) and the quantifier ```{2}``` (two times).
+Here only "appleapple" matches. "aplle+apple" does not match, as there is an other character between the words.
 
 ## Escaping
 
@@ -283,3 +283,8 @@ Only the first color code matches.
 * ```^#``` = must start with "#"
 * ```[a-fA-F0-9]{6}``` = 6 character (a to f, A to F and 0 to 9 allowed)
 * ```$``` = end of string
+
+## Continue ...
+
+with pattern extraction & greedy<br>
+<https://rolkra.github.io/regex-for-beginners-extract/>
