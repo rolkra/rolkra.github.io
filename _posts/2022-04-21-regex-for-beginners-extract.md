@@ -11,7 +11,8 @@ As a Data Scientist you should know how to use regular expressions (regex).
 
 You can use regex to detect, locate and extract patterns.
 
-How to detect patterns: https://rolkra.github.io/regex-for-beginners-detect/
+How to detect patterns: 
+<https://rolkra.github.io/regex-for-beginners-detect/>
 
 ```str_extract()``` can be used to extract patterns:
 
@@ -100,5 +101,8 @@ To replance ALL patterns:
 
 ## Cheat Sheets
 
-* String manipulation with {stringr}: <https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf>
-* Regex in R:  <https://raw.githubusercontent.com/rstudio/cheatsheets/main/regex.pdf>
+String manipulation with {stringr}: 
+<https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf>
+
+Regex in R:
+<https://raw.githubusercontent.com/rstudio/cheatsheets/main/regex.pdf>
