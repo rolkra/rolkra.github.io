@@ -100,5 +100,5 @@ To replance ALL patterns:
 
 ## Cheat Sheets
 
-* [String manipulation with {stringr}] (https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf)
-* [Regex in R] (https://raw.githubusercontent.com/rstudio/cheatsheets/main/regex.pdf)
+* String manipulation with {stringr}: <https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf>
+* Regex in R:  <https://raw.githubusercontent.com/rstudio/cheatsheets/main/regex.pdf>
