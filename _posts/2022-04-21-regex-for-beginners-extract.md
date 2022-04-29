@@ -11,7 +11,7 @@ As a Data Scientist you should know how to use regular expressions (regex).
 
 You can use regex to detect, locate and extract patterns.
 
-Check this [post] (https://rolkra.github.io/regex-for-beginners-detect/) on how to detect patterns.
+How to detect patterns: https://rolkra.github.io/regex-for-beginners-detect/
 
 ```str_extract()``` can be used to extract patterns:
 
