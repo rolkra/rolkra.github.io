@@ -135,6 +135,33 @@ You can exclude characters too (using ```^```):
 * ```[^0-9]``` = non digit (all characters, but no 0 to 9)
 * ```[^A-Z]``` = all characters, but no upper case letter (A to Z)
 
+## Character Classes, Groups & Quantifiers
+
+We are looking for words that contain a repetitive letter.
+
+```R
+> grep("[a-z]{2}", c("apple", "apple+apple", "appleapple"))
+[1] 1 2 3
+```
+We define the character class ```[a-z]``` (letter a to z) with the quantifier ```{2}``` (two times)
+All words contain "pp"! How about detecting a repetitive word?
+
+```R
+>grep("apple{2}", c("apple", "apple+apple", "appleapple"))
+[1] integer(0)
+```
+
+This regex is NOT detecting the repetitive word "apple"! It searches for a repetitive "e".
+
+Detecting the repetitive word "apple" can be done by using brackets.
+
+```R
+>grep("(apple){2}", c("apple", "apple+apple", "appleapple"))
+[1] 3
+```
+We define the word as a grouping (using brackets) and the quantifier ```{2}``` (two times)
+Here only "appleapple" matches. "aplle+apple" does not match, as there is a other character between the words.
+
 ## Escaping
 
 ```R
