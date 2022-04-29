@@ -286,5 +286,5 @@ Only the first color code matches.
 
 ## Continue ...
 
-with pattern extraction & greedy<br>
+with pattern extraction & greedy matching<br>
 <https://rolkra.github.io/regex-for-beginners-extract/>
