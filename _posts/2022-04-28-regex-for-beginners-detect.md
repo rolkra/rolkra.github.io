@@ -99,15 +99,15 @@ To combine both:
 * ```.*``` = any string
 * ```e$``` = ends with "e"
 
-To control the number of characters between start and end you can use ```*```, ```+``` and ```{ }```:
+To control the number of characters between start and end you can use ```*```, ```+```, ```?``` and ```{ }```:
 
 * ```.*``` = any string 
 * ```.+``` = any string with minimum length of 1 character
 * ```.?``` = string with length 0 or 1
-* ```.{3}``` = exactly 3 character
-* ```.{3,}``` = 3 or more character
-* ```.{,3}``` = maximum 3 character
-* ```.{1,3}``` = between 1 and 3 character
+* ```.{3}``` = exactly 3 characters
+* ```.{3,}``` = 3 or more characters
+* ```.{,3}``` = maximum 3 characters
+* ```.{1,3}``` = between 1 and 3 characters
 
 ```R
 > str = c("Apple", "Ape", "Ae")
@@ -190,7 +190,7 @@ And more: ```?``` ```|``` ```(``` ```)``` ```[``` ```]``` ```{``` ```}```
 
 ## Fixed (Literal)
 
-If you cust want to search for a string as it is (literal), you can use ```fixed = TRUE```
+If you just want to search for a string as it is (literal), you can use ```fixed = TRUE```
 
 ```R
 > grep(".", c("a.b.c", "a-b-c", "a^b^c"), fixed = TRUE)
