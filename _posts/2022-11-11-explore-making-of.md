@@ -1,9 +1,7 @@
 ---
 layout: post
-title: {explore} making of
+title: {explore} 1.0.0
 ---
-
-# {explore} 1.0.0
 
 I am excited to announce the release of {explore} 1.0.0!
 
