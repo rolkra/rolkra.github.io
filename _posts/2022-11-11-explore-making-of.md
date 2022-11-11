@@ -61,6 +61,12 @@ Thanks, we see:
 
 Luckily I was finally able to fix all the problems and {explore} hit CRAN on May 2019!
 
+### Hexsticker
+
+Finally the packaged needed a hex sticker. Luckily {hexSticker} helped a lot:
+
+<img src="man/figures/hex_explore.png" align="right" width="130" height="150"/>
+
 ## Improving
 
 I started getting more used to CRAN and its rules and was able to slowly improve {explore}
