@@ -73,6 +73,8 @@ explore(PatientStress,ID,ストレッサー得点)
 
 I was impressed that {explore} is used in Japan for medical analysis and so I decided to fulfill this wish.
 
+![Japanese](../images/explore-japanese.png)
+
 ## Version 1.0.0
 
 2 ½ years after putting the first version on CRAN, I now finalized version 1.0.0.
