@@ -49,7 +49,7 @@ And I needed a package-name. I did a brainstorming and came up with:
 * exploreR (which was already the name of an existing packages)
 * explore
 
-I was surprised that “explore” was still available. After a few days I was unsure if I am even allowed to pick such a general name for my first package. But then I decided to be brave and picked {explore}!
+I was surprised that “explore” was still available. But I was unsure if I am even allowed to pick such a general name for my first package. But then I decided to be brave and choose {explore}!
  
 ### Following the rules 
 
