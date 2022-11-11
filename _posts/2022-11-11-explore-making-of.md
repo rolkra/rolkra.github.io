@@ -3,6 +3,8 @@ layout: post
 title: {explore} making of
 ---
 
+# {explore} making of
+
 I am excited to announce the release of {explore} 1.0.0!
 
 Time to look back:
@@ -30,11 +32,11 @@ Luckily I got a “go” after a while and I started working on a CRAN package.
 ### Choosing a name
 
 And I needed a package-name. I did a brainstorming and came up with:
-deexr (de)scribe - (ex)plore (r)eport
-eda
-edaR
-exploreR (which was already the name of an existing packages)
-explore
+* deexr (de)scribe - (ex)plore (r)eport
+* eda
+* edaR
+* exploreR (which was already the name of an existing packages)
+* explore
 
 I was surprised that “explore” was still available. After a few days I was unsure if I am even allowed to pick such a general name for my first package. But then I decided to be brave and picked {explore}!
  
