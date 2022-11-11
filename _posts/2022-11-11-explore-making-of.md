@@ -73,7 +73,7 @@ explore(PatientStress,ID,ストレッサー得点)
 
 I was impressed that {explore} is used in Japan for medical analysis and so I decided to fulfill this wish.
 
-![Japanese](../images/explore-japanese.png)
+![Japanese](../images/explore-japan.png)
 
 ## Version 1.0.0
 
