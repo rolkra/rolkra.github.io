@@ -16,6 +16,8 @@ create_data_app() |> explore()
 
 ![explore](../images/explore-app.png)
 
+![explore](../images/explore-app-tree.png)
+
 Time to look back:
 
 ## The beginning
