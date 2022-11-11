@@ -11,7 +11,7 @@ Time to look back:
 
 ## The beginning
 
-A few years ago I was working as a Data Scientist for a big telecommunication company. I was writing a lot of R code for exploratory data analysis (EDA). I really loved R as a programming language, but it felt somehow wrong. I was spending so much time writing code, searching for the correct syntax in help files and on the web. My brain was blocked by these things. It was like trying to write a poem, but thinking way too much about grammar.  
+In 2018 I was working as a Data Scientist for a big telecommunication company. I was writing a lot of R code for exploratory data analysis (EDA). I really loved R as a programming language, but it felt somehow wrong. I was spending so much time writing code, searching for the correct syntax in help files and on the web. My brain was blocked by these things. It was like trying to write a poem, but thinking way too much about grammar.  
 
 There must be a better way.
 
