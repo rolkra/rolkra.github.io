@@ -27,7 +27,7 @@ After a while I realized that this package could help people outside of my compa
 
 Luckily I got a “go” after a while and I started working on a CRAN package.
 
-## Choosing a name
+### Choosing a name
 
 And I needed a package-name. I did a brainstorming and came up with:
 deexr (de)scribe - (ex)plore (r)eport
@@ -38,7 +38,7 @@ explore
 
 I was surprised that “explore” was still available. After a few days I was unsure if I am even allowed to pick such a general name for my first package. But then I decided to be brave and picked {explore}!
  
-## Following the rules 
+### Following the rules 
 
 My first submission to CRAN was a disaster. I was overwhelmed by warnings, errors and complaints not following CRAN rules.
 
