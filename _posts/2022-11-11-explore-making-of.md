@@ -67,7 +67,7 @@ Luckily I was finally able to fix all the problems and {explore} hit CRAN on May
 
 Finally the packaged needed a hex sticker. Luckily {hexSticker} helped a lot:
 
-<img src="man/figures/hex_explore.png" align="right" width="130" height="150"/>
+<img src="../images/hex_explore.png" align="right" width="130" height="150"/>
 
 ## Improving
 
