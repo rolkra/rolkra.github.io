@@ -7,6 +7,15 @@ title: {explore} making of
 
 I am excited to announce the release of {explore} 1.0.0!
 
+{explore} simplifies exploratory data analysis!
+
+```R
+library(explore)
+create_data_app() |> explore()
+```
+
+![explore](../images/explore-app.png)
+
 Time to look back:
 
 ## The beginning
