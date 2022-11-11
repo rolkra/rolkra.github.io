@@ -3,7 +3,7 @@ layout: post
 title: {explore} making of
 ---
 
-# {explore} making of
+# {explore} 1.0.0
 
 I am excited to announce the release of {explore} 1.0.0!
 
