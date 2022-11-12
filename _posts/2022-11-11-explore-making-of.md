@@ -34,15 +34,15 @@ After a while some of my colleagues were getting interested in the package (it w
 
 ## Go CRAN
 
-After a while I realized that this package could help people outside of my company too. I started to inform myself if I as an employee was allowed to share R code as open source. It was difficult to get an answer, because I was the first in this company who asked to publish an R package as open source.
+After a while I realized that this package could help people outside of my company too. I started to inform myself if I as an employee was allowed to share R code as open source. It was difficult to get an answer, because I was the first to ask this question.
 
-Luckily I got a “go” after a while and I started working on a CRAN package.
+Luckily I got a “go” after a while and I started working on the CRAN package.
 
 ### Choosing a name
 
 And I needed a package-name. I did a brainstorming and came up with:
 * deexr (de)scribe - (ex)plore (r)eport
-* eda
+* fastEDA
 * edaR
 * exploreR (which was already the name of an existing packages)
 * explore
@@ -78,6 +78,18 @@ Finally the packaged needed a hex sticker. Luckily {hexSticker} helped a lot:
 
 ![hexsticker](../images/hexsticker-all.jpg)
 
+## Getting attention
+
+I was surprised to find {exlore} beeing coverd in a paper:
+
+![The Landscape of R Packages for Automated Exploratory Data Analysis (by Mateusz Staniak and Przemysław Biecek)](https://arxiv.org/pdf/1904.02101.pdf)
+
+*"...a systematic review of existing tools for Automated Exploratory Data Analysis (autoEDA). We explore
+the features of fifteen popular R packages to identify the parts of the analysis that can be effectively
+automated with the current tools and to point out new directions for further autoEDA development."*
+
+![hexsticker](../images/paper-autoEDA.png)
+
 ## Improving
 
 I started getting more used to CRAN and its rules and was able to slowly improve {explore}
@@ -94,6 +106,6 @@ I was impressed that {explore} is used in Japan for medical analysis and so I de
 
 ## Version 1.0.0
 
-2 ½ years after putting the first version on CRAN, I now finalized version 1.0.0.
+2 ½ years after putting the first version on CRAN (and 17 updates), I now finalized version 1.0.0.
 
 Enjoy!
