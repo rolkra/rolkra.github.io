@@ -94,6 +94,8 @@ automated with the current tools and to point out new directions for further aut
 
 Furthermore the paper was presented at the Why R? 2019 conference in Wrocław, Poland
 
+Sometimes I was getting contacted by other {explore} users. I really loved these conversations, specially with people from Africa.
+
 ## Improving
 
 I started getting more used to CRAN and its rules and was able to slowly improve {explore}
