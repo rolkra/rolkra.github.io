@@ -73,7 +73,7 @@ Thanks, we see:
 
 Luckily I was finally able to fix all the problems and {explore} hit CRAN on May 2019!
 
-### Hexsticker
+### Hex sticker
 
 Finally the package needed a hex sticker. Luckily {hexSticker} helped a lot:
 
