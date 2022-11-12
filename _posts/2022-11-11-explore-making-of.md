@@ -120,21 +120,20 @@ expore(data)
 
 This will start a shiny app that let's you do interactive data exploration.
 
-To get more options and possibilities these users will switch to coding using just a handful of simple functions of the {explore} package. After a while these new R users will naturally go into the direction of reproducible datascience with rmarkdown and will discover new packages like {dplyr}, {ggplot2}, {tidyr}
+To get more options and possibilities these new R users will switch to coding using just a handful of simple functions of the {explore} package. After a while they  will naturally go into the direction of reproducible datascience with rmarkdown/quarto and will discover new packages like {dplyr}, {ggplot2}, {tidyr}
 
 So I believe the {explore} package offers an easy learning path, specially for people coming from a GUI, to have a successful start with R and stay with it in the long run.
 
-I always wanted to record a "hands-on" video of {explore} and put it on YouTube, but didn't find the time. But luckily, someone else did it:
+To support teaching I always wanted to record a "hands-on" video of {explore} and put it on YouTube, but didn't find the time. But luckily, someone else did it:
 
 <https://www.youtube.com/watch?v=j1pkPsjYw5s&t=61s>
 
 ![YouTube](../images/explore-youtube.png)
 
-
 Thank's a lot!
 
 ## Version 1.0.0
 
-So 2 ½ years after putting the first version on CRAN (and 17 updates), I now finalized version 1.0.0.
+So 3 ½ years after putting the first version on CRAN (and 17 updates), I now finalized version 1.0.0.
 
 Enjoy!
