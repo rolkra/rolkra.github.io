@@ -124,9 +124,12 @@ To get more options and possibilities these users will switch to coding using ju
 
 So I believe the {explore} package offers an easy learning path, specially for people coming from a GUI, to have a successful start with R and stay with it in the long run.
 
-I always wanted to record a "hands-on" video of {explore} and put it on Youtube, but didn't find the time. But luckily, someone else did it:
+I always wanted to record a "hands-on" video of {explore} and put it on YouTube, but didn't find the time. But luckily, someone else did it:
 
 <https://www.youtube.com/watch?v=j1pkPsjYw5s&t=61s>
+
+![YouTube](../images/explore-youtube.png)
+
 
 Thank's a lot!
 
