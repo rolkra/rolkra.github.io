@@ -9,12 +9,13 @@ I am excited to announce the release of {explore} 1.0.0!
 
 ```R
 library(explore)
-create_data_app() |> explore()
+create_data_app(obs = 200) |> 
+  explore()
 ```
 
-![explore](../images/explore-app.png)
+![explore](../images/explore-app-2.png)
 
-![explore](../images/explore-app-tree.png)
+![explore](../images/explore-app-tree-2.png)
 
 Time to look back:
 
