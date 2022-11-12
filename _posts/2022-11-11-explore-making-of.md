@@ -107,8 +107,30 @@ I was impressed that {explore} is used in Japan for medical analysis and so I de
 
 ![Japanese](../images/explore-japan.png)
 
+## Teaching
+
+I found out that {explore} helps a lot to get people into R. Instead of learning a bunch of functions-names before doing anything useful, you can just start as simple as this:
+
+```R
+library(explore)
+data <- create_data_app()
+expore(data)
+```
+
+This will start a shiny app that let's you do interactive data exploration.
+
+To get more options and possibilities these users will switch to coding using just a handful of simple functions of the {explore} package. After a while these new R users will naturally go into the direction of reproducible datascience with rmarkdown and will discover new packages like {dplyr}, {ggplot2}, {tidyr}
+
+So I believe the {explore} package offers an easy learning path, specially for people coming from a GUI, to have a successful start with R and stay with it in the long run.
+
+I always wanted to record a "hands-on" video of {explore} and put it on Youtube, but didn't find the time. But luckily, someone else did it:
+
+<https://www.youtube.com/watch?v=j1pkPsjYw5s&t=61s>
+
+Thank's a lot!
+
 ## Version 1.0.0
 
-2 ½ years after putting the first version on CRAN (and 17 updates), I now finalized version 1.0.0.
+So 2 ½ years after putting the first version on CRAN (and 17 updates), I now finalized version 1.0.0.
 
 Enjoy!
