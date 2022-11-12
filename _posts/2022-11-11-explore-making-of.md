@@ -75,7 +75,7 @@ Luckily I was finally able to fix all the problems and {explore} hit CRAN on May
 
 ### Hexsticker
 
-Finally the packaged needed a hex sticker. Luckily {hexSticker} helped a lot:
+Finally the package needed a hex sticker. Luckily {hexSticker} helped a lot:
 
 ![hexsticker](../images/hexsticker-all.jpg)
 
