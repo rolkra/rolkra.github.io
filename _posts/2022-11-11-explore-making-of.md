@@ -82,13 +82,16 @@ Finally the packaged needed a hex sticker. Luckily {hexSticker} helped a lot:
 
 I was surprised to find {exlore} beeing coverd in a paper:
 
-![The Landscape of R Packages for Automated Exploratory Data Analysis (by Mateusz Staniak and Przemysław Biecek)](https://arxiv.org/pdf/1904.02101.pdf)
+The Landscape of R Packages for Automated Exploratory Data Analysis (by Mateusz Staniak and Przemysław Biecek)
+<https://arxiv.org/pdf/1904.02101.pdf>
 
 *"...a systematic review of existing tools for Automated Exploratory Data Analysis (autoEDA). We explore
 the features of fifteen popular R packages to identify the parts of the analysis that can be effectively
 automated with the current tools and to point out new directions for further autoEDA development."*
 
-![hexsticker](../images/paper-autoEDA.png)
+![autoEDA](../images/paper-autoEDA.png)
+
+Furthermore the paper was presented at the Why R? 2019 conference in Wrocław, Poland
 
 ## Improving
 
