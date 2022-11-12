@@ -138,4 +138,6 @@ Thank's a lot!
 
 So 3 ½ years after putting the first version on CRAN (and 17 updates), I now finalized version 1.0.0.
 
+![Submissions & Downloads](../images/explore-downloads.png)
+
 Enjoy!
