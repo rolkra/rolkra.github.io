@@ -81,7 +81,7 @@ Finally the package needed a hex sticker. Luckily {hexSticker} helped a lot:
 
 ## Getting attention
 
-I was surprised to find {exlore} beeing coverd in a paper:
+I was surprised to find {explore} beeing covered in a paper:
 
 The Landscape of R Packages for Automated Exploratory Data Analysis (by Mateusz Staniak and Przemysław Biecek)
 <https://arxiv.org/pdf/1904.02101.pdf>
@@ -94,7 +94,7 @@ automated with the current tools and to point out new directions for further aut
 
 Furthermore the paper was presented at the Why R? 2019 conference in Wrocław, Poland
 
-Sometimes I was getting contacted by other {explore} users. I really loved these conversations, specially with people from Africa.
+Sometimes I was getting contacted by other {explore} users. I really loved these conversations, especially with people from Africa.
 
 ## Improving
 
@@ -122,7 +122,7 @@ expore(data)
 
 This will start a shiny app that let's you do interactive data exploration.
 
-To get more options and possibilities these new R users will switch to coding using just a handful of simple functions of the {explore} package. After a while they  will naturally go into the direction of reproducible datascience with rmarkdown/quarto and will discover new packages like {dplyr}, {ggplot2}, {tidyr}
+To get more options and possibilities these new R users will switch to coding using just a handful of simple functions of the {explore} package. After a while they  will naturally go into the direction of reproducible data science with rmarkdown/quarto and will discover new packages like {dplyr}, {ggplot2}, {tidyr}
 
 So I believe the {explore} package offers an easy learning path, specially for people coming from a GUI, to have a successful start with R and stay with it in the long run.
 
@@ -132,11 +132,11 @@ To support teaching I always wanted to record a "hands-on" video of {explore} an
 
 ![YouTube](../images/explore-youtube.png)
 
-Thank's a lot!
+Thanks a lot!
 
 ## Version 1.0.0
 
-So 3 ½ years after putting the first version on CRAN (and 17 updates), I now finalized version 1.0.0.
+So 3 ½ years after putting the first version on CRAN (and 16 updates/submissions), I now finalized version 1.0.0.
 
 ![Submissions & Downloads](../images/explore-downloads.png)
 
