@@ -71,7 +71,7 @@ Thanks, we see:
          grafically
 ```
 
- I was really thinking of giving up.
+I was really thinking of giving up.
 
 Luckily I was finally able to fix all the problems and {explore} hit CRAN on May 2019!
 
@@ -114,7 +114,7 @@ I was impressed that {explore} is used in Japan for medical analysis and so I de
 
 ## Teaching
 
-I found out that {explore} helps a lot to get people into R. Instead of learning a bunch of functions-names before doing anything useful, you can just start as simple as this:
+I found out that {explore} helps a lot to get people into R. Instead of learning a bunch of function-names before doing anything useful, you can just start as simple as this:
 
 ```R
 library(explore)
