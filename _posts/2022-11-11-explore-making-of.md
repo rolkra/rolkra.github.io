@@ -27,13 +27,7 @@ There must be a better way.
 
 I started inspecting the code I wrote for EDA. And there was so much repetition. It's time to pack some of this code into function! After a while I collected quite a number of useful functions and found out that putting these functions into an R package isn't as complicated as I thought.
 
-And I challanged myself to make these functions as simple and intuitive as possible to use. The most radical simplification I could think of was:
-
-```R
-expore(iris)
-```
-
-to explore the iris dataset. 
+And I challanged myself to make these functions as simple and intuitive as possible to use.
 
 ## Start sharing
 
