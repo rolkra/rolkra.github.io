@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Fair AI Challange Using {explore}
+title:  Fair AI Challange
 ---
 
-The best way to understand how to ensure fair AI is ... <br>
+The best way to understand fair AI is ... <br>
 Train an unfair AI and try to detect its unfairness!
 
 ## Get data
@@ -51,28 +51,30 @@ describe(train)
 22 target      int       0      0      2   0     0.37   1 
 ```
 
-In this dataset we find a lot of sensitive features (gender, skin_color, iq, income, religion, ...) together with a target variable (target)
+In this dataset we find a lot of sensitive features (gender, skin_color, iq, income, religion, ...) together with a target variable (target).
 Let's think of an website offering credits, and we wants to predict if a customer gets payment difficulties (target = 1)
 
 ## Find patterns
 
-We start the {explore} GUI
+We start the {explore} GUI:
 
 ```R
 explore(train)
 ```
 
+Then selecting "target" as variable (to explore the target variable)
+
 ![explore](../images/fair-ai-explore-target.png)
 
 So, about 37% of all people in the dataset had payment difficulties (target = 1)
 
-To explore the relationship between age and the target, we select variable "target" as target, and age as variable.
+To explore the relationship between age and the target, we select variable "target" as target, and "age" as variable.
 
 ![explore](../images/fair-ai-explore-age-target.png)
 
 Wee see, that older people have more frequent payment difficulties. An AI model that uses this data will learn that older people are more risky and decide frequently against older people. Is this fair? Probably yes, if there is a real reason behind this pattern. But probably no, because descisions bases on age may simply discriminate older people.
 
-There are a lot of other sensitive variables in the dataset!
+And there are a lot of other sensitive variables in the dataset!
 
 ![explore](../images/fair-ai-explore-gender-target.png)
 
@@ -80,17 +82,17 @@ There are a lot of other sensitive variables in the dataset!
 
 ![explore](../images/fair-ai-explore-religion-target.png)
 
-Which of these pattern will a AI model "pick up" during training?
+Which of these patterns will an AI model "pick up" during training?
 
 ## AI Model
 
-A simple AI Model (Decision Tree) would learn this:
+We train a simple AI Model by clicking on tab "explain". A decision tree is generated.
 
 ![explore](../images/fair-ai-explain-target.png)
 
-So this AI model would base it's decision on age, bad_debt and credit_car. Which seems to be reasonable. But other variables are used like internet_gb (internet usage), iq (intelligence) and skin_color. 
+So this AI model would base it's decision on age, bad_debt and credit_car, which seems to be reasonable. But other variables are used too like internet_gb (internet usage), iq (intelligence) and skin_color. 
 
-Did we create a discriminating and racist AI?
+Did we just create a discriminating and racist AI?
 
 ## Your turn!
 
