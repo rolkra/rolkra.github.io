@@ -94,7 +94,7 @@ We train a simple AI Model by clicking on tab "explain". A decision tree is gene
 
 ![explore](../images/fair-ai-explain-target.png)
 
-So this AI model would base it's decision on age, bad_debt and credit_car, which seems to be reasonable. But other variables are used too like internet_gb (internet usage), iq (intelligence) and skin_color. 
+So this AI model would base it's decision on age, bad_debt and credit_card, which seems to be reasonable. But other variables are used too like internet_gb (internet usage), iq (intelligence) and skin_color. 
 
 Did we just create a discriminating and racist AI?
 
