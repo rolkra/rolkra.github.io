@@ -82,7 +82,11 @@ And there are a lot of other sensitive variables in the dataset!
 
 ![explore](../images/fair-ai-explore-religion-target.png)
 
-Which of these patterns will an AI model "pick up" during training?
+Which of these patterns will an AI model "pick up" during training? And are these patterns causal effects?
+
+![explore](../images/fair-ai-explore-pet-target.png)
+
+Should we really believe, that cats reduce the risk of payment difficulties?
 
 ## AI Model
 
