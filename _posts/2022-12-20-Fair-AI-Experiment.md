@@ -64,11 +64,19 @@ explore(train)
 
 ![explore](../images/fair-ai-explore-target.png)
 
-So, about 37% of all people in the dataset hat payment difficulties (target = 1)
+So, about 37% of all people in the dataset had payment difficulties (target = 1)
 
 To explore the relationship between age and the target, we select variable "target" as target, and age as variable.
 
 ![explore](../images/fair-ai-explore-age-target.png)
+
+Wee see, that older people have more frequent payment difficulties. An AI model that uses this data will learn that older people are more risky and decide frequently against older people. Is this fair? Probably yes, if there is a real reason behind this pattern. But probably no, because descisions bases on age may simply discriminate older people.
+
+There are a lot of other suspicous variables in the dataset!
+
+![explore](../images/fair-ai-explore-skin-target.png)
+
+Which of these pattern will a AI model "pick up" during training?
 
 ## AI Model
 
