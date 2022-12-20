@@ -96,7 +96,8 @@ Did we just create a discriminating and racist AI?
 
 ## Your turn!
 
-How to check if the AI is unfair?
-How would a true fair AI look like?
+* Which of these patterns have predictive power? (an which are just random noise?)
+* How to check if the AI is unfair?
+* How would a true fair AI look like?
 
 Try to find out!
