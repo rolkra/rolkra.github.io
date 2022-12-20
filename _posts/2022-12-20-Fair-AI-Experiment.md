@@ -15,7 +15,7 @@ You may create your own training data manually using {explore}:
 
 ```R
 library(explore)
-train <- create_data_unfair(obs = 1000)
+train <- create_data_unfair(obs = 1000, seed = 10)
 ```
 Now let's describe the data:
 
