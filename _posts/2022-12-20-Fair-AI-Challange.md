@@ -90,10 +90,11 @@ A simple AI Model (Decision Tree) would learn this:
 
 So this AI model would base it's decision on age, bad_debt and credit_car. Which seems to be reasonable. But other variables are used like internet_gb (internet usage), iq (intelligence) and skin_color. 
 
-## Your turn!
-
 Did we create a discriminating and racist AI?
 
-Which variables should a fair AI model use?
+## Your turn!
+
+How to check if the AI is unfair?
+How would a true fair AI look like?
 
 Try to find out!
