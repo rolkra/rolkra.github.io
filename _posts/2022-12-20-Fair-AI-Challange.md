@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fair AI experiment using {explore}
+title:  Fair AI Challange Using {explore}
 ---
 
 The best way to understand how to ensure fair AI is ... <br>
