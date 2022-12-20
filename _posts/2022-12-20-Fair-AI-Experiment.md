@@ -53,9 +53,28 @@ describe(train)
 
 In this dataset we find a lot of sensitive features (gender, skin_color, iq, income, religion, ...) together with a target variable (target)
 Let's think of an website offering credits, and we wants to predict if a customer gets payment difficulties (target = 1)
-## Detect patterns
 
 ## Find patterns
 
-![explore](../images/explore-app-tree-2.png)
+We start the {explore} GUI
+
+```R
+explore(train)
+```
+
+![explore](../images/fair-ai-explore-target.png)
+
+So, about 37% of all people in the dataset hat payment difficulties (target = 1)
+
+To explore the relationship between age and the target, we select variable "target" as target, and age as variable.
+
+![explore](../images/fair-ai-explore-age-target.png)
+
+## AI Model
+
+A simple AI Model (Decision Tree) would learn this:
+
+![explore](../images/fair-ai-explain-target.png)
+
+
 
