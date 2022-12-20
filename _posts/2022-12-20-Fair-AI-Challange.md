@@ -11,7 +11,7 @@ Train an unfair AI and try to detect its unfairness!
 To train an unfair AI you need data containing sensitive features. 
 As this is critical from a privacy perspective, use synthetic data!
 
-You can create your own training data using {explore} (you need version 1.0.1 or higher):
+You can create your own synthetic training data using {explore} (you need version 1.0.1 or higher):
 
 ```R
 library(explore)
