@@ -3,7 +3,7 @@ layout: post
 title:  Fair AI experiment using {explore}
 ---
 
-The best way to learn how to get an fair AI is ... <br>
+The best way to understand how to ensure fair AI is ... <br>
 Train an unfair AI and try to detect its unfairness!
 
 ## Get data
@@ -11,7 +11,7 @@ Train an unfair AI and try to detect its unfairness!
 To train an unfair AI you need data containing sensitive features. 
 As this is critical from a privacy perspective, use synthetic data!
 
-You may create your own training data manually using {explore} (you need version 1.0.1 or higher):
+You can create your own training data using {explore} (you need version 1.0.1 or higher):
 
 ```R
 library(explore)
@@ -87,3 +87,13 @@ Which of these pattern will a AI model "pick up" during training?
 A simple AI Model (Decision Tree) would learn this:
 
 ![explore](../images/fair-ai-explain-target.png)
+
+So this AI model would base it's decision on age, bad_debt and credit_car. Which seems to be reasonable. But other variables are used like internet_gb (internet usage), iq (intelligence) and skin_color. 
+
+## Your turn!
+
+Did we create a discriminating and racist AI?
+
+Which variables should a fair AI model use?
+
+Try to find out!
