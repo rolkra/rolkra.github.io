@@ -72,9 +72,13 @@ To explore the relationship between age and the target, we select variable "targ
 
 Wee see, that older people have more frequent payment difficulties. An AI model that uses this data will learn that older people are more risky and decide frequently against older people. Is this fair? Probably yes, if there is a real reason behind this pattern. But probably no, because descisions bases on age may simply discriminate older people.
 
-There are a lot of other suspicous variables in the dataset!
+There are a lot of other sensitive variables in the dataset!
+
+![explore](../images/fair-ai-explore-gender-target.png)
 
 ![explore](../images/fair-ai-explore-skin-target.png)
+
+![explore](../images/fair-ai-explore-religion-target.png)
 
 Which of these pattern will a AI model "pick up" during training?
 
@@ -83,6 +87,3 @@ Which of these pattern will a AI model "pick up" during training?
 A simple AI Model (Decision Tree) would learn this:
 
 ![explore](../images/fair-ai-explain-target.png)
-
-
-
