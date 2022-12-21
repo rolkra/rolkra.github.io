@@ -4,7 +4,7 @@ title:  Fair AI Challange
 ---
 
 The best way to understand fair AI is ... <br>
-Train an unfair AI and try to detect its unfairness!
+Train an unfair AI and try to fix it!
 
 ## Get data
 
