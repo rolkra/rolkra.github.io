@@ -52,7 +52,7 @@ describe(train)
 ```
 
 In this dataset we find a lot of sensitive features (gender, skin_color, iq, income, religion, ...) together with a target variable (target).
-Let's think of an website offering credits, and we wants to predict if a customer gets payment difficulties (target = 1)
+Let's think of an website offering credits, and we want to predict if a customer gets payment difficulties (target = 1)
 
 ## Find patterns
 
