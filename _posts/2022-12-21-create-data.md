@@ -13,8 +13,6 @@ The number of observations can be controlled by parameter obs. If you want to cr
 
 ```R
 library(explore)
-library(dplyr)
-
 data <- create_data_person(obs = 1000, seed = 10)
 describe(data)
 ```
@@ -42,6 +40,7 @@ describe(data)
 We get a dataframe containing 1000 observations and 15 variables. Some of these variables have completely random values, some have build in correlations.
 
 ```R
+library(dplyr)
 data |> 
   select(age, gender, likes_beer) |> 
   explore_all(target = likes_beer)
