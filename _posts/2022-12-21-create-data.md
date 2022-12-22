@@ -18,6 +18,7 @@ library(explore)
 data <- create_data_person(obs = 1000, seed = 10)
 describe(data)
 ```
+
 ```
 # A tibble: 15 x 8
    variable          type     na na_pct unique   min  mean   max
@@ -58,6 +59,7 @@ The pattern age/likes_beer is just a random noise, but gender/likes_beer is a bu
 data <- create_data_app(obs = 1000, seed = 10)
 describe(data)
 ```
+
 ```
 # A tibble: 7 x 8
   variable     type     na na_pct unique   min    mean   max
@@ -79,6 +81,7 @@ describe(data)
 data <- create_data_buy(obs = 1000, seed = 10)
 describe(data)
 ```
+
 ```
 # A tibble: 13 x 8
    variable        type     na na_pct unique    min      mean    max
@@ -106,6 +109,7 @@ describe(data)
 data <- create_data_churn(obs = 1000, seed = 10)
 describe(data)
 ```
+
 ```
 # A tibble: 9 x 8
   variable   type     na na_pct unique   min  mean   max
@@ -129,6 +133,7 @@ describe(data)
 data <- create_data_unfair(obs = 1000, seed = 10)
 describe(data)
 ```
+
 ```
 # A tibble: 22 x 8
    variable    type     na na_pct unique   min   mean   max
@@ -165,6 +170,7 @@ describe(data)
 data <- create_data_random(obs = 1000, vars = 10, seed = 10)
 describe(data)
 ```
+
 ```
 # A tibble: 12 x 8
    variable   type     na na_pct unique   min  mean   max
@@ -195,6 +201,7 @@ data <- data |>
   add_var_random_cat(name = "group", cat = LETTERS[1:5])
 head(data)
 ```
+
 ```
   success   budget group
 1       1 85.71165     C
@@ -212,6 +219,7 @@ data <- data |>
   add_var_random_starsign() |> 
   add_var_random_moon()
 ```
+
 ```
    success   budget group random_starsign  random_moon
 1        1 85.71165     C             Leo Waning  (-) 
