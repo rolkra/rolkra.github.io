@@ -3,15 +3,13 @@ layout: post
 title:  Create your own (synthetic) data!
 ---
 
-You need sample data for learning/testing/teaching? 
+You need sample data for learning/testing/teaching?<br> 
 Create your own ... using {explore}
-
-## Prepared data
 
 The R package {explore} offers prepared synthetic data. You can use ```create_data_*()``` functions to create this synthetic data.
 The number of observations can be controlled by parameter ```obs```. If you want to create reproducible synthetic data, use parameter ```seed``` (random seed number)
 
-### Person
+## Person
 
 ```create_data_person()``` creates a dataset containing synthetic data of people:
 
@@ -52,7 +50,7 @@ data |> explore(gender, target = likes_beer)
 
 The pattern age/likes_beer is just a random noise, but gender/likes_beer is a build in correlation.
 
-### App
+## App
 
 ```create_data_app()``` creates a dataset containing synthetic data of apps in an appstore:
 
@@ -73,7 +71,7 @@ describe(data)
 7 screen_sizes dbl       0      0      5     1    2.56     5
 ```
 
-### Buy
+## Buy
 
 ```create_data_buy()``` creates a dataset containing synthetic data of customer who buy (or not buy) a product:
 
@@ -100,7 +98,7 @@ describe(data)
 13 hh_single       int       0      0      2      0      0.31      1
 ```
 
-### Churn
+## Churn
 
 ```create_data_churn()``` creates a dataset containing synthetic data of customer churn:
 
@@ -123,7 +121,7 @@ describe(data)
 9 churn      dbl       0      0      2     0  0.36     1
 ```
 
-### Unfair
+## Unfair
 
 ```create_data_churn()``` creates a dataset containing synthetic data of people that can be used to test model fairness:
 
@@ -159,7 +157,7 @@ describe(data)
 22 target      int       0      0      2   0     0.37   1  
 ```
 
-## Random Data
+## Random
 
 ```create_data_random()``` creates a dataset containing random data:
 
@@ -183,4 +181,52 @@ describe(data)
 10 var_8      int       0      0    101     0  49.2   100
 11 var_9      int       0      0    101     0  49.2   100
 12 var_10     int       0      0    101     0  50.1   100
+```
+
+## Empty
+
+```create_data_random()``` creates an empty dataset. You can use ```add_var_random_*()``` functions to add random variables:
+
+```R
+data <- create_data_empty(obs = 100)
+data <- data |> 
+  add_var_random_01(name = "success", prob = c(0.3, 0.7)) |> 
+  add_var_random_dbl(name = "budget", min_val = 10, max_val = 100) |> 
+  add_var_random_cat(name = "group", cat = LETTERS[1:5])
+head(data)
+```
+```
+  success   budget group
+1       1 85.71165     C
+2       1 92.23001     D
+3       0 14.32489     C
+4       0 91.91952     E
+5       0 65.75793     B
+6       1 28.00104     D
+```
+
+You can add prepared random variables too:
+
+```R
+data <- data |> 
+  add_var_random_starsign() |> 
+  add_var_random_moon()
+```
+```
+   success   budget group random_starsign  random_moon
+1        1 85.71165     C             Leo Waning  (-) 
+2        1 92.23001     D             Leo Waning  (-) 
+3        0 14.32489     C           Aries Waning  (-) 
+4        0 91.91952     E          Pisces Waxing  (+)
+5        0 65.75793     B          Pisces Waning  (-) 
+6        1 28.00104     D           Aries Waxing  (+)
+7        0 17.92046     C           Virgo Waxing  (+)
+8        1 16.59915     D           Libra Waning  (-) 
+9        0 78.61641     C           Aries Waxing  (+)
+10       0 15.86658     C          Taurus Waning  (-) 
+11       0 12.72608     E          Pisces     New ( )   
+12       0 71.91871     C             Leo Waning  (-) 
+13       1 22.82367     E        Aquarius Waning  (-) 
+14       1 19.63139     D       Carpicorn Waning  (-) 
+15       1 38.01133     E       Carpicorn Waxing  (+)
 ```
