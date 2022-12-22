@@ -191,7 +191,7 @@ describe(data)
 
 ## Empty
 
-```create_data_random()``` creates an empty dataset. You can use ```add_var_random_*()``` functions to add random variables:
+```create_data_empty()``` creates an empty dataset. You can use ```add_var_random_*()``` functions to add random variables:
 
 ```R
 data <- create_data_empty(obs = 100)
@@ -232,7 +232,7 @@ data <- data |>
 8        1 16.59915     D           Libra Waning  (-) 
 9        0 78.61641     C           Aries Waxing  (+)
 10       0 15.86658     C          Taurus Waning  (-) 
-11       0 12.72608     E          Pisces     New ( )   
+11       0 12.72608     E          Pisces    New  ( )   
 12       0 71.91871     C             Leo Waning  (-) 
 13       1 22.82367     E        Aquarius Waning  (-) 
 14       1 19.63139     D       Carpicorn Waning  (-) 
