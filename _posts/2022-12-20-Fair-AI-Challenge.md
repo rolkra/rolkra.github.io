@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fair AI Challange
+title:  Fair AI Challenge
 ---
 
 The best way to understand fair AI is ... <br>
