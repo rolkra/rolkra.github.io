@@ -73,6 +73,12 @@ describe(data)
 7 screen_sizes dbl       0      0      5     1    2.56     5
 ```
 
+```R
+data |> explore(downloads, target = os)
+```
+
+![explore](../images/create-data-explore-downloads-os.png)
+
 ## Buy
 
 ```create_data_buy()``` creates a dataset containing synthetic data of customer who buy (or not buy) a product:
@@ -95,11 +101,16 @@ describe(data)
  7 fixeddata_ind   int       0      0      1      1      1         1
  8 fixedtv_ind     int       0      0      2      0      0.41      1
  9 mobilevoice_ind int       0      0      2      0      0.6       1
-10 mobiledata_ind  chr       0      0      3     NA     NA        NA
-11 bbi_speed_ind   int       0      0      2      0      0.63      1
-12 bbi_usg_gb      int       0      0     85      8    164.   100000
-13 hh_single       int       0      0      2      0      0.31      1
+10 bbi_speed_ind   int       0      0      2      0      0.63      1
+11 bbi_usg_gb      int       0      0     85      8    164.   100000
+12 hh_single       int       0      0      2      0      0.31      1
 ```
+
+```R
+data |> explain_tree(target = buy)
+```
+
+![explore](../images/create-data-explain-buy.png)
 
 ## Churn
 
@@ -124,6 +135,12 @@ describe(data)
 8 duration   int       0      0    101     0 50.8    100
 9 churn      dbl       0      0      2     0  0.36     1
 ```
+
+```R
+data |> explain_tree(target = churn)
+```
+
+![explore](../images/create-data-explain-churn.png)
 
 ## Unfair
 
@@ -159,8 +176,17 @@ describe(data)
 19 skin_color  chr       0      0      5  NA    NA     NA  
 20 religion    chr       0      0      4  NA    NA     NA  
 21 internet_gb dbl       0      0    666   0   118.   442. 
-22 target      int       0      0      2   0     0.37   1  
 ```
+
+```R
+data |> explain_tree(target = internet_gb)
+```
+
+![explore](../images/create-data-explain-internetgb.png)
+
+If we try to predict internet usage in gigabytes using all other variables in the dataset, we see some patterns. 
+Some might make sense, some other might just cause unfairness and discrimination. This dataset is designed to be used as a educational playground 
+for "Trustworthy AI".
 
 ## Random
 
@@ -194,9 +220,9 @@ describe(data)
 ```create_data_empty()``` creates an empty dataset. You can use ```add_var_random_*()``` functions to add random variables:
 
 ```R
-data <- create_data_empty(obs = 100)
+data <- create_data_empty(obs = 5000)
 data <- data |> 
-  add_var_random_01(name = "success", prob = c(0.3, 0.7)) |> 
+  add_var_random_01(name = "success", prob = c(0.3, 0.7), seed = 16) |> 
   add_var_random_dbl(name = "budget", min_val = 10, max_val = 100) |> 
   add_var_random_cat(name = "group", cat = LETTERS[1:5])
 head(data)
@@ -238,3 +264,11 @@ data <- data |>
 14       1 19.63139     D       Carpicorn Waning  (-) 
 15       1 38.01133     E       Carpicorn Waxing  (+)
 ```
+
+```R
+data |> explain_tree(target = success)
+```
+
+![explore](../images/create-data-explain-success.png)
+
+If we try to predict success using all other variables in the dataset, we see some patterns. But all variables are created just randomly.
