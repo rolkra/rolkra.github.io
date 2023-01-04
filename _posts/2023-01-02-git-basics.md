@@ -28,6 +28,7 @@ Git Basics you should know:
 
 ## Troubleshooting
 
-* If ```git config --list``` shows some entries you want to delete: use ```git config --unset-all <name>```
-* ```git reset --hard HEAD^```  to remove latest commit and corresponding file changes
+* ```git reset``` will unstage all changes
 * ```git reset HEAD^``` to uncommit latest commit, keep file changes
+* ```git reset --hard HEAD^``` to remove latest commit and corresponding file changes
+* If ```git config --list``` shows some entries you want to delete: use ```git config --unset-all <name>```
