@@ -23,6 +23,7 @@ Git Basics you should know:
 ## Update repo
 
 * ```git add myfilename``` adds a change in a file to the staging area
+* ```git add directory/.``` adds changes in all files of a directory to the staging area
 * ```git commit -m "this has changed"``` commit staged changes (add message)
 * ```git push``` push changes to repo
 
@@ -32,3 +33,4 @@ Git Basics you should know:
 * ```git reset HEAD^``` to uncommit latest commit, keep file changes
 * ```git reset --hard HEAD^``` to remove latest commit and corresponding file changes
 * If ```git config --list``` shows some entries you want to delete: use ```git config --unset-all <name>```
+* ```git push --force``` to make the remote repository match your local repo (attention, your remote repo will be overwritten!)
