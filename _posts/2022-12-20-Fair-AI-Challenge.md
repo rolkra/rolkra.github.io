@@ -100,7 +100,7 @@ Did we just create a discriminating and racist AI?
 
 ## Your turn!
 
-* Which of these patterns have predictive power? (an which are just random noise?)
+* Which of these patterns have predictive power? (and which are just random noise?)
 * How to check if the AI is unfair?
 * How would a true fair AI look like?
 
