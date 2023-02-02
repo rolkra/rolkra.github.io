@@ -13,16 +13,17 @@ Dice rolls and coin flips are simulated using sample().
 The properties of the dice can be changed, like the number of sides. 
 A coin flip is simulated using a two sided dice. Experiments can be combined with the pipe-operator. 
   
-## Design  
+## Roll  
   
-The default dice design is black/white with gold as highlight for a success 
+The default dice design is black/white with gold as highlight for a success.
+To make it reproducible, use ```seed```
 
 ```R
 # use package
 library(tidydice)
   
 # example: roll 10x6 = 60 dice
-roll_dice(times = 10, rounds = 6) |>
+roll_dice(times = 10, rounds = 6, seed = 2) |>
   plot_dice()
 ```
 
@@ -34,13 +35,3 @@ roll_dice(times = 10, rounds = 6) |>
 * ```point_color``` = color of points
 * ```line_color``` = color of lines
 * ```line_size``` = size of lines
-
-```R
-roll_dice(times = 6) %>% 
-  plot_dice(fill = "darkgrey", 
-            fill_success = "darkblue",
-            line_color = "white",
-            point_color = "white")
-```
-
-![explore](../images/tidydice-dice-design.png)
