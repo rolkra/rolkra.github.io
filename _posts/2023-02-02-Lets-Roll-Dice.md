@@ -137,7 +137,11 @@ The chance to get 3 or more six is just 6.23%
 We can cheat by increasing the probability of getting a six from 1/6 (0.167) to 1/2 (0.5).
 
 ```R
-roll_dice(times = 6, prob = c(0.1,0.1,0.1,0.1,0.1,0.5), seed = 123) |> 
+roll_dice(
+  times = 6, 
+  prob = c(0.1,0.1,0.1,0.1,0.1,0.5), 
+  seed = 123
+) |> 
   plot_dice()
 ```  
 
@@ -149,7 +153,9 @@ Let's do an experiment!
 
 ```R
 roll_dice(times = 6, rounds = 10000, agg = TRUE) |>
-  roll_dice(times = 6, rounds = 10000, agg = TRUE, prob = c(0.1,0.1,0.1,0.1,0.1,0.5)) |> 
+  roll_dice(
+    times = 6, rounds = 10000, agg = TRUE, 
+    prob = c(0.1,0.1,0.1,0.1,0.1,0.5)) |> 
   explore(success, target = experiment)
 ```  
 
@@ -165,7 +171,7 @@ If you want to do more complex dice rolls, use ```roll_dice_formula()``` (many t
 ```R
 roll_dice_formula(
   dice_formula = "4d6", # 4 dice with 6 sides
-  success = 15:24,      # success is defined as sum between 15 and 24
+  success = 15:24,      # success: sum between 15 and 24
   seed = 123            # random seed to make it reproducible
 )
 ```
