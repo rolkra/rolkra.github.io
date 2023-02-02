@@ -157,3 +157,49 @@ roll_dice(times = 6, rounds = 10000, agg = TRUE) |>
 
 The plot shows, that there is a high chance that the cheating will be detected, if we roll the dice multiple times. 
 Because getting 4 or more six is very unlikely if there is no cheating.
+
+### Using Dice Formula
+
+If you want to do more complex dice rolls, use ```roll_dice_formula()``` (many thanks to Giovanni Marco for contributing the code!)
+
+```{r}
+roll_dice_formula(
+  dice_formula = "4d6", # 4 dice with 6 sides
+  success = 15:24,      # success is defined as sum between 15 and 24
+  seed = 123            # random seed to make it reproducible
+)
+```
+
+```
+# A tibble: 1 × 7
+  experiment dice_formula label round    nr result success
+       <int> <chr>        <chr> <int> <int>  <dbl> <lgl>  
+1          1 4d6          4d6       1     1     18 TRUE  
+```
+
+```{r}
+roll_dice_formula(
+  dice_formula = "4d6+1d10", # 4 dice with 6 sides + 1 dice with 10 sides
+  rounds = 1000) %>%         # repeat 1000 times
+  explore_bar(result, numeric = TRUE)
+```
+
+![explore](../images/tidydice-roll-dice-formula.png)
+
+Other examples for dice_formula:
+
+- ```1d6``` = roll one 6-sided dice
+- ```1d8``` = roll one 8-sided dice
+- ```1d12``` = roll one 12-sided dice
+- ```2d6``` = roll two 6-sided dice
+- ```1d6e6``` = roll one 6-sided dice, explode dice on a 6
+- ```3d6kh2``` = roll three 6-sided dice, keep highest 2 rolls
+- ```3d6kl2``` = roll three 6-sided dice, keep lowest 2 rolls
+- ```4d6kh3e6``` = roll four 6-sided dice, keep highest 3 rolls, but explode on a 6
+- ```1d20+4``` = roll one 20-sided dice, and add 4
+- ```1d4+1d6``` = roll one 4-sided dice and one 6-sided dice, and sum the results
+
+## Weblinks
+
+* {tidydice} on Github: <https://github.com/rolkra/tidydice> 
+* {explore} on Github: <https://github.com/rolkra/explore>
