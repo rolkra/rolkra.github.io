@@ -141,8 +141,7 @@ roll_dice(
   times = 6, 
   prob = c(0.1,0.1,0.1,0.1,0.1,0.5), 
   seed = 123
-) |> 
-  plot_dice()
+) |> plot_dice()
 ```  
 
 ![explore](../images/tidydice-roll-dice-6-cheat.png)
