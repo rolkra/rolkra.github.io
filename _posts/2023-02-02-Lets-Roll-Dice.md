@@ -5,6 +5,8 @@ title:  Let's roll dice!
 
 {tidydice} 1.0.0 is on CRAN!
 
+## Why {tidydice}
+
 A basic understanding of probability and statistics is crucial for data understanding. 
 A great way to teach probability and statistics is to start with an experiment, like rolling a dice or flipping a coin.
 
@@ -13,7 +15,7 @@ Dice rolls and coin flips are simulated using sample().
 The properties of the dice can be changed, like the number of sides. 
 A coin flip is simulated using a two sided dice. Experiments can be combined with the pipe-operator. 
   
-## Roll  
+## Design  
   
 The default dice design is black/white with gold as highlight for a success.
 To make it reproducible, use ```seed```
@@ -22,12 +24,12 @@ To make it reproducible, use ```seed```
 # use package
 library(tidydice)
   
-# example: roll 10x6 = 60 dice
-roll_dice(times = 10, rounds = 6, seed = 2) |>
+# example: roll dice 6 times
+roll_dice(times = 6, seed = 123) |>
   plot_dice()
 ```
 
-![explore](../images/tidydice-roll-dice-60.png)
+![explore](../images/tidydice-roll-dice-6.png)
 
  You can control the design of dice using ```plot_dice()``` arguments: 
 * ```fill``` = fill color of dice
@@ -35,3 +37,97 @@ roll_dice(times = 10, rounds = 6, seed = 2) |>
 * ```point_color``` = color of points
 * ```line_color``` = color of lines
 * ```line_size``` = size of lines
+
+```R
+roll_dice(times = 6, seed = 123) |> 
+  plot_dice(fill = "darkgrey", 
+            fill_success = "darkblue",
+            line_color = "white",
+            point_color = "white")
+```
+
+![explore](../images/tidydice-roll-dice-6-design.png)
+
+## Repeat
+
+We see 2 six. This is more than th expected value, which is 1. (A dice has 6 sides, so the probability of getting a six is 1/6)
+
+Now let's repeat this experiment 6 times
+
+```R
+roll_dice(times = 6, rounds = 6, seed = 123) |> 
+  plot_dice(fill = "darkgrey", 
+            fill_success = "darkblue",
+            line_color = "white",
+            point_color = "white")
+```
+
+![explore](../images/tidydice-roll-dice-36-design.png)
+
+Now we get 6 six. This is excactly the expected value.
+
+## Aggregate
+
+Lets increase rounds to 10 000. To see how many times we got a six in each round, use ```agg = TRUE```
+
+```R
+roll_dice(times = 6, rounds = 10000, agg = TRUE, seed = 123)
+```
+
+```
+# A tibble: 10,000 × 4
+   experiment round times success
+        <int> <int> <int>   <int>
+ 1          1     1     6       2
+ 2          1     2     6       2
+ 3          1     3     6       0
+ 4          1     4     6       0
+ 5          1     5     6       2
+ 6          1     6     6       0
+ 7          1     7     6       0
+ 8          1     8     6       1
+ 9          1     9     6       0
+10          1    10     6       1
+# … with 9,990 more rows
+```
+
+We get a tibble, where each row represents one round.
+
+Let's use {explore} to visualise the result
+
+```R
+roll_dice(times = 6, rounds = 10000, agg = TRUE, seed = 123) |>
+  explore(success)
+```
+
+![explore](../images/tidydice-explore-success-6-10000.png)
+
+## Binomial Distribution
+
+By repeating the experiment 10 000 times we already get pretty close to the Binomial Distribution:
+
+```R
+binom_dice(times = 6)
+```
+
+```
+# A tibble: 7 × 3
+  success         p      pct
+    <int>     <dbl>    <dbl>
+1       0 0.335     33.5    
+2       1 0.402     40.2    
+3       2 0.201     20.1    
+4       3 0.0536     5.36   
+5       4 0.00804    0.804  
+6       5 0.000643   0.0643 
+7       6 0.0000214  0.00214
+```
+
+```R
+binom_dice(times = 6) |>
+  plot_binom(highlight = 3:6)
+```
+
+![explore](../images/tidydice-binom-6.png)
+
+The chance to get 3 or more six is just 6.23%
