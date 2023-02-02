@@ -3,7 +3,7 @@ layout: post
 title:  Let's roll dice!
 ---
 
-{tidydice} 1.0.0 is on CRAN!
+{tidydice} 1.0.0 is here!
 
 ## Why {tidydice}
 
@@ -131,3 +131,29 @@ binom_dice(times = 6) |>
 ![explore](../images/tidydice-binom-6.png)
 
 The chance to get 3 or more six is just 6.23%
+
+## Cheating
+
+We can cheat by increasing the probability of getting a six from 1/6 (0.167) to 1/2 (0.5).
+
+```R
+roll_dice(times = 6, prob = c(0.1,0.1,0.1,0.1,0.1,0.5), seed = 123) |> 
+  plot_dice()
+```  
+
+![explore](../images/tidydice-roll-dice-6-cheat.png)
+
+Can this cheating be detected? 3 six is still in a normal range.
+
+Let's do an experiment!
+
+```R
+roll_dice(times = 6, rounds = 10000, agg = TRUE) |>
+  roll_dice(times = 6, rounds = 10000, agg = TRUE, prob = c(0.1,0.1,0.1,0.1,0.1,0.5)) |> 
+  explore(success, target = experiment)
+```  
+
+![explore](../images/tidydice-roll-dice-6-experiment.png)
+
+The plot shows, that there is a high chance that the cheating will be detected, if we roll the dice multiple times. 
+Because getting 4 or more six is very unlikely if there is no cheating.
