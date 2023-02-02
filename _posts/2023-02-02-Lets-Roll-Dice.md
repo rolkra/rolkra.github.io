@@ -35,3 +35,12 @@ roll_dice(times = 10, rounds = 6) |>
 * ```line_color``` = color of lines
 * ```line_size``` = size of lines
 
+```R
+roll_dice(times = 6) %>% 
+  plot_dice(fill = "darkgrey", 
+            fill_success = "darkblue",
+            line_color = "white",
+            point_color = "white")
+```
+
+![explore](../images/tidydice-dice-design.png)
