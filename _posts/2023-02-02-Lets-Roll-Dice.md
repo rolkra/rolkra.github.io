@@ -6,6 +6,7 @@ title:  Let's roll dice!
 {tidydice} 1.0.0 is here!
 
 ## Why {tidydice}
+<img src="../images/hex_tidydice.png" align="right" width="130" height="150"/>
 
 A basic understanding of probability and statistics is crucial for data understanding. 
 A great way to teach probability and statistics is to start with an experiment, like rolling a dice or flipping a coin.
