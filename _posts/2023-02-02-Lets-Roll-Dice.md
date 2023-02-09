@@ -184,9 +184,11 @@ roll_dice_formula(
 ```
 
 ```R
+# 4 dice with 6 sides + 1 dice with 10 sides
+# repeat 1000 times
 roll_dice_formula(
-  dice_formula = "4d6+1d10", # 4 dice with 6 sides + 1 dice with 10 sides
-  rounds = 1000) %>%         # repeat 1000 times
+  dice_formula = "4d6+1d10", 
+  rounds = 1000) |> 
   explore_bar(result, numeric = TRUE)
 ```
 
