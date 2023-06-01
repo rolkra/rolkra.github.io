@@ -144,7 +144,7 @@ data |> explain_tree(target = churn)
 
 ## Unfair
 
-```create_data_churn()``` creates a dataset containing synthetic data of people that can be used to test model fairness:
+```create_data_unfair()``` creates a dataset containing synthetic data of people that can be used to test model fairness:
 
 ```R
 data <- create_data_unfair(obs = 1000, seed = 10)
