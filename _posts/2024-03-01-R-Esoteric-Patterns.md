@@ -101,7 +101,7 @@ Well, we have only 1000 observations in the data. So we could get more data and 
 data <- create_data_esoteric(obs = 100000) 
 ```
 
-When exploring the patterns of 100 000 observations, the "esoteric patterns" are gone.
+When exploring the patterns of 100 000 observations, the "esoteric patterns" are gone (or too small to have any practical relevance)
 
 ![explore_all](../images/esoteric-explore-all-targetpct-100k.png)
 
