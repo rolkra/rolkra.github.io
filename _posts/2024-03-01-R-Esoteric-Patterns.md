@@ -66,4 +66,29 @@ data |> explore_all(target = success, targetpct = TRUE)
 ![explore_all](../images/esoteric-explore-all-targetpct.png)
 
 Ok, there are some intersting correlations. But what does that actually mean?
+Does starsign "Pisces", chinese zodiac "Monkey", a waxing moon, blood type A- or keeping fingers crossed have a positive impact on success?
+
+What if these patterns are just random? We can find out by testing if these patterns are statistically significant:
+
+```R
+data |> abtest(starsign == "Pisces", target = success)
+```
+
+![explore_all](../images/esoteric-abtest-starsign.png)
+
+The A/B test shows, that the relationship between starsign "Pisces" and success is not no statistically significant. People with starsign "Pisces" have a higher chance of success (in this data), but this seems to be only a random pattern, not a real correlation (or causation).
+
+We can A/B test all the other variables too
+
+```R
+data |> abtest(chinese == "Monkey", target = success)
+data |> abtest(moon == "Waxing (+)", target = success)
+data |> abtest(blood == "A-", target = success)
+data |> abtest(fingers_crossed == "A-", target = success)
+```
+
+![explore_all](../images/esoteric-abtest-rest.png)
+
+All are not statistically significant (but chinese zodiac "Monkey" and waxing moon are quite close)!
+
 
