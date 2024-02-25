@@ -91,4 +91,18 @@ data |> abtest(fingers_crossed == "A-", target = success)
 
 All are not statistically significant (but chinese zodiac "Monkey" and waxing moon are quite close)!
 
+An esoteric minded person cound argue, that it tolally makes sense that chinese zodiac "Monkey" and waxing moon tend to have more success, as monkeys are very smart and agile. And a waxing moon is an "increasing" moon, so it can increase success too.
 
+But as a data scientist, we only care about data. What does data tell us about all this?
+
+Well, we have only 1000 observations in the data. So we could get more data and look if these patterns are still there:
+
+```R
+data <- create_data_esoteric(obs = 100000) 
+```
+
+When exploring the patterns of 100 000 observations, the "esoteric patterns" are gone.
+
+![explore_all](../images/esoteric-explore-all-targetpct-100k.png)
+
+So, the lower the number of observations, the easier it is to find such "esoteric patterns". Be aware of them!
