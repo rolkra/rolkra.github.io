@@ -86,9 +86,9 @@ data |> explain_xgboost(target = buy)
 
 We get the feature importance of a XGBoost model explaining the target `buy`: 
 
-![explore_all](../images/xgboost-plot-feature-importance.png)
+![feature-importance](../images/xgboost-plot-feature-importance.png)
 
-So the most important varaibles are 'age', `bbi_usg_gb`, `femaale_ind` and `fixed_tv_ind`
+The most important varaibles are 'age', `bbi_usg_gb`, `femaale_ind` and `fixed_tv_ind`
 
 Let's take a closer look to their relationship with the target variable `buy`:
 
@@ -99,5 +99,55 @@ data |>
   explore_all(target = buy)
 ```
 
-![explore_all](../images/xgboost-explore_all.png)
+![explore_all](../images/xgboost-explore-all.png)
 
+So with the help of `explain_xgboost()` we can understand which variables explain the target `buy`.
+
+### More XGBoost
+
+`explain_xgboost()` can return much more:
+
+```R
+data |> explain_xgboost(target = buy, out = "all") -> model
+```
+
+Now you get more outputs. `model$plot` is the feature-important plot. You get the data behind:
+
+```R
+model$importance
+```
+
+```
+          variable        gain       cover  frequency  importance
+1:             age 0.459501045 0.338333975 0.29666667 0.459501045
+2:      bbi_usg_gb 0.259520698 0.304656256 0.31333333 0.259520698
+3:      female_ind 0.160985735 0.150706363 0.13333333 0.160985735
+4:     fixedtv_ind 0.076391986 0.106877646 0.11333333 0.076391986
+5:   bbi_speed_ind 0.017973412 0.028905647 0.03666667 0.017973412
+6:        city_ind 0.017914818 0.050673036 0.05000000 0.017914818
+7:       hh_single 0.004823200 0.013086040 0.03000000 0.004823200
+8: mobilevoice_ind 0.001655567 0.003425110 0.01333333 0.001655567
+9:  fixedvoice_ind 0.001233540 0.003335926 0.01333333 0.001233540
+```
+
+And the result of hyper parameter tuning
+
+```R
+model$tune_plot
+```
+
+![explore_all](../images/xgboost-tune-plot.png)
+
+```R
+model$tune_data
+```
+
+```
+   model_nr  eta max_depth runtime iter train_auc_mean test_auc_mean
+1:        1 0.30         3  0 mins   19      0.9579619     0.9252692
+2:        2 0.10         3  0 mins   45      0.9572738     0.9274616
+3:        3 0.01         3  0 mins  513      0.9582980     0.9266134
+4:        4 0.30         5  0 mins   15      0.9796771     0.9201005
+5:        5 0.10         5  0 mins   28      0.9731001     0.9232089
+6:        6 0.01         5  0 mins   36      0.9572939     0.9244891
+```
