@@ -24,7 +24,6 @@ data <- create_data_buy(obs = 1000)
 Let's take a look into the data
 
 ```R
-library(explore)
 data |> describe()
 ```
 ```
@@ -77,12 +76,28 @@ data |> describe()
 Now we have only 13 variables. `period` and `fixeddata_ind` are dropped because they contain only a constant value (no variance).
 `mobiledata_prd` is dropped because it is not numeric.
 
+### Create XGBoost
+
 We are ready to create a XGBoost model. It is as simple as this:
 
 ```R
 data |> explain_xgboost(target = buy)
 ```
 
+We get the feature importance of a XGBoost model explaining the target `buy`: 
 
+![explore_all](../images/xgboost-plot-feature-importance.png)
 
+So the most important varaibles are 'age', `bbi_usg_gb`, `femaale_ind` and `fixed_tv_ind`
+
+Let's take a closer look to their relationship with the target variable `buy`:
+
+```R
+library(dplyr)  # for select
+data |> 
+  select(buy, age, bbi_usg_gb, female_ind, fixedtv_ind) |> 
+  explore_all(target = buy)
+```
+
+![explore_all](../images/xgboost-explore_all.png)
 
