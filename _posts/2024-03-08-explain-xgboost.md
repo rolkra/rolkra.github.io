@@ -151,3 +151,33 @@ model$tune_data
 5:        5 0.10         5  0 mins   28      0.9731001     0.9232089
 6:        6 0.01         5  0 mins   36      0.9572939     0.9244891
 ```
+
+### Prediction 
+
+The XGBoost model itself is available too for prediction.
+
+```R
+test <- use_data_buy(obs = 100, seed = 999) |>   # new data
+  predict_target(model = model$model) 
+test |> describe()
+```
+
+```
+# A tibble: 14 x 8
+   variable        type     na na_pct unique       min      mean       max
+   <chr>           <chr> <int>  <dbl>  <int>     <dbl>     <dbl>     <dbl>
+ 1 period          int       0      0      1 202012    202012    202012   
+ 2 buy             int       0      0      2      0         0.49      1   
+ 3 age             int       0      0     43     24        52.6      82   
+ 4 city_ind        int       0      0      2      0         0.49      1   
+ 5 female_ind      int       0      0      2      0         0.51      1   
+ 6 fixedvoice_ind  int       0      0      2      0         0.09      1   
+ 7 fixeddata_ind   int       0      0      1      1         1         1   
+ 8 fixedtv_ind     int       0      0      2      0         0.4       1   
+ 9 mobilevoice_ind int       0      0      2      0         0.6       1   
+10 mobiledata_prd  chr       0      0      3     NA        NA        NA   
+11 bbi_speed_ind   int       0      0      2      0         0.65      1   
+12 bbi_usg_gb      int       0      0     54     11      1063.   100000   
+13 hh_single       int       0      0      2      0         0.25      1   
+14 prediction      dbl       0      0     96      0.02      0.52      0.98
+```
