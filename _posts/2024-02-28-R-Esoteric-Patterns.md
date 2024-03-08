@@ -76,7 +76,7 @@ data |> abtest(starsign == "Pisces", target = success)
 
 ![explore_all](../images/esoteric-abtest-starsign.png)
 
-The A/B test shows, that the relationship between starsign "Pisces" and success is not no statistically significant. People with starsign "Pisces" have a higher chance of success (in this data), but this seems to be only a random pattern, not a real correlation (or causation).
+The A/B test shows, that the relationship between starsign "Pisces" and success is not statistically significant. People with starsign "Pisces" have a higher chance of success (in this data), but this seems to be only a random pattern, not a real correlation (or causation).
 
 We can A/B test all the other variables too
 
