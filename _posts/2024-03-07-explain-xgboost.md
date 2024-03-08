@@ -136,7 +136,7 @@ And the result of hyper parameter tuning
 model$tune_plot
 ```
 
-![explore_all](../images/xgboost-tune-plot.png)
+![tune-plot](../images/xgboost-tune-plot.png)
 
 ```R
 model$tune_data
@@ -157,7 +157,7 @@ model$tune_data
 The XGBoost model itself is available too for prediction.
 
 ```R
-test <- use_data_buy(obs = 100, seed = 999) |>   # new data
+test <- create_data_buy(obs = 100, seed = 999) |>   # new data
   predict_target(model = model$model) 
 test |> describe()
 ```
@@ -180,4 +180,55 @@ test |> describe()
 12 bbi_usg_gb      int       0      0     54     11      1063.   100000   
 13 hh_single       int       0      0      2      0         0.25      1   
 14 prediction      dbl       0      0     96      0.02      0.52      0.98
+```
+
+Now we can check the prediction
+
+```R
+test |> explore(prediction, target = buy)
+```
+
+![prediction](../images/xgboost-prediction.png)
+
+Obviousley, it worked very well!
+
+### Behind the scenes
+
+If you run `explain_xgboost()` with parameter `log = TRUE` you see whats going on "behind the scenes":
+
+```R
+data |> explain_xgboost(target = buy, log = TRUE)
+```
+
+```
+train xgboost nr 1
+eta=0.3, max_depth=3, gamma=0, colsample_bytree=0.8, subsample=0.8, min_child_weight=1, scale_pos_weight=1
+19 iterations, training time=0 min, auc=0.9253
+
+train xgboost nr 2
+eta=0.1, max_depth=3, gamma=0, colsample_bytree=0.8, subsample=0.8, min_child_weight=1, scale_pos_weight=1
+45 iterations, training time=0 min, auc=0.9275
+
+train xgboost nr 3
+eta=0.01, max_depth=3, gamma=0, colsample_bytree=0.8, subsample=0.8, min_child_weight=1, scale_pos_weight=1
+513 iterations, training time=0 min, auc=0.9266
+
+train xgboost nr 4
+eta=0.3, max_depth=5, gamma=0, colsample_bytree=0.8, subsample=0.8, min_child_weight=1, scale_pos_weight=1
+15 iterations, training time=0 min, auc=0.9201
+
+train xgboost nr 5
+eta=0.1, max_depth=5, gamma=0, colsample_bytree=0.8, subsample=0.8, min_child_weight=1, scale_pos_weight=1
+28 iterations, training time=0 min, auc=0.9232
+
+train xgboost nr 6
+eta=0.01, max_depth=5, gamma=0, colsample_bytree=0.8, subsample=0.8, min_child_weight=1, scale_pos_weight=1
+36 iterations, training time=0 min, auc=0.9245
+
+best model found in cross-validation: xgboost nr 2: 
+eta=0.01, max_depth=5, gamma=0, colsample_bytree=0.8, subsample=0.8, min_child_weight=1, scale_pos_weight=1
+nrounds=45, test_auc=0.9275
+
+train final model...
+done, training time=0 min
 ```
