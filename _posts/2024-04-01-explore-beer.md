@@ -78,7 +78,7 @@ data |>
 
 ![data-understanding-2](../images/explore-beer-understand2.png)
 
-And we see, **some of the beers actually contain sugar!**
+We see, **some of the beers actually contain sugar!**
 
 Somme of the beers have attributes with undefined values (na). The density-plot of `alcolhol_vol_pct`, `energy_kcal_100ml` and `original_wort` look quite similar, there seems to be a strong relationship. Let's check:
 
