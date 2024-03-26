@@ -112,8 +112,6 @@ Let's check the other attributes too!
 
 #### Correlations with sugar
 
-We test the hypothesis: "the amount of sugar in beer is defined by beer-type"
-
 ```R
 data |> 
   select(country, year, type, color_dark, sugar_g_100ml) |> 
