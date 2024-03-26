@@ -153,7 +153,7 @@ data |>
 We can see sugar depends on many attributes. `alcohol_vol_pct`, `energy_kcal_100ml` and `original_wort` are still in the model, but the "Random Forest" rank other attributes higher. 
 The strongest are: 
 * `type`:  as we already saw that beer-type "Alkoholfrei" contains the highest amount of sugar
-* ´carb_g_100ml`: as sugar is a type of carb (carbohydrates)
-* `alcohol_vol_pct': as we saw that higher alcohol means lower sugar
+* `carb_g_100ml`: as sugar is a type of carb (carbohydrates)
+* `alcohol_vol_pct`: as we saw that higher alcohol means lower sugar
 
-`original_wort`and `energy_kcal_100ml`have a medium impact on sugar. The rest of the attributes have a low (or no) impact on sugar.
+`original_wort`and `energy_kcal_100ml` have a medium impact on sugar. The rest of the attributes have a low (or no) impact on sugar.
