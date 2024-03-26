@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Sugar in beer?
+title:  Sugar in beer? Let´s {explore}!
 ---
 
 Let's dive into beer-data and build a beer-AI!
