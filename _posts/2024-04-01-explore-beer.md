@@ -7,7 +7,7 @@ Let's dive into beer-data and build an AI that explains sugar in beer!
 
 ### Setup
 
-If {explore} is not installed, install it from CRAN (you need explore 1.2.0 or higher)
+If {explore} is not installed, install it from CRAN
 
 ```R
 install.packages("explore") 
@@ -171,3 +171,9 @@ The strongest are:
 `original_wort`and `energy_kcal_100ml` have a medium impact on sugar. The rest of the attributes have a low (or no) impact on sugar.
 
 The rest of the attributes are less convincing.
+
+### About {explore}
+
+* <https://github.com/rolkra/explore>
+* <https://CRAN.R-project.org/package=explore>
+* <https://rolkra.github.io/explore/articles/explore.html>
