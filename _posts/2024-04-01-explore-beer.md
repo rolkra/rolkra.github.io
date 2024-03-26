@@ -166,3 +166,5 @@ The strongest are:
 * `alcohol_vol_pct`: as we saw that higher alcohol means lower sugar
 
 `original_wort`and `energy_kcal_100ml` have a medium impact on sugar. The rest of the attributes have a low (or no) impact on sugar.
+
+The rest of the attributes are less convincing.
