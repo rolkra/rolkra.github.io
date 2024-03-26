@@ -3,7 +3,7 @@ layout: post
 title:  Sugar in beer? Let´s {explore}!
 ---
 
-Let's dive into beer-data and build a beer-AI!
+Let's dive into beer-data and build an AI that explains sugar in beer!
 
 ### Setup
 
@@ -59,7 +59,7 @@ data |> describe_all()
 ```
 
 So we got 161 beers (29 different brands) from 3 countries. For most of the beers we got most common attributes like alcohol (in volumne percent), original wort, energy (in kcal per 100 ml), and so on. 
-Let's take a closer look to some of the attributes (we will use "beer-like" golden color for the plots):
+Let's take a closer look to some of the attributes (we will use "beer-like" golden color for the plots, you need {explore} version 1.3 or higher to use the color parameter):
 
 ```R
 library(dplyr)
@@ -107,31 +107,33 @@ data |>
 
 ![sugar-energy](../images/explore-beer-sugar-energy.png)
 
-There seems to be a relationship between sugar and energy, but the higher the sugar, the lower the energy (kcal/100ml). Maybe sugar is related to the beer type too?
+There seems to be a relationship between sugar and energy, but the higher the sugar, the lower the energy (kcal/100ml). L
+Let's check the other attributes too!
 
-#### Sugar depends on beer-type
+#### Correlations with sugar
 
 We test the hypothesis: "the amount of sugar in beer is defined by beer-type"
 
 ```R
 data |> 
-  explore(sugar_g_100ml, energy_kcal_100ml, color = "gold")
+  select(country, year, type, color_dark, sugar_g_100ml) |> 
+  explore_all(target = sugar_g_100ml, color = "gold")
 ```
 
-![sugar-energy](../images/explore-beer-sugar-type.png)
+![correlation-sugar-1](../images/explore-beer-cor-sugar1.png)
 
 Beer type "Alkoholfrei" (alcohol free) has clearly the highest amount of sugar. Beer type "Bock" has the lowest amount of sugar. 
-As the main difference between type "Bock" and "Alkoholfrei" is the amount of alcohol, we test the relationship between sugar and alcohol too:
-
-#### Sugar depends on alcohol
-
-We test the hypothesis: "the less alcohol in a beer, the more sugar"
+As the main difference between type "Bock" and "Alkoholfrei" is the amount of alcohol
 
 ```R
 data |> 
-  explore(sugar_g_100ml, alcoholkcal_100ml, color = "gold")
+  select(alcohol_vol_pct, original_wort, energy_kcal_100ml, carb_g_100ml, sugar_g_100ml) |> 
+  explore_all(target = sugar_g_100ml, color = "gold")
 ```
-![alcohol-sugar](../images/explore-beer-alcohol-sugar.png)
+
+All 4 attributes show a correlation with sugar! `carb_g_100ml` show a positive correlation (the higher `carb_g_100ml` the higher sugar). The other 3 attributes show a negative correlation (the higher the attribute the lower sugar).
+
+![correlation-sugar-2](../images/explore-beer-cor-sugar2.png)
 
 ### Explain sugar
 
