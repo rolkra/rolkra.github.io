@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Let's {explore} beer!
+title:  Sugar in beer?
 ---
 
 Let's dive into beer-data and build a beer-AI!
@@ -80,3 +80,80 @@ data |>
 
 Somme of the beers have unknown attributes (na values). The density-plot of alcolhol_vol_pct and original_wort look quite similar, there seems to be a strong relationship.
 
+And we see, some of the beers actually contain sugar!
+
+### Hypothesis
+
+#### More sugar, more kcal
+
+We test the hypothesis: "the ore sugar a beer contains, the more energy (kcal/100ml)
+
+```R
+data |> 
+  explore(sugar_g_100ml, energy_kcal_100ml, color = "gold")
+```
+
+![sugar-energy](../images/explore-beer-sugar-energy.png)
+
+There seems to be a relationship between sugar and energy, but the higher the sugar, the lower the energy (kcal/100ml). Maybe sugar is related to the beer type too?
+
+#### Sugar depends on beer-type
+
+We test the hypothesis: "the amount of sugar in beer is defined by beer-type"
+
+```R
+data |> 
+  explore(sugar_g_100ml, energy_kcal_100ml, color = "gold")
+```
+
+![sugar-energy](../images/explore-beer-sugar-type.png)
+
+Beer type "Alkoholfrei" (alcohol free) has clearly the highest amount of sugar. Beer type "Bock" has the lowest amount of sugar. 
+As the main difference between type "Bock" and "Alkoholfrei" is the amount of alcohol, we test the relationship between sugar and alcohol too:
+
+#### Sugar depends on alcohol
+
+We test the hypothesis: "the less alcohol in a beer, the more sugar"
+
+```R
+data |> 
+  explore(sugar_g_100ml, alcoholkcal_100ml, color = "gold")
+```
+![alcohol-sugar](../images/explore-beer-alcohol-sugar.png)
+
+### Explain sugar
+
+#### Decision Tree
+
+Ok, it seeems that sugar is depending not just on one single attribute. To explain sugar, we use the machine learning algorithm "Decision Tree":
+
+```R
+data |> 
+  explain_tree(target = sugar_g_100ml)
+```
+
+![explain-sugar-tree](../images/explore-beer-tree-sugar.png)
+
+The decision tree explains the relationship between sugar with the other attributes `alcohol_vol_pct`, `energy_kcal_100_ml' and `original_wort`.
+So, if the beer contains less than 1.5% alcohol in 100 ml, then it contains more sugar (in average 2.9 g / 100ml). If the beer contains more than 1.5% alcohol in 100 ml, 
+then the beer contains a low amount of sugar. The lowest sugar have beer with > 3.8% alcohol in 100 ml and original_wort < 12.
+
+#### Random Forest
+
+Now let's use a more detailed machine learning algorithm: "Random Forest" to explain sugar in beer.
+
+```R
+data |> 
+  drop_obs_with_na() |> 
+  explain_forest(target = sugar_g_100ml)
+```
+
+![explain-sugar-forest](../images/explore-beer-forest-sugar.png)
+
+We can see sugar depends on many attributes. `alcohol_vol_pct`, `energy_kcal_100ml` and `original_wort` are still in the model, but the "Random Forest" rank other attributes higher. 
+The strongest are: 
+* `type`:  as we already saw that beer-type "Alkoholfrei" contains the highest amount of sugar
+* ´carb_g_100ml`: as sugar is a type of carb (carbohydrates)
+* `alcohol_vol_pct': as we saw that higher alcohol means lower sugar
+
+`original_wort`and `energy_kcal_100ml`have a medium impact on sugar. The rest of the attributes have a low (or no) impact on sugar.
