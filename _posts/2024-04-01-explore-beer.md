@@ -120,7 +120,7 @@ data |>
   explore_all(target = sugar_g_100ml, color = "gold")
 ```
 
-![correlation-sugar-1](../images/explore-beer-cor-sugar1.png)
+![correlation-sugar-1](../images/explore-beer-explore-cor-sugar1.png)
 
 Beer type "Alkoholfrei" (alcohol free) has clearly the highest amount of sugar. Beer type "Bock" has the lowest amount of sugar. 
 As the main difference between type "Bock" and "Alkoholfrei" is the amount of alcohol
@@ -133,7 +133,7 @@ data |>
 
 All 4 attributes show a correlation with sugar! `carb_g_100ml` show a positive correlation (the higher `carb_g_100ml` the higher sugar). The other 3 attributes show a negative correlation (the higher the attribute the lower sugar).
 
-![correlation-sugar-2](../images/explore-beer-cor-sugar2.png)
+![correlation-sugar-2](../images/explore-beer-explore-cor-sugar2.png)
 
 ### Explain sugar
 
