@@ -95,7 +95,7 @@ Both, `energy_kcal_100ml` and `original_wort` have a strong relationship with `a
 
 #### More sugar, more kcal
 
-We test the hypothesis: "the ore sugar a beer contains, the more energy (kcal/100ml)
+We test the hypothesis: "the more sugar a beer contains, the more energy (kcal/100ml)"
 
 ```R
 data |> 
