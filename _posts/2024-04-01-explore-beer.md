@@ -68,6 +68,9 @@ data |>
   explore_all(color = "gold")
 ```
 
+Most of the beers are produced in Austria, some in Germany and Switzerland. All beer-data are collected in 2023. 
+Beer types are "Alkoholfrei", "Bock" and "Rest. "Rest is the most common beer type. Below 10% of all beers have a dark color.
+
 ![data-understanding-1](../images/explore-beer-understand1.png)
 
 ```R
