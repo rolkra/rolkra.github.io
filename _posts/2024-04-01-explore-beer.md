@@ -78,14 +78,18 @@ data |>
 
 ![data-understanding-2](../images/explore-beer-understand2.png)
 
-Somme of the beers have unknown attributes (na values). The density-plot of `alcolhol_vol_pct`, `energy_kcal_100ml` and `original_wort` look quite similar, there seems to be a strong relationship. Let's check:
+And we see, **some of the beers actually contain sugar!**
+
+Somme of the beers have attributes with undefined values (na). The density-plot of `alcolhol_vol_pct`, `energy_kcal_100ml` and `original_wort` look quite similar, there seems to be a strong relationship. Let's check:
 
 ```R
 data |> explore(energy_kcal_100ml, alcohol_vol_pct, color = "gold")
 data |> explore(original_wort, alcohol_vol_pct, color = "gold")
 ```
 
-And we see, some of the beers actually contain sugar!
+![data-cor](../images/explore-beer-cor-alcohol.png)
+
+Both, `energy_kcal_100ml` and `original_wort` have a strong relationship with `alcohol_vol_pct`
 
 ### Hypothesis
 
