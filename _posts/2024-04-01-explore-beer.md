@@ -107,8 +107,7 @@ data |>
 
 ![sugar-energy](../images/explore-beer-sugar-energy.png)
 
-There seems to be a relationship between sugar and energy, but the higher the sugar, the lower the energy (kcal/100ml). L
-Let's check the other attributes too!
+There seems to be a relationship between sugar and energy, but the higher the sugar, the lower the energy (kcal/100ml). Let's check the other attributes too!
 
 #### Correlations with sugar
 
@@ -121,7 +120,7 @@ data |>
 ![correlation-sugar-1](../images/explore-beer-explore-cor-sugar1.png)
 
 Beer type "Alkoholfrei" (alcohol free) has clearly the highest amount of sugar. Beer type "Bock" has the lowest amount of sugar. 
-As the main difference between type "Bock" and "Alkoholfrei" is the amount of alcohol
+The main difference between type "Bock" and "Alkoholfrei" is the amount of alcohol.
 
 ```R
 data |> 
@@ -131,7 +130,7 @@ data |>
 
 ![correlation-sugar-2](../images/explore-beer-explore-cor-sugar2.png)
 
-All 4 attributes show a correlation with sugar! `carb_g_100ml` show a positive correlation (the higher `carb_g_100ml` the higher sugar). The other 3 attributes show a negative correlation (the higher the attribute the lower sugar).
+All 4 attributes show a correlation with sugar! `carb_g_100ml` shows a positive correlation (the higher `carb_g_100ml` the higher sugar). The other 3 attributes show a negative correlation (the higher the attribute the lower sugar).
 
 ### Explain sugar
 
