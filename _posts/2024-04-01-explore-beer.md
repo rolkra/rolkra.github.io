@@ -134,7 +134,7 @@ data |>
 
 ![explain-sugar-tree](../images/explore-beer-tree-sugar.png)
 
-The decision tree explains the relationship between sugar with the other attributes `alcohol_vol_pct`, `energy_kcal_100_ml' and `original_wort`.
+The decision tree explains the relationship between sugar with the other attributes `alcohol_vol_pct`, `energy_kcal_100_ml` and `original_wort`.
 So, if the beer contains less than 1.5% alcohol in 100 ml, then it contains more sugar (in average 2.9 g / 100ml). If the beer contains more than 1.5% alcohol in 100 ml, 
 then the beer contains a low amount of sugar. The lowest sugar have beer with > 3.8% alcohol in 100 ml and original_wort < 12.
 
