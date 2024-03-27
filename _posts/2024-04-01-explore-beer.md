@@ -83,7 +83,7 @@ data |>
 
 We see, **some of the beers actually contain sugar!**
 
-Somme of the beers have attributes with undefined values (na). The density-plot of `alcolhol_vol_pct`, `energy_kcal_100ml` and `original_wort` look quite similar, there seems to be a strong relationship. Let's check:
+Somme of the beers have attributes with undefined values (na). The density-plot of `alcolhol_vol_pct`, `energy_kcal_100ml` and `original_wort` have some similarities. Are they correlated? Let's check:
 
 ```R
 data |> explore(energy_kcal_100ml, alcohol_vol_pct, color = "gold")
@@ -161,15 +161,18 @@ data |>
 
 ![explain-sugar-forest](../images/explore-beer-forest-sugar.png)
 
-We can see sugar depends on many attributes. `alcohol_vol_pct`, `energy_kcal_100ml` and `original_wort` are still in the model, but the "Random Forest" rank other attributes higher. 
-The strongest are: 
+We can see sugar depends on many attributes. `alcohol_vol_pct`, `energy_kcal_100ml` and `original_wort` are still in the model, but the "Random Forest" rank other attributes higher. The strongest are: 
 * `type`:  as we already saw that beer-type "Alkoholfrei" contains the highest amount of sugar
 * `carb_g_100ml`: as sugar is a type of carb (carbohydrates)
 * `alcohol_vol_pct`: as we saw that higher alcohol means lower sugar
 
 `original_wort`and `energy_kcal_100ml` have a medium impact on sugar. The rest of the attributes have a low (or no) impact on sugar.
 
-The rest of the attributes are less convincing.
+The rest of the attributes are less important (and not convincing).
+
+### Conclusion
+
+Yes, beer can contain sugar (even if it doesn't taste sweet). You can expect alcohol free or low alcohol beers to contain sugar. But those beer have lower engergy (kcal / 100 ml) compared to an average beer with typical alcohol.
 
 ### About {explore}
 
