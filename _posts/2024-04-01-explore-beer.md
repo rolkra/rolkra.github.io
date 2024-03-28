@@ -194,7 +194,7 @@ The rest of the attributes are less important (and not convincing).
 
 ### Conclusion
 
-Yes, beer can contain sugar (even if it doesn't taste sweet). You can expect alcohol free or low alcohol beers to contain more sugar. But these beer have lower engergy (kcal / 100 ml) compared to an average beer with typical alcohol.
+Yes, beer can contain sugar (even if it doesn't taste sweet). You can expect alcohol free or low alcohol beers to contain more sugar. But these beers have lower engergy (kcal / 100 ml) compared to an average beer with typical alcohol.
 
 ### About {explore}
 
