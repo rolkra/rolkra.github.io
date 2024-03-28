@@ -118,9 +118,7 @@ data |>
 
 There is a clear pattern: beers with high carb tend to have very low alcohol (type = Alkoholfrei)
 
-### Hypothesis
-
-#### More sugar, more kcal
+### More sugar, more kcal?
 
 We test the hypothesis: "the more sugar a beer contains, the more energy (kcal/100ml)"
 
@@ -133,7 +131,7 @@ data |>
 
 There seems to be a relationship between sugar and energy, but the higher the sugar, the lower the energy (kcal/100ml). Let's check the other attributes too!
 
-#### Correlations with sugar
+### Correlations with sugar
 
 ```R
 data |> 
