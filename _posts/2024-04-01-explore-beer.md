@@ -83,7 +83,11 @@ data |>
 
 We see, **some of the beers actually contain sugar!**
 
-Somme of the beers have attributes with undefined values (na). The density-plot of `alcolhol_vol_pct`, `energy_kcal_100ml` and `original_wort` have some similarities. Are they correlated? Let's check:
+### Deep Dive
+
+Let's dive deeper into the data and look for some interesting patterns.
+
+First we check the relationship between `alcolhol_vol_pct`, `energy_kcal_100ml` and `original_wort`:
 
 ```R
 data |> explore(energy_kcal_100ml, alcohol_vol_pct, color = "gold")
@@ -93,6 +97,19 @@ data |> explore(original_wort, alcohol_vol_pct, color = "gold")
 ![data-cor](../images/explore-beer-cor-alcohol.png)
 
 Both, `energy_kcal_100ml` and `original_wort` have a strong relationship with `alcohol_vol_pct`
+
+Then we check the relationship between `carb_g_100ml`, `alcohol_vol_pct` and `type`
+
+```R
+data |> 
+  explore(alcohol_vol_pct, carb_g_100ml, 
+          target = type,
+          color = c("blue","red", "gold")))
+```
+
+![data-cor](../images/explore-beer-explore-cor-alc-carb-type.png)
+
+There is a clear pattern: beers with high carb tend to have very low alcohol (type = Alkoholfrei)
 
 ### Hypothesis
 
