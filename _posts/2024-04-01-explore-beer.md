@@ -61,13 +61,13 @@ data |> describe_all()
 So we got 161 beers (29 different brands) from 3 countries. For most of the beers we got most common attributes like alcohol (in volumne percent), original wort, energy (in kcal per 100 ml), and so on. 
 Let's take a closer look to some of the attributes: (we will use "beer-like" golden color for the plots, you need {explore} version 1.3 or higher to use the color parameter):
 
-We use `dplyr` for `select`.
+We use {dplyr} for `select`, all other functions are from {explore}
 
 ```R
 library(dplyr)
 ```
 
- We will use "beer-like" golden color for the plots, you need {explore} version 1.3 or higher to use the color parameter.
+ We will use a "beer-like" golden color for the plots, you need {explore} version 1.3 or higher to use the color parameter.
  
 ```R
 data |> 
