@@ -188,7 +188,7 @@ We can see sugar depends on many attributes. `alcohol_vol_pct`, `energy_kcal_100
 * `carb_g_100ml`: as sugar is a type of carb (carbohydrates)
 * `alcohol_vol_pct`: as we saw that higher alcohol means lower sugar
 
-`original_wort`and `energy_kcal_100ml` have a medium impact on sugar. The rest of the attributes have a low (or no) impact on sugar.
+`original_wort`and `energy_kcal_100ml` have a medium impact on sugar.
 
 The rest of the attributes are less important (and not convincing).
 
