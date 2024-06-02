@@ -66,8 +66,26 @@ We can visualise the correlation between `age` and `bbi_usg_gb` by using the `ex
 data |> explore(age, bbi_usg_gb)
 ```
 
-![expore-beer](../images/explore-beer-interact.gif)
+![expore-correlation](../images/extreme-explore-age-bbiusg.png)
 
-Give it a try! <https://github.com/rolkra/explore>
+There is one single observation with a crazy high internet usage (1 Mio Gigabyte). 
+What will happen, if we exclute this extreme value from the data?
 
-And dive deeper into beer data using [{explore} & coding](https://rolkra.github.io/explore-beer/)
+```R
+data |>
+  filter(bbi_usg_gb < 100000) |>
+  explore(age, bbi_usg_gb)
+```
+
+![expore-correlation](../images/extreme-explore-age-bbiusg-filter.png)
+
+This made the correlation flip from a positive value to a negative value.
+
+### Conclusion
+
+Never trust a correlation, always take a closer look to the data.
+
+Use visualisations to check patterns in data, and double check with someone who has domain knowlege, if it realy makes sense.
+
+Wanna try by yourself? 
+Use <https://github.com/rolkra/explore> (you need {explore} 1.3.1 or higher)
