@@ -3,7 +3,7 @@ layout: post
 title:  New R IDE Positron (from Posit)!
 ---
 
-Positron is in early beta, but still promising. Take a look!
+Positron is in early beta, but promising. Take a look!
 
 ### Install
 
