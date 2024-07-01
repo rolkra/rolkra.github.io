@@ -33,7 +33,7 @@ You can switch easily to dark mode by selecting the settings-icon on the bottom 
 
 ### Data Explorer
 
-I really like the built in data explorer
+I really like the built in data explorer. On the left you can see an overview of all variables with percentage of NULL values. And you can define a filter easily.
 
 ![positron-data-explorer](../images/positron-data-explorer.png)
 
