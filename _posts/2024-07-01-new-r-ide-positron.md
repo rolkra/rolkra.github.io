@@ -39,7 +39,9 @@ I really like the built in data explorer. On the left you can see an overview of
 
 ### Limitations
 
-I expect Positron to improve fast, but at the moment (July 2024) there are some major limitations. Quarto and inline HTML output do not work out of the box. If you want to run a code block, you need more than one ```<ctrl> <enter>``` (unlike RStudio IDE). Some of the keyboard shortcuts I am used to are missing. But you may define it by yourself using the settings-icon on the bottom left of the screen. However, ```<ctrl <shift> M``` works as expected (pipe operator |> )
+I expect Positron to improve fast, but at the moment (July 2024) there are some major limitations. Quarto and inline HTML output do not work out of the box. If you want to run a code block, you need more than one ```<ctrl> <enter>``` (unlike RStudio IDE). 
+
+Some of the keyboard shortcuts I am used to are missing. But you may define it by yourself using the settings-icon on the bottom left of the screen. However, ```<ctrl> <shift> M``` works as expected (pipe operator ```|>``` )
 
 ### Conclusion
 
