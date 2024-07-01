@@ -37,9 +37,13 @@ I really like the built in data explorer. On the left you can see an overview of
 
 ![positron-data-explorer](../images/positron-data-explorer.png)
 
+### Limitations
+
+I expect Positron to improve fast, but at the moment (July 2024) there are some major limitations. Quarto and inline HTML output do not work out of the box. If you want to run a code block, you need more than one <ctrl> <enter> (unlike RStudio IDE). Some of the keyboard shortcuts I am used to are missing. But you may define it by yourself using the settings-icon on the bottom left of the screen. However, <strl> <shift> M works as expected (pipe operator |> )
+
 ### Conclusion
 
-Postiron is promising. It may become a great IDE for R and Python users that combine the best of both worlds from VSCode and RStudio IDE.
+Postiron is promising. It may become a great IDE for R and Python users that combine the best of both worlds from VSCode and RStudio IDE. But at the moment (July 2024 it is in beta and not everything works as expected)
 
 Wanna try {explore}? 
 See <https://github.com/rolkra/explore>
