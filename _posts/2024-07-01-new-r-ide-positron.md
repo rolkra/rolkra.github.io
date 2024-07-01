@@ -45,7 +45,7 @@ Some of the keyboard shortcuts I am used to are missing. But you may define it b
 
 ### Conclusion
 
-Postiron is promising. It may become a great IDE for R and Python users that combine the best of both worlds from VSCode and RStudio IDE. But at the moment (July 2024 it is in beta and not everything works as expected)
+Postiron is promising. It may become a great IDE for R and Python users that combine the best of both worlds from VSCode and RStudio IDE. But at the moment (July 2024) it is in beta and not everything works as expected)
 
 Wanna try {explore}? 
 See <https://github.com/rolkra/explore>
