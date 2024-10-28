@@ -232,3 +232,5 @@ nrounds=45, test_auc=0.9275
 train final model...
 done, training time=0 min
 ```
+
+Need for speed? Use the `nthread` parameter in `xgboost()`
