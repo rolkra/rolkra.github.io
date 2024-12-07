@@ -9,23 +9,17 @@ Let's find out!
 
 # Get the data
 
-First, we get the CRAN download statistics of {explore} using {cranlogs}, and than do some data cleaning:
+First, we get the CRAN download statistics of {explore} using {cranlogs}, and do some data cleaning and add a cummulated sum:
 
 ```R
 library(tidyverse)
 library(explore)
 library(cranlogs)
 
-data <- cran_downloads("explore", from = "2019-05-15")
-data$total <- cumsum(data$count)
-
-date_active <- data |> 
-  filter(count > 0) |> 
-  pull(date)
-
-data <- data |> 
-  filter(date >= min(date_active)) |> 
-  filter(date <= max(date_active))
+data <- cran_downloads("explore", from = "2019-05-15") |>
+  filter(date >= min(data[data$count > 0, ]$date)) |>
+  filter(date <= max(data[data$count > 0, ]$date)) |>
+  mutate(total = cumsum(count))
 
 data |> glimpse()
 ```
