@@ -68,9 +68,9 @@ data |>
 
 # Predict
 
-OK, the last date we have data is 2024-12-05. {explore} has 99 133 total CRAN downloads. In the last two months, there have been between 50 and 75 downloads per day. How long will it take to reach 100k? 100 000 - 99 133 = 866 downloads missing.
+OK, the last date with downloads is 2024-12-05. {explore} has 99 133 total CRAN downloads. In the last two months, there have been between 50 and 75 downloads per day in average. How long will it take to reach 100k? 100 000 - 99 133 = 866 downloads missing.
 
-* 50 downloads per day: 866 / 50 = 17.32 -> 100k until 2024-12-22
-* 75 downloads per day: 866 / 75 = 11.55 -> 100k until 2024-12-17
+* 50 downloads per day: 866 / 50 = 17.32 days -> 100k until 2024-12-22
+* 75 downloads per day: 866 / 75 = 11.55 days -> 100k until 2024-12-17
 
 So, the chances are high to celebrate 100k before X-mas!
