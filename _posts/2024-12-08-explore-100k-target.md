@@ -7,7 +7,9 @@ When will {explore} CRAN download hit 100k?
 
 Let's find out!
 
-First, we get the CRAN download statistics of {explore} using {cranlogs}.
+# Get the data
+
+First, we get the CRAN download statistics of {explore} using {cranlogs}, and than do some data cleaning:
 
 ```R
 library(tidyverse)
@@ -37,7 +39,9 @@ $ package <chr> "explore", "explore", "explore", "explore", "explore", "e…
 $ total   <dbl> 5, 27, 39, 52, 73, 85, 117, 141, 161, 170, 179, 191, 201,…
 ```
 
-Let's visualize it:
+# Visualize it
+
+Now let's take a look:
 
 ```R
 data |> 
@@ -61,3 +65,12 @@ data |>
 ```
 
 ![explore-downloads-365](../images/explore-downloads-365.png)
+
+# Predict
+
+OK, the last date we have data is 2024-12-05. {explore} has 99 133 total CRAN downloads. In the last two months, there have been between 50 and 75 downloads per day. How long will it take to reach 100k? 100 000 - 99 133 = 866 downloads missing.
+
+* 50 downloads per day: 866 / 50 = 17.32 -> 100k until 2024-12-22
+* 75 downloads per day: 866 / 75 = 11.55 -> 100k until 2024-12-17
+
+So, the chances are high to celebrate 100k before X-mas!
