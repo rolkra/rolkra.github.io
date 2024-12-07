@@ -3,7 +3,7 @@ layout: post
 title:  Targeting 100k CRAN downloads
 ---
 
-When will {explore} CRAN download hit 100k? 
+When will {explore} CRAN downloads hit 100k? 
 
 Let's find out!
 
