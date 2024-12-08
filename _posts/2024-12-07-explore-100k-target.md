@@ -41,7 +41,7 @@ Now let's take a look:
 ```R
 data |> 
   ggplot(aes(x = date, y = total)) +
-  geom_line(color = "#7BB8DA", size = 2) +
+  geom_line(color = "#7BB8DA", linewidth = 2) +
   scale_y_continuous(labels = function(x) format(x, big.mark = " ")) +
   theme_minimal() +
   ggtitle(paste("{explore} CRAN downloads:", format(sum(data$count), big.mark = " "))) 
