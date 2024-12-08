@@ -16,7 +16,8 @@ library(tidyverse)
 library(explore)
 library(cranlogs)
 
-data <- cran_downloads("explore", from = "2019-05-15") |>
+data <- cran_downloads("explore", from = "2019-05-15")
+data <- data |> 
   filter(date >= min(data[data$count > 0, ]$date)) |>
   filter(date <= max(data[data$count > 0, ]$date)) |>
   mutate(total = cumsum(count))
