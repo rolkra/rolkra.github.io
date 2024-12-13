@@ -54,8 +54,11 @@ So it is very close to 100k. Let's take a closer look to daily downloads of the 
 ```R
 data |>
   slice_tail(n = 365) |> 
+  arrange(date) |> 
   add_var_id(name = "day") |>
-  explore(day, count, title = "{explore} CRAN downloads (last 365 days)") +
+  explore(day, count, 
+          title = "{explore} CRAN downloads (last 365 days)",
+          auto_scale = FALSE) +
   geom_smooth(color = "red")
 ```
 
