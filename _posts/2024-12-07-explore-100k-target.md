@@ -72,3 +72,9 @@ OK, the last date with downloads is 2024-12-05. {explore} has 99 133 total CRAN 
 * 75 downloads per day: 867 / 75 = 11.56 days -> 100k until 2024-12-17
 
 So, the chances are high to celebrate 100k before X-mas!
+
+# Update 2024-12-12
+
+Looks good!
+
+![explore-100k-20241212](../images/explore-100k-20241212.png)
