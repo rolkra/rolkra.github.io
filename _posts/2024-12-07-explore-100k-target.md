@@ -78,3 +78,10 @@ So, the chances are high to celebrate 100k before X-mas!
 Looks good!
 
 ![explore-100k-20241212](../images/explore-100k-20241212.png)
+
+# Update 2024-12-18
+
+On track!
+
+![explore-100k-20241218](../images/explore-100k-20241218.png)
+
