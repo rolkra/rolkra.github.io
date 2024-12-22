@@ -85,3 +85,9 @@ On track!
 
 ![explore-100k-20241218](../images/explore-100k-20241218.png)
 
+# Update 2024-12-21
+
+Done!
+
+![explore-100k-20241221](../images/explore-100k-20241221.png)
+
