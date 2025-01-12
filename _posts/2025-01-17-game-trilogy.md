@@ -15,9 +15,19 @@ The owl 🦉 may give you some extra time!
 
 ![creepyalien-game](../images/games3-creepyalien2.png)
 
+```r
+library(creepyalien)
+creepyalien()
+```
+
 ## {pixelpuzzle}
 
 Select one of the pixel arts (Mario, Yoshi, Space Invaders, ...) and try to restore the pixel art by shifting rows!
+
+```r
+library(pixelpuzzle)
+pixelpuzzle()
+```
 
 ![pixelpuzzle](../images/games3-pixelpuzzle.png)
 
@@ -29,6 +39,11 @@ You try to break the code by trying color patterns. The computer tells you the n
 Try to break the code in less steps as possible!
 
 ![codebreaker](../images/games3-codebreaker.png)
+
+```r
+library(codebreaker)
+codebreaker()
+```
 
 ## Wanna try?
 
