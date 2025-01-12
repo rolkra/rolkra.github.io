@@ -13,21 +13,21 @@ You are an alien 👽 lost in a graveyard and have until midnight to find your w
 Skeletons 💀 are waiting to scare you to death should you come to close. You can dig up to 5 holes to help keep them away. 
 The owl 🦉 may give you some extra time!
 
-![creepyalien-game](../images/games3-creepyalien2.png)
-
 ```r
 library(creepyalien)
 creepyalien()
 ```
 
-## {pixelpuzzle}
+![creepyalien-game](../images/games3-creepyalien2.png)
 
-Select one of the pixel arts (Mario, Yoshi, Space Invaders, ...) and try to restore the pixel art by shifting rows!
+## {pixelpuzzle}
 
 ```r
 library(pixelpuzzle)
 pixelpuzzle()
 ```
+
+Select one of the pixel arts (Mario, Yoshi, Space Invaders, ...) and try to restore the pixel art by shifting rows!
 
 ![pixelpuzzle](../images/games3-pixelpuzzle.png)
 
@@ -38,12 +38,12 @@ The computer chooses a pattern of four colors (duplicates possible).
 You try to break the code by trying color patterns. The computer tells you the number of correct colors. 
 Try to break the code in less steps as possible!
 
-![codebreaker](../images/games3-codebreaker.png)
-
 ```r
 library(codebreaker)
 codebreaker()
 ```
+
+![codebreaker](../images/games3-codebreaker.png)
 
 ## Wanna try?
 
