@@ -22,12 +22,12 @@ creepyalien()
 
 ## {pixelpuzzle}
 
+Select one of the pixel arts (Mario, Yoshi, Space Invaders, ...) and try to restore the pixel art by shifting rows!
+
 ```r
 library(pixelpuzzle)
 pixelpuzzle()
 ```
-
-Select one of the pixel arts (Mario, Yoshi, Space Invaders, ...) and try to restore the pixel art by shifting rows!
 
 ![pixelpuzzle](../images/games3-pixelpuzzle.png)
 
