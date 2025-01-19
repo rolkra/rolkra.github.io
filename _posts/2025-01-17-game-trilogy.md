@@ -9,9 +9,9 @@ I just finished my "trilogy" of retro games written in R. {creepyalien} complete
 
 ## {creepyalien}
 
-You are an alien 👽 lost in a graveyard and have until midnight to find your way to your ship 🛸. 
-Skeletons 💀 are waiting to scare you to death should you come to close. You can dig up to 5 holes to help keep them away. 
-The owl 🦉 may give you some extra time!
+You are an alien lost in a graveyard and have until midnight to find your way to your ship. 
+Skeletons are waiting to scare you to death should you come to close. You can dig up to 5 holes to help keep them away. 
+The owl may give you some extra time!
 
 ```r
 library(creepyalien)
