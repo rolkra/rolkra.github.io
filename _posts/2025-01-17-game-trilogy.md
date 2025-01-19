@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Retro games {creepyalien}, {pixelpuzzle} & {codebreaker}
+title:  Retro games {creepyalien}, {pixelpuzzle} and {codebreaker}
 ---
 
 Have fun with these 3 retro games written in R:
 
-I just finished my "trilogy" of retro 🕹 games written in R. {creepyalien} completes {pixelpuzzle} and {codebreaker}
+I just finished my "trilogy" of retro games written in R. {creepyalien} completes {pixelpuzzle} and {codebreaker}
 
 ## {creepyalien}
 
