@@ -41,6 +41,8 @@ R is not available in the App-Center, you need to use the Terminal to install it
 
 You can use ```Control + Shift + v``` to paste text into the terminal
 
+![Ubuntu CRAN-Website Terminal ](../images/windows-ubuntu-terminal.png)
+
 ## Install R packages
 
 Now you can install your favorite R packages by simply typing
