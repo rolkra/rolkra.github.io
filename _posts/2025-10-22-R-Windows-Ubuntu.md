@@ -39,7 +39,7 @@ Open the App-Center and search for "RStudio". Then simply press "install"... (RS
 
 R is not available in the App-Center, you need to use the Terminal to install it manually. Follow the steps on the CRAN website: https://cran.r-project.org/bin/linux/ubuntu/
 
-You can use ```Control + Shift + v``` to paste text into the terminal
+You can use ```Control+Shift+v``` to paste text into the terminal
 
 ![Ubuntu CRAN-Website Terminal ](../images/windows-ubuntu-terminal.png)
 
