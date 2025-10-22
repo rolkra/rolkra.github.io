@@ -64,6 +64,6 @@ sudo apt-get install libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libweb
 
 Then everything worked as expected!
 
-Youn can find out by yourself, which Ubuntu-packages are missing by checking your error-messages for the string "[ANTICONF]". There the missing Ubuntu-packages are listed.
+Youn can find out by yourself, which Ubuntu-packages are missing by checking your error-messages for the string ```[ANTICONF]```. There the missing Ubuntu-packages are listed.
 
 Have fun with R/RStudio on Ubuntu Linux!
