@@ -31,7 +31,7 @@ Now you can install Ubuntu. I used Ubuntu 24.04.3 LTS. Just follow the installat
 
 ## Install RStudio
 
-Simply open the App-Center and search for "RStudio". Then simply press "install"...
+Open the App-Center and search for "RStudio". Then simply press "install"...
 
 ![Ubuntu running R/RStudio](../images/windows-ubuntu-rstudio-install.png)
 
@@ -39,7 +39,7 @@ Simply open the App-Center and search for "RStudio". Then simply press "install"
 
 R is not available in the App-Center, you need to use the Terminal to install it manually. Follow the steps on the CRAN website: https://cran.r-project.org/bin/linux/ubuntu/
 
-You can use ```Control + Shift + v``` to paste a text into the terminal
+You can use ```Control + Shift + v``` to paste text into the terminal
 
 ## Install R packages
 
@@ -47,7 +47,7 @@ Now you can install your favorite R packages by simply typing
 
 ```install.packages("<package>")``` in RStudio
 
-But maybe now you run into some problems (like I did). When trying to install {tidyverse} I got a bunch of error messages. I found out, that my Ubuntu-system is lacking some system-packages that are needed. So you need to manually install them using the Terminal again. In my case I had to type:
+But maybe now you run into some problems (like I did). When trying to install {tidyverse} I got a bunch of error messages. I found out, that my Ubuntu-system is lacking some system-packages that are needed. So I had to manually install them using the Terminal again. In my case I had to type:
 
 ```
 sudo apt-get install libcurl4-openssl-dev
@@ -58,3 +58,5 @@ sudo apt-get install libharfbuzz-dev
 sudo apt-get install libfribidi-dev
 sudo apt-get install libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libwebp-dev
 ```
+
+Then everything worked as expected!
