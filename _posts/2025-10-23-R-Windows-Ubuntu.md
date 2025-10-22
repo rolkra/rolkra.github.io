@@ -20,7 +20,9 @@ You must "Turn off RST" first!
 ## Switch to AHCI
 
 Reboot your laptop and press F2 during booting. This will show you the BIOS-menu.
-Select Main > SATA Model > AHCI
+
+```Select Main > SATA Model > AHCI```
+
 Then reboot again (press F12 and select your usb-stick)
 
 ## Install Ubuntu
