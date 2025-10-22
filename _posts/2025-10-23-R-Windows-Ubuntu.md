@@ -3,7 +3,7 @@ layout: post
 title:  Switching from Windows to Ubuntu (as an R developer)
 ---
 
-This is my recipe to switch tu Ubuntu and set up R/RStudio:
+This is my recipe to switch to Ubuntu and set up R/RStudio:
 
 ![Ubuntu running R/RStudio](../images/windows-ubuntu-ready.png)
 
@@ -21,17 +21,17 @@ You must "Turn off RST" first!
 
 Reboot your laptop and press F2 during booting. This will show you the BIOS-menu.
 
-```Select Main > SATA Model > AHCI```
+Select ```Main > SATA Model > AHCI```
 
 Then reboot again (press F12 and select your usb-stick)
 
 ## Install Ubuntu
 
-Now you can install Ubuntu. I used Ubuntu 24.04.3 LTS Just follow the installation-steps...
+Now you can install Ubuntu. I used Ubuntu 24.04.3 LTS. Just follow the installation-steps...
 
 ## Install RStudio
 
-Simply open the App-Center and search for "RStudio". Then simply press "install"
+Simply open the App-Center and search for "RStudio". Then simply press "install"...
 
 
 
