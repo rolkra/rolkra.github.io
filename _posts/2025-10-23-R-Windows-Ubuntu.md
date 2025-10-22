@@ -1,0 +1,35 @@
+---
+layout: post
+title:  Switching from Windows to Ubuntu (as an R developer)
+---
+
+This is my recipe to switch tu Ubuntu and set up R/RStudio:
+
+![Ubuntu running R/RStudio](../images/windows-ubuntu-ready.png)
+
+I used my Dell XPS 15 9560 to develop and maintain my R packages {explore}, {tidydice}, {pixelpuzzle}, {creepyalien}, {codebreaker}, ... 
+But Microsoft decided to stop supporting Windows 10 and didn't allow my laptop to upgrade to Windows 11. This gave me the final push to swith to Ubuntu: 
+
+## Get Ubuntu
+
+Download the Ubuntu iso from https://ubuntu.com/download/desktop and create a bootable usb-stick (I used rufus https://rufus.ie/de/)
+Then you can reboot your computer and press F12 during booting. This will let you select your usb-stick to boot from. Then you may get an error (like I did):
+
+You must "Turn off RST" first!
+
+## Switch to AHCI
+
+Reboot your laptop and press F2 during booting. This will show you the BIOS-menu.
+Select Main > SATA Model > AHCI
+Then reboot again (press F12 and select your usb-stick)
+
+## Install Ubuntu
+
+Now you can install Ubuntu. I used Ubuntu 24.04.3 LTS Just follow the installation-steps...
+
+## Install RStudio
+
+Simply open the App-Center and search for "RStudio". Then simply press "install"
+
+
+
