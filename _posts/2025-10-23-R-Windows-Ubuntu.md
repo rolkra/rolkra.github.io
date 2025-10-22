@@ -35,5 +35,26 @@ Simply open the App-Center and search for "RStudio". Then simply press "install"
 
 ![Ubuntu running R/RStudio](../images/windows-ubuntu-rstudio-install.png)
 
+## Install R
 
+R is not available in the App-Center, you need to use the Terminal to install it manually. Follow the steps on the CRAN website: https://cran.r-project.org/bin/linux/ubuntu/
 
+You can use ```Control + Shift + v``` to paste a text into the terminal
+
+## Install R packages
+
+Now you can install your favorite R packages by simply typing
+
+```install.packages("<package>")``` in RStudio
+
+But maybe now you run into some problems (like I did). When trying to install {tidyverse} I got a bunch of error messages. I found out, that my Ubuntu-system is lacking some system-packages that are needed. So you need to manually install them using the Terminal again. In my case I had to type:
+
+```
+sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install libssl-dev
+sudo apt-get install libxml2-dev
+sudo apt-get install libfontconfig1-dev
+sudo apt-get install libharfbuzz-dev
+sudo apt-get install libfribidi-dev
+sudo apt-get install libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libwebp-dev
+```
