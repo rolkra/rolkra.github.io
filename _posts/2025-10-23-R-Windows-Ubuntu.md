@@ -33,5 +33,7 @@ Now you can install Ubuntu. I used Ubuntu 24.04.3 LTS. Just follow the installat
 
 Simply open the App-Center and search for "RStudio". Then simply press "install"...
 
+![Ubuntu running R/RStudio](../images/windows-ubuntu-rstudio-install.png)
+
 
 
