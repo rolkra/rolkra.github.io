@@ -43,6 +43,12 @@ You can use ```Control+Shift+v``` to paste text into the terminal
 
 ![Ubuntu CRAN-Website Terminal ](../images/windows-ubuntu-terminal.png)
 
+Now you can start RStudio and test if RStudio/R works
+
+## Install Github
+
+In case git is not installed on your system, use the terminal and run ```sudo apt-get install git```
+
 ## Install R packages
 
 Now you can install your favorite R packages by simply typing
