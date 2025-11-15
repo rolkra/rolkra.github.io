@@ -49,4 +49,8 @@ use_data_beer() |>
  theme(plot.title = element_text(size=20))
 ```
 
-![Ubuntu running R/RStudio](../images/utf8ify-ggplot-beer.png)
+![ggplot using utf8ify](../images/utf8ify-ggplot-beer.png)
+
+## Links
+
+https://github.com/rolkra/utf8ify
