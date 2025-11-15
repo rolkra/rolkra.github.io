@@ -11,23 +11,23 @@ If you want to post a text, but there is no format-option. Check, if you can add
 
 If yes, my R package {𝘂𝘁𝗳𝟴𝗶𝗳𝘆} does the trick! It let's you format text using utf8 characters. So every character of a 𝗯𝗼𝗹𝗱 text ist now translated into a corresponding bold utf8 character.
 
-This is the code for the first line:
-
-𝚕𝚒𝚋𝚛𝚊𝚛𝚢(𝚞𝚝𝚏𝟾𝚒𝚏𝚢)<br>
-𝚌𝚊𝚝(𝚙𝚊𝚜𝚝𝚎(<br>
- 𝚞𝚝𝚏𝟾_𝚝𝚎𝚡𝚝_𝚋𝚘𝚕𝚍𝚒𝚝𝚊𝚕𝚒𝚌("𝚃𝙷𝙸𝚂"),<br>
- 𝚞𝚝𝚏𝟾_𝚝𝚎𝚡𝚝_𝚋𝚘𝚕𝚍("𝚒𝚜 𝚝𝚑𝚎 𝚜𝚎𝚌𝚛𝚎𝚝"),<br>
- "𝚑𝚘𝚠 𝚝𝚘 𝚏𝚘𝚛𝚖𝚊𝚝",<br>
- 𝚞𝚝𝚏𝟾_𝚝𝚎𝚡𝚝_𝚌𝚒𝚛𝚌𝚕𝚎("𝚝𝚎𝚡𝚝"),<br>
- 𝚞𝚝𝚏𝟾_𝚝𝚎𝚡𝚝_𝚐𝚘𝚝𝚑𝚒𝚌("(𝚒𝚏 𝚝𝚑𝚎𝚛𝚎 𝚒𝚜 𝚗𝚘 𝚏𝚘𝚛𝚖𝚊𝚝 𝚘𝚙𝚝𝚒𝚘𝚗):")<br>
-))<br>
-
 And the whole text above is without using HTML format-options. It's simply using the utf8 trick provided by {𝘂𝘁𝗳𝟴𝗶𝗳𝘆}
 
+This is the code that produces the first text-line:
+```
+library(utf8ify)
+cat(paste(
+  utf8_text_bolditalic("THIS"),
+  utf8_text_bold("is the secret"),
+  "how to format",
+  utf8_text_circle("text"),
+  utf8_text_gothic("(if there is no format option):")
+))
+```
 
 ## ggplot
 
-**{utf8ify}** your ggplot!
+You can even **{utf8ify}** your ggplot!
 
 ```
 library(tidyverse)
