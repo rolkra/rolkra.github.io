@@ -9,11 +9,11 @@ Format text using {utf8ify} if there is no format option!
 
 If you want to post a text, but there is no format-option. Check, if you can add some smileys 😀💡✔️ 
 
-If yes, my R package {𝘂𝘁𝗳𝟴𝗶𝗳𝘆} does the trick! It let's you format text using utf8 characters. So every character of a 𝗯𝗼𝗹𝗱 text ist now translated into a corresponding bold utf8 character.
+If yes, my R package {𝘂𝘁𝗳𝟴𝗶𝗳𝘆} does the trick! It let's you format text using utf8 characters. So e.g. every character of a 𝗯𝗼𝗹𝗱 text ist now translated into a corresponding bold utf8 character.
 
 And the whole text above is without using HTML format-options. It's simply using the utf8 trick provided by {𝘂𝘁𝗳𝟴𝗶𝗳𝘆}
 
-This is the code that produces the first text-line:
+This is the code that generates the first text-line:
 ```
 library(utf8ify)
 cat(paste(
