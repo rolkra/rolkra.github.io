@@ -66,6 +66,7 @@ sudo apt-get install libfontconfig1-dev
 sudo apt-get install libharfbuzz-dev
 sudo apt-get install libfribidi-dev
 sudo apt-get install libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libwebp-dev
+sudo apt-get install gfortran
 ```
 
 Then everything worked as expected!
